@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar';
 
 export default class App extends Component {
   componentDidMount() {
@@ -8,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hey</h1>
+        <Navbar />
       </div>
     );
   }
