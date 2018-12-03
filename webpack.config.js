@@ -40,7 +40,6 @@ module.exports = {
     port: 8080,
     open: true,
     contentBase: path.join(__dirname, outputDirectory),
-    
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
