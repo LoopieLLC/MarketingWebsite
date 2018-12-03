@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar';
+import { hot } from 'react-hot-loader';
+class App extends Component {
 
-export default class App extends Component {
   componentDidMount() {
     console.log('We have a React component!');
   }
@@ -8,8 +10,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hey</h1>
+        <Navbar />
       </div>
     );
   }
 }
+export default hot(module)(App);
