@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import { hot } from 'react-hot-loader';
+import '../client/styles/main.scss';
 class App extends Component {
 
   componentDidMount() {
