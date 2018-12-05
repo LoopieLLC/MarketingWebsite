@@ -26,3 +26,4 @@ This project follows a very simple, React-suggested structure:
 
 # Resources
 https://reactjs.org/docs/thinking-in-react.html
+https://material.io/
