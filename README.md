@@ -23,3 +23,6 @@ This project follows a very simple, React-suggested structure:
     `index.js`: Where we bind React to the DOM.
 `public/`:
   `index.html`: The main entry-point for React.
+
+# Resources
+https://reactjs.org/docs/thinking-in-react.html
