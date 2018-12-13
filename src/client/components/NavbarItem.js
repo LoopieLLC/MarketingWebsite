@@ -1,12 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from 'react-router-dom';
 
 const NavbarItem = ({item}) => (
-  <li>{item}</li>
+  <li>
+    <NavLink to={item.url}>{item.name}</NavLink>
+  </li>
 );
 
 NavbarItem.propTypes = {
-  item: PropTypes.string,
+  item: PropTypes.object,
 }
 
 export default NavbarItem;
