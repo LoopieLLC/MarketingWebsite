@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
       <HashRouter>
       <nav className='main-nav'>
         <img className='logo' />
-        <ul>
+        <ul className='nav-item-container'>
           {this.state.items.map((item) => {
             return (
               <NavbarItem to={item.url} key={item.name} item={item}/>
