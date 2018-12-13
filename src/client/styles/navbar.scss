@@ -1,8 +1,25 @@
-.nav-item-container {
-  display: flex;
-  justify-content: flex-end;
+  
+.main-nav {
+  background-color: $ColorDark;
 
-  .navbar-item {
-    margin: 0 3rem;
+  .nav-item-container {
+    display: flex;
+    justify-content: flex-end;
+  
+    .navbar-item {
+      margin: 0 3rem;
+      list-style:  none;
+  
+      > a {
+        color: $ColorWhite;
+        line-height: 14px;
+        font-weight: bold;
+  
+        &:hover, &:focus {
+          color: $ColorLoopie;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
