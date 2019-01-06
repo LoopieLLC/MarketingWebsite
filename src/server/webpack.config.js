@@ -31,7 +31,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
         loader: 'url-loader?limit=100000'
       },
     ]
@@ -40,7 +40,7 @@ module.exports = {
     port: 8080,
     open: true,
     contentBase: path.join(__dirname, outputDirectory),
-    
+    historyApiFallback  : true,
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),

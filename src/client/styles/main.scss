@@ -1,1 +1,13 @@
+@import 'variables.scss';
 @import 'navbar.scss';
+@import 'home.scss';
+
+html, body, #root, #root>div {
+  height: 100%;
+  background: no-repeat center center fixed;
+  background-color: $DarkBlue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

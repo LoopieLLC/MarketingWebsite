@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
+const nodeMailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
-(function() {
+(function () {
 
   // Step 1: Create & configure a webpack compiler
   var webpack = require('webpack');
@@ -9,16 +11,53 @@ const app = express();
   var compiler = webpack(webpackConfig);
 
   // Step 2: Attach the dev middleware to the compiler & the server
-  app.use(require("webpack-dev-middleware")(compiler, {
+  app.use(require('webpack-dev-middleware')(compiler, {
     logLevel: 'warn', publicPath: webpackConfig.output.publicPath
   }));
 
   // Step 3: Attach the hot middleware to the compiler & the server
-  app.use(require("webpack-hot-middleware")(compiler, {
-    log: console.log, path: '/__webpack_hmr', heartbeat: 10 * 1000
-  }));
-})();
+  app.use(require('webpack-hot-middleware')(compiler));
 
-app.use(express.static('dist'));
-app.listen(8080, () => console.log('Listening on port 8080!'));
+  // Email handling
+  app.use(bodyParser.urlencoded({ extended: true }));
+  app.use(bodyParser.json());
 
+  app.post('/send-email', function (req, res) {
+    let transporter = nodeMailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'loopiellcdev@gmail.com',
+        pass: ''
+      }
+    });
+    let mailOptions = {
+      from: 'Loopie LLC <loopiellcdev@gmail.com>', // sender address
+      to: req.body.to, // list of receivers
+      subject: req.body.subject, // Subject line
+      text: req.body.body, // plain text body
+      html: '<b>NodeJS Email Tutorial</b>' // html body
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log('Message %s sent: %s', info.messageId, info.response);
+      res.render('index');
+    });
+  });
+
+  app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
+
+  app.listen(8090, function (err) {
+    if (err) {
+      return console.error(err);
+    }
+
+    console.log('Listening at http://localhost:8080/');
+  });
+}());
