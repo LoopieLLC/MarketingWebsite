@@ -9,17 +9,22 @@ const app = express();
   var compiler = webpack(webpackConfig);
 
   // Step 2: Attach the dev middleware to the compiler & the server
-  app.use(require("webpack-dev-middleware")(compiler, {
+  app.use(require('webpack-dev-middleware')(compiler, {
     logLevel: 'warn', publicPath: webpackConfig.output.publicPath
   }));
 
   // Step 3: Attach the hot middleware to the compiler & the server
-  app.use(require("webpack-hot-middleware")(compiler, {
-    log: console.log, path: '/__webpack_hmr', heartbeat: 10 * 1000
-  }));
-})();
+  app.use(require('webpack-hot-middleware')(compiler));
 
-app.use(express.static('dist'));
-app.get('/api/getUsername', (req, res) => res.send({}));
-app.listen(8080, () => console.log('Listening on port 8080!'));
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  });
 
+  app.listen(8090, function(err) {
+    if (err) {
+      return console.error(err);
+    }
+
+    console.log('Listening at http://localhost:8080/');
+  });
+}()); 
