@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import { hot } from 'react-hot-loader';
 import '../client/styles/main.scss';
-class App extends Component {
+export class App extends Component {
 
   componentDidMount() {
     console.log('We have a React component!');
@@ -16,4 +16,3 @@ class App extends Component {
     );
   }
 }
-export default hot(module)(App);
