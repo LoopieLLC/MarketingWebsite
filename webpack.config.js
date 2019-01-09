@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const webpack = require('webpack');
 const devMode = process.env.NODE_ENV !== 'production';
 
 const outputDirectory = 'dist';
@@ -13,6 +13,7 @@ module.exports = {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js'
   },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -36,9 +37,11 @@ module.exports = {
       },
     ]
   },
+  devtool: 'inline-source-map',
   devServer: {
     port: 8080,
     open: true,
+    hot: true,
     contentBase: path.join(__dirname, outputDirectory),
   },
   plugins: [
@@ -49,6 +52,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
