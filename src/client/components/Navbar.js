@@ -31,17 +31,18 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <HashRouter>
-      <nav className='main-nav'>
-        <img className='logo' />
-        <ul className='nav-item-container'>
-          {this.state.items.map((item) => {
-            return (
-              <NavbarItem to={item.url} key={item.name} item={item}/>
-            )
-          })}
-        </ul>
-      </nav>
+        <nav className='main-nav'>
+          <img className='logo' />
+          <ul className='nav-item-container'>
+            {this.state.items.map((item) => {
+              return (
+                <NavbarItem to={item.url} key={item.name} item={item}/>
+              )
+            })}
+          </ul>
+        </nav>
       </HashRouter>
+
     );
   }
 };
