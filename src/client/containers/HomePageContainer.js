@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {HashRouter} from 'react-router-dom';
+import {withRouter} from 'react-router';
 
 class HomePageContainer extends React.Component {
   state = {
@@ -33,6 +33,6 @@ class HomePageContainer extends React.Component {
   }
 };
 
-export default HomePageContainer;
+export default withRouter(HomePageContainer);
 
 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
-import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { hot } from 'react-hot-loader';
 import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
+import ServicesContainer from './containers/ServicesContainer';
 import HomePageCTA from './components/HomePageCTA';
 
 class App extends Component {
@@ -22,8 +23,9 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Redirect exact path='/' to='home' />
+        <Route exact path='/' render={this.renderHomePage} />
         <Route path='/home' render={this.renderHomePage} />
+        <Route path='/services' render={this.renderServices} />
       </Switch>
     );
   }
