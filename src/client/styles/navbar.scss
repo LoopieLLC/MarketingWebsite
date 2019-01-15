@@ -1,20 +1,21 @@
-
 .main-nav {
-  background-color: $ColorDark;
-
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  margin-top: 1rem;
+  
   .nav-item-container {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 1rem; 
+    align-items: flex-end;
 
     .navbar-item {
       margin: 0 3rem;
       list-style:  none;
-
       > a {
         color: $ColorWhite;
         line-height: 14px;
         font-weight: bold;
-
         &:hover, &:focus {
           color: $ColorLoopie;
           text-decoration: none;
@@ -22,4 +23,11 @@
       }
     }
   }
+
+  .logo {
+    max-height: 4rem;
+    max-width: 10rem;
+    margin-left: 1rem;
+  }
 }
+

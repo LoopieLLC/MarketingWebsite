@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const NavbarItem = ({item}) => (
   <li className='navbar-item'>
