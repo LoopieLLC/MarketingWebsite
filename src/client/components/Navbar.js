@@ -22,6 +22,7 @@ const Navbar = ({ items }) => (
   </HashRouter>
 );
 
+
 Navbar.propTypes = {
   items: PropTypes.array,
 }
