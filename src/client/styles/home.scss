@@ -1,8 +1,9 @@
 
 .home-page-cta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 5rem;
+  height: 100vh;
 
   .cta-container {
     margin-left: 15rem;
@@ -10,6 +11,7 @@
     .cta-text {
       color: $ColorLoopie;
       font-weight: bold;
+      font-size: 10rem;
       max-width: 45rem;
       max-height: 30rem;
       z-index: 2;
@@ -20,14 +22,13 @@
       color: $ColorWhite;
     }
     .btn {
-      border-radius: 0;
+      border-radius: 2px;
     }
   }
-  
+
   .cta-image {
     margin-right: 5rem;
     max-width: 45rem;
     max-height: 30rem;
   }
 }
-  

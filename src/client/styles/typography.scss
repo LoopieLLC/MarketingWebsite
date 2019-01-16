@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
 html, body {
   font-family: 'Roboto', sans-serif;
 }
@@ -5,4 +8,8 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: $ColorLoopie;
 }

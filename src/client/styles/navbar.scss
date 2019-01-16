@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   height: 5rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.15),rgba(0,0,0,0));
 
 
   .nav-item-container {
@@ -23,7 +24,7 @@
         font-weight: bold;
         &:hover, &:focus {
           color: $ColorLoopie;
-          text-decoration: none;
+          
         }
       }
     }
