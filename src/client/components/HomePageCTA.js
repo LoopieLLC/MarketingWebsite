@@ -5,7 +5,7 @@ import {HashRouter} from 'react-router-dom';
 import Button from './Button';
 import CTAImage from '../../../public/images/placeholder1.jpg';
 import Grid from '@material-ui/core/Grid';
-
+import StickyNotes from './StickyNotes';
 const HomePageCTA = ({CTAText, subtext}) => (
   <main>
   <div className='home-page-cta'>
@@ -13,6 +13,7 @@ const HomePageCTA = ({CTAText, subtext}) => (
         <h4 className='cta-subtext'>{subtext}</h4>
         <Button text='Lets get started' />
         <img className='cta-image' src={CTAImage} />
+        <StickyNotes />
   </div>
   </main>
 );
