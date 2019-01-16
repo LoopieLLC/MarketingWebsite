@@ -9,7 +9,7 @@ import {
 
 const Navbar = ({ items }) => (
   <HashRouter>
-    <nav className='navbar   main-nav'>
+    <nav className='navbar   main-nav  fixed'>
       <img className='logo' src={logo} />
       <ul className='nav-item-container'>
         {items.map((item) => {
