@@ -29,8 +29,8 @@ const path = require('path');
       port: 465,
       secure: true,
       auth: {
-        user: 'loopiellcdev@gmail.com',
-        pass: '',
+        user: process.env.LOOPIE_EMAIL,
+        pass: process.env.LOOPIE_EMAIL_PASSWORD,
       },
     });
     let mailOptions = {
