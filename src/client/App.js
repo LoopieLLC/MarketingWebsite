@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+  
 import Navbar from './components/Navbar';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
