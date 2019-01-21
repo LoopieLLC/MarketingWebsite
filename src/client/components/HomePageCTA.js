@@ -1,19 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BUtton from './Button';
 import {HashRouter} from 'react-router-dom';
-import Button from './Button';
+import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/placeholder1.jpg';
-
+import Grid from '@material-ui/core/Grid';
+import StickyNotes from './StickyNotes';
 const HomePageCTA = ({CTAText, subtext}) => (
+  <main>
   <div className='home-page-cta'>
-    <div className='cta-container'>
-      <h1 className='cta-text'>{CTAText}</h1>
-      <h4 className='cta-subtext'>{subtext}</h4>
-      <Button text='Lets get started' />
-    </div>
-    <img className='cta-image' src={CTAImage} />
+        <h1 className='cta-text'>{CTAText}</h1>
+        <h4 className='cta-subtext'>{subtext}</h4>
+        <LoopieButton text='Lets get started' />
+        <img className='cta-image' src={CTAImage} />
+        <StickyNotes />
   </div>
+  </main>
 );
 
 HomePageCTA.propTypes = {

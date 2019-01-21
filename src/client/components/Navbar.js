@@ -4,7 +4,7 @@ import NavbarItem from './NavbarItem';
 import logo from '../../../public/images/logo.svg';
 
 const Navbar = ({ items }) => (
-    <nav className='navbar   main-nav'>
+    <nav className='navbar   main-nav  fixed'>
       <img className='logo' src={logo} />
       <ul className='nav-item-container'>
         {items.map((item) => {
