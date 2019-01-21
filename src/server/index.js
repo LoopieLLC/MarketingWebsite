@@ -38,7 +38,7 @@ const path = require('path');
       to: 'loopiellcdev@gmail.com', // list of receivers
       subject: req.body.subject, // Subject line
       text: req.body.body, // plain text body
-      html: '<b>NodeJS Email Tutorial</b>', // html body
+      html: req.body.body, // html body
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
