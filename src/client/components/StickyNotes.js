@@ -7,12 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
-import {
-  HashRouter
-} from 'react-router-dom';
-
 const StickyNotes = ({ to, header, content}) => (
-  <HashRouter>
    <CardActionArea onClick={event => {}}>
     <Card className="cards">
       <CardContent>
@@ -22,7 +17,6 @@ const StickyNotes = ({ to, header, content}) => (
     </Card>
 
    </CardActionArea>
-  </HashRouter>
 );
 
 StickyNotes.propTypes = {

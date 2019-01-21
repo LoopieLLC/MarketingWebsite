@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-  
+
 import Navbar from './components/Navbar';
-import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
 
 
-import { hot } from 'react-hot-loader';
+import {hot} from 'react-hot-loader';
 import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
 import ServicesContainer from './containers/ServicesContainer';
@@ -19,12 +19,7 @@ class App extends React.Component {
 
   renderHomePage = () => {
     return (
-      <HomePageContainer>{(
-        items => <>
-        <Navbar items={items.navItems}/>
-        <HomePageCTA CTAText='Get Laundry Delivered To Your Doorstep' subtext='Flat rates, starting from $27.99'/>
-        </>)}
-      </HomePageContainer>
+      <HomePageContainer />
     );
   }
 
