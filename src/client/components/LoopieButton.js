@@ -7,7 +7,7 @@ export default class LoopieButton extends React.Component {
 
 
   render() {
-    return <Button color="primary" size="medium" fullWidth="false" variant="contained">{this.props.text}</Button>;
+    return <Button color="primary" size="medium"  variant="contained">{this.props.text}</Button>;
   }
 }
 
