@@ -13,9 +13,6 @@ import {
   HashRouter
 } from 'react-router-dom';
 
-const styles = {
-    borderRadius: 10,
-};
 
 
 export default class StickyNotes extends React.Component {
@@ -24,21 +21,15 @@ export default class StickyNotes extends React.Component {
 // the <> and </> are necessary to return multiline JSX
 
   render() {
-    const styles = {
-      root: {
-        background: '#0085FF' 
-      }
-    }
-
+    let styles = {
+        borderRadius: 10,
+        backgroundColor: this.props.color,
+    };
 
     return <>
       <HashRouter>
        <CardActionArea onClick={event => {}}>
-<<<<<<< HEAD
-        <Card className="cards" classes={styles}>
-=======
         <Card style={styles} className="cards">
->>>>>>> 518891d85d9b86fab01ce9c17e10068437d6315a
           <CardContent>
             <h3>{this.props.header}</h3>
             <p>{this.props.content}</p>
