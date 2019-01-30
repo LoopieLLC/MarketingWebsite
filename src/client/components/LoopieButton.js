@@ -17,11 +17,12 @@ export default class LoopieButton extends React.Component {
 
 
   render() {
-    return <Button color={this.handleColor(this.props.color)} size="medium"  variant="contained">{this.props.text}</Button>;
+    return <a><Button color={this.handleColor(this.props.color)} size="medium"  variant="contained">{this.props.text}</Button></a>;
 
   }
 }
 
+LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 
 //
 // const Button = ({text, onClick}) => (
