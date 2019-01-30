@@ -7,10 +7,11 @@ import Grid from '@material-ui/core/Grid';
 import StickyNotes from './StickyNotes';
 const HomePageCTA = ({CTAText, subtext}) => (
   <main>
+
   <div className='home-page-cta'>
         <h1 className='cta-text'>{CTAText}</h1>
+        <LoopieButton text='Lets get started' color="blue" />
         <h4 className='cta-subtext'>{subtext}</h4>
-        <LoopieButton text='Lets get started' />
         <img className='cta-image' src={CTAImage} />
         <StickyNotes to="" header="owo" content="owo" />
   </div>

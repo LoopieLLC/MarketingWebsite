@@ -1,6 +1,6 @@
 
 .home-page-cta {
-  display: flex;
+  //display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -11,9 +11,9 @@
     .cta-text {
       color: $ColorLoopie;
       font-weight: bold;
-      
+
       max-width: 45rem;
-      //max-height: 30rem;
+      max-height: 30rem;
       z-index: 2;
       margin-bottom: 2rem;
     }
