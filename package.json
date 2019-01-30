@@ -26,6 +26,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-simple-scroll": "^1.0.0",
+    "typeface-roboto": "0.0.54",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-hot-middleware": "^2.24.3"
   },

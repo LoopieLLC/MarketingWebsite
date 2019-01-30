@@ -1,3 +1,5 @@
+import 'typeface-roboto';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
@@ -18,7 +20,9 @@ const theme = createMuiTheme({
     }
 
   },
-
+  typography: {
+     useNextVariants: true,
+   },
 });
 
 ReactDOM.render(
