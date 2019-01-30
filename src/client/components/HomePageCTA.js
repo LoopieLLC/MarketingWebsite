@@ -10,10 +10,10 @@ const HomePageCTA = ({CTAText, subtext}) => (
 
   <div className='home-page-cta'>
         <h1 className='cta-text'>{CTAText}</h1>
-        <LoopieButton text='Lets get started' color="blue" />
+        <LoopieButton text='Lets get started' color="blue" className="text-light"/>
         <h4 className='cta-subtext'>{subtext}</h4>
         <img className='cta-image' src={CTAImage} />
-        <StickyNotes to="" header="owo" content="owo" />
+        <StickyNotes header="owo" content="owo" />
   </div>
   </main>
 );
