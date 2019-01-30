@@ -12,13 +12,21 @@ import {
 
 export default class StickyNotes extends React.Component {
 
+
 // the <> and </> are necessary to return multiline JSX
 
   render() {
+    const styles = {
+      root: {
+        background: '#0085FF' 
+      }
+    }
+
+
     return <>
       <HashRouter>
        <CardActionArea onClick={event => {}}>
-        <Card className="cards">
+        <Card className="cards" classes={styles}>
           <CardContent>
             <h3>{this.props.header}</h3>
             <p>{this.props.content}</p>

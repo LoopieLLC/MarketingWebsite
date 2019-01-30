@@ -12,12 +12,22 @@ export default class LoopieButton extends React.Component {
       return "primary";
     } else if (color == "yellow") {
       return "secondary";
+    } else {
+      return "primary";
     }
   }
 
 
   render() {
-    return <a><Button color={this.handleColor(this.props.color)} size="medium" variant="contained" className="text-light">{this.props.text}</Button></a>;
+    return <>
+            <Button
+              classes={{ label: 'button-text-light' }}
+              color={this.handleColor(this.props.color)}
+              size="medium"
+              variant="contained">
+              {this.props.text}
+            </Button>
+          </>;
 
   }
 }
