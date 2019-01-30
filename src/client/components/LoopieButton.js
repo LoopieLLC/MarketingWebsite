@@ -17,7 +17,7 @@ export default class LoopieButton extends React.Component {
 
 
   render() {
-    return <a><Button color={this.handleColor(this.props.color)} size="medium"  variant="contained">{this.props.text}</Button></a>;
+    return <a><Button color={this.handleColor(this.props.color)} size="medium" variant="contained" className="text-light">{this.props.text}</Button></a>;
 
   }
 }
