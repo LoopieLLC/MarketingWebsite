@@ -2,9 +2,9 @@ import 'typeface-roboto';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import App from './App';
 
 
 //theming
@@ -28,9 +28,10 @@ const theme = createMuiTheme({
 });
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </MuiThemeProvider>,
-  document.getElementById('root'));
+  <MuiThemeProvider theme={theme}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </MuiThemeProvider>,
+  document.getElementById('root')
+);

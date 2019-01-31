@@ -5,7 +5,9 @@ import ButtonBase from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
 
-export default class LoopieButton extends React.Component {
+const LoopieButton = ({text, onClick}) => (
+  <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant='contained'>{text}</Button>
+);
 
   handleColor(color) {
     if (color == "blue") {
@@ -45,3 +47,10 @@ LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 // };
 //
 // export default Button;
+
+LoopieButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+export default LoopieButton;
