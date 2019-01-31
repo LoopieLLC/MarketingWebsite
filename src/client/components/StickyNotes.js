@@ -8,34 +8,37 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import CardActionArea from '@material-ui/core/CardActionArea';
+let styles = {
+    borderRadius: 10,
+    backgroundColor: this.props.color,
+};
 
-import {
-  HashRouter
-} from 'react-router-dom';
+const StickyNotes = ({ to, header, content}) => (
+   <CardActionArea onClick={event => {}}>
+    <Card style={styles} className="cards">
+      <CardContent>
+        <h3>{header}</h3>
+        <p>{content}</p>
+      </CardContent>
+    </Card>
 
+   </CardActionArea>
+);
 
-
-export default class StickyNotes extends React.Component {
-
-
-// the <> and </> are necessary to return multiline JSX
-
-  render() {
-    let styles = {
-        borderRadius: 10,
-        backgroundColor: this.props.color,
-    };
-
-    return <>
-      <HashRouter>
-       <CardActionArea onClick={event => {}}>
-        <Card style={styles} className="cards">
-          <CardContent>
-            <h3>{this.props.header}</h3>
-            <p>{this.props.content}</p>
-          </CardContent>
-        </Card>
-       </CardActionArea>
-      </HashRouter> </>;
-  }
+StickyNotes.propTypes = {
+  to: PropTypes.string,
+  header: PropTypes.string,
+  content: PropTypes.string,
+ /*
+  *  url: url,
+  *  header: string,
+  *  content: string,
+  *  color: default / primary
+  *
+  */
 }
+
+
+// export default class StickyNotes extends React.Component {
+// }
+// the <> and </> are necessary to return multiline JSX

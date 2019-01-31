@@ -5,32 +5,34 @@ import ButtonBase from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
 
-export default class LoopieButton extends React.Component {
-
-  handleColor(color) {
-    if (color == "blue") {
-      return "primary";
-    } else if (color == "yellow") {
-      return "secondary";
-    } else {
-      return "primary";
-    }
-  }
-
-
-  render() {
-    return <>
-            <Button
-              classes={{ label: 'button-text-light' }}
-              color={this.handleColor(this.props.color)}
-              size="medium"
-              variant="contained">
-              {this.props.text}
-            </Button>
-          </>;
-
-  }
-}
+const LoopieButton = ({text, onClick}) => (
+  <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant='contained'>{text}</Button>
+);
+//
+//   handleColor(color) {
+//     if (color == "blue") {
+//       return "primary";
+//     } else if (color == "yellow") {
+//       return "secondary";
+//     } else {
+//       return "primary";
+//     }
+//   };
+//
+//
+//   render() {
+//     return <>
+//             <Button
+//               classes={{ label: 'button-text-light' }}
+//               color={this.handleColor(this.props.color)}
+//               size="medium"
+//               variant="contained">
+//               {this.props.text}
+//             </Button>
+//           </>;
+//
+//   }
+// }
 
 LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 
@@ -45,3 +47,10 @@ LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 // };
 //
 // export default Button;
+
+LoopieButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+export default LoopieButton;
