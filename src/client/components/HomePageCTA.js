@@ -16,7 +16,7 @@ const HomePageCTA = ({CTAText, subtext}) => (
         <LoopieButton text='Lets get started' color="blue" className="text-light"/>
         <h4 className='cta-subtext'>{subtext}</h4>
         <img className='cta-image' src={CTAImage} />
-        <StickyNotes header="owo" content="owo" color={styles.loopieyellow} />
+        <StickyNotes header="owo" content="owo" color={styles.loopieblue} />
   </div>
   </main>
 );
