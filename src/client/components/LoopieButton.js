@@ -33,8 +33,8 @@ const LoopieButton = ({text, onClick}) => (
 //
 //   }
 // }
-
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
+//
+// LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 
 //
 // const Button = ({text, onClick}) => (

@@ -7,24 +7,22 @@ import StickyNotes from './StickyNotes';
 
 const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
   <main>
-<<<<<<< HEAD
+
     <div className='home-page-cta'>
       <h1 className='cta-text'>{CTAText}</h1>
       <h4 className='cta-subtext'>{subtext}</h4>
-      <LoopieButton onClick={handleEmail} text='Lets get started' />
       <img className='cta-image' src={CTAImage} />
-      <StickyNotes header="owo" content="owo" color={styles.loopieblue} />
+
     </div>
-=======
+
 
   <div className='home-page-cta'>
         <h1 className='cta-text'>{CTAText}</h1>
         <LoopieButton text='Lets get started' color="blue" className="text-light"/>
         <h4 className='cta-subtext'>{subtext}</h4>
         <img className='cta-image' src={CTAImage} />
-        <StickyNotes header="owo" content="owo" color={styles.loopieyellow} />
+        
   </div>
->>>>>>> parent of 8c1ebf3... updagte styles
   </main>
 );
 
