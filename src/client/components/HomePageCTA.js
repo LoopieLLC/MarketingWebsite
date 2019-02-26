@@ -4,6 +4,7 @@ import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/placeholder1.jpg';
 import Grid from '@material-ui/core/Grid';
 import StickyNotes from './StickyNotes';
+import {loopieblue} from './styles';
 
 const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
   <main>
@@ -16,7 +17,7 @@ const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
 
   </div>
 
-  //    <StickyNotes header="owo" content="owo" color={styles.loopieblue} />
+   <StickyNotes header="owo" content="owo" color={loopieblue} />
 
 
   </main>

@@ -8,22 +8,24 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import CardActionArea from '@material-ui/core/CardActionArea';
-let styles = {
+
+const StickyNotes = ({to, header, content, color}) => {
+  const styles = {
     borderRadius: 10,
-    backgroundColor: this.props.color,
+    backgroundColor: color,
+  };
+  return (
+    <CardActionArea onClick={event => { }}>
+      <Card style={styles} className="cards">
+        <CardContent>
+          <h3>{header}</h3>
+          <p>{content}</p>
+        </CardContent>
+      </Card>
+
+    </CardActionArea>
+  );
 };
-
-const StickyNotes = ({ to, header, content}) => (
-   <CardActionArea onClick={event => {}}>
-    <Card style={styles} className="cards">
-      <CardContent>
-        <h3>{header}</h3>
-        <p>{content}</p>
-      </CardContent>
-    </Card>
-
-   </CardActionArea>
-);
 
 StickyNotes.propTypes = {
   to: PropTypes.string,
