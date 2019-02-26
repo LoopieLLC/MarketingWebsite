@@ -21,7 +21,7 @@ const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
         <LoopieButton text='Lets get started' color="blue" className="text-light"/>
         <h4 className='cta-subtext'>{subtext}</h4>
         <img className='cta-image' src={CTAImage} />
-        
+
   </div>
   </main>
 );
