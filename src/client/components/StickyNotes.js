@@ -37,8 +37,18 @@ StickyNotes.propTypes = {
   *
   */
 }
+<<<<<<< HEAD
+=======
+
+
+export default class StickyNotes extends React.Component {
+>>>>>>> 51f23b7ab833f07e07ce33307cb2f49292b9eab2
 
 
 // export default class StickyNotes extends React.Component {
 // }
 // the <> and </> are necessary to return multiline JSX
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 51f23b7ab833f07e07ce33307cb2f49292b9eab2
