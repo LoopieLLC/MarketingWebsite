@@ -12,6 +12,10 @@ const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
       <h1 className='cta-text'>{CTAText}</h1>
       <h4 className='cta-subtext'>{subtext}</h4>
       <img className='cta-image' src={CTAImage} />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4a3668740d9c17c00859d507ce0695354fc566c
 
     </div>
 
@@ -23,6 +27,13 @@ const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
         <img className='cta-image' src={CTAImage} />
 
   </div>
+<<<<<<< HEAD
+=======
+=======
+      <StickyNotes header="owo" content="owo" color={styles.loopieblue} />
+    </div>
+>>>>>>> 51f23b7ab833f07e07ce33307cb2f49292b9eab2
+>>>>>>> b4a3668740d9c17c00859d507ce0695354fc566c
   </main>
 );
 
