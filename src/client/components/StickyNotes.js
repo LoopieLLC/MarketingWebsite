@@ -43,3 +43,4 @@ export default class StickyNotes extends React.Component {
 
 
 // the <> and </> are necessary to return multiline JSX
+}
