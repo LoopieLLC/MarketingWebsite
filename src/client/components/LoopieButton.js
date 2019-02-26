@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import ButtonBase from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
-
+export default class LoopieButton extends React.Component {
 const LoopieButton = ({text, onClick}) => (
   <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant='contained'>{text}</Button>
 );
