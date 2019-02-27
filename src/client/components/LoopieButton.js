@@ -8,7 +8,7 @@ import Link from '@material-ui/core/Link';
 const LoopieButton = ({text, onClick, variant}) => (
   <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant={variant}>{text}</Button>
 );
- 
+
 LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
 
 
