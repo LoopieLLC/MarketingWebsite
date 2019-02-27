@@ -9,24 +9,8 @@ const LoopieButton = ({text, onClick, variant}) => (
   <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant={variant}>{text}</Button>
 );
 
-<<<<<<< HEAD
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'primary'}
-=======
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
->>>>>>> ecb62068f210cbf72eeff1a5b8593f819be0aa9c
+LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'primary',}
 
-
-//
-// const Button = ({text, onClick}) => (
-//   <button onClick={onClick} className='btn btn-primary'>{text}</button>
-// );
-//
-// Button.propTypes = {
-//   text: PropTypes.string.isRequired,
-//   onClick: PropTypes.func.isRequired,
-// };
-//
-// export default Button;
 
 LoopieButton.propTypes = {
   text: PropTypes.string.isRequired,
