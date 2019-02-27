@@ -9,6 +9,7 @@ const Navbar = ({items}) => (
     <ul className='nav-item-container'>
       {items.map((item) => <NavbarItem to={item.url} key={item.name} item={item} />)}
     </ul>
+
   </nav>
 );
 
