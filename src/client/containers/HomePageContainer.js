@@ -21,7 +21,7 @@ class HomePageContainer extends React.Component {
         name: 'About Us',
         url: '/about',
       },
-    
+
     ],
   }
 
