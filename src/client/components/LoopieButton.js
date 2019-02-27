@@ -9,7 +9,11 @@ const LoopieButton = ({text, onClick, variant}) => (
   <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant={variant}>{text}</Button>
 );
 
+<<<<<<< HEAD
 LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'primary'}
+=======
+LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass'}
+>>>>>>> ecb62068f210cbf72eeff1a5b8593f819be0aa9c
 
 
 //
