@@ -8,13 +8,11 @@ import {loopieblue} from './styles';
 
 const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
   <main>
-
   <div className='home-page-cta'>
         <h1 className='cta-text'>{CTAText}</h1>
-        <LoopieButton text='Lets get started' color="blue" className="text-light"/>
+        <LoopieButton text='Lets get started' color="blue" className="text-light" variant = "contained"/>
         <h4 className='cta-subtext'>{subtext}</h4>
         <img className='cta-image' src={CTAImage} />
-
   </div>
 
    <StickyNotes header="owo" content="owo" color={loopieblue} />
