@@ -13,6 +13,7 @@ const Navbar = ({items}) => (
         <LoopieButton text="Get Started"></LoopieButton>
       </li>
     </ul>
+
   </nav>
 );
 
