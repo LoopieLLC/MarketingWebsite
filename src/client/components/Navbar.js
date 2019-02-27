@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
 import logo from '../../../public/images/logo.svg';
+import LoopieButton from './LoopieButton';
 
 const Navbar = ({items}) => (
   <nav className='navbar main-nav fixed'>
@@ -13,7 +14,7 @@ const Navbar = ({items}) => (
         <LoopieButton text="get started"></LoopieButton>
       </li>
     </ul>
-    
+
 
   </nav>
 );
