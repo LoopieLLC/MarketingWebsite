@@ -19,33 +19,33 @@ const  styles = theme => ({
   },
 });
 
-const HomePageCTA = ({CTAText, subtext, handleEmail}) => (
+const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
   <main>
 
   <div className='home-page-cta'>
 
-    <div className={ styles.root}>
+    <div className={ classes.root}>
      <Grid container spacing={24}>
        <Grid item xs={12}>
-         <Paper className={ styles.paper}>xs=12</Paper>
+         <Paper className={ classes.paper}>xs=12</Paper>
        </Grid>
        <Grid item xs={6}>
-         <Paper className={ styles.paper}>xs=6</Paper>
+         <Paper className={ classes.paper}>xs=6</Paper>
        </Grid>
        <Grid item xs={6}>
-         <Paper className={ styles.paper}>xs=6</Paper>
+         <Paper className={ classes.paper}>xs=6</Paper>
        </Grid>
        <Grid item xs={3}>
-         <Paper className={ styles.paper}>xs=3</Paper>
+         <Paper className={ classes.paper}>xs=3</Paper>
        </Grid>
        <Grid item xs={3}>
-         <Paper className={ styles.paper}>xs=3</Paper>
+         <Paper className={ classes.paper}>xs=3</Paper>
        </Grid>
        <Grid item xs={3}>
-         <Paper className={ styles.paper}>xs=3</Paper>
+         <Paper className={ classes.paper}>xs=3</Paper>
        </Grid>
        <Grid item xs={3}>
-         <Paper className={ styles.paper}>xs=3</Paper>
+         <Paper className={ classes.paper}>xs=3</Paper>
        </Grid>
      </Grid>
    </div>
