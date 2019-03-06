@@ -9,7 +9,8 @@ const LoopieButton = ({text, onClick, variant}) => (
   <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant={variant}>{text}</Button>
 );
 
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'primary'}
+
+LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'flat'}
 
 LoopieButton.propTypes = {
   text: PropTypes.string.isRequired,
