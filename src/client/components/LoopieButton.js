@@ -10,7 +10,7 @@ const LoopieButton = ({text, onClick, variant}) => (
 );
 
 
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'primary'}
+LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'flat'}
 
 
 
