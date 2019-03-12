@@ -12,7 +12,7 @@ const Navbar = ({items}) => (
       {items.map((item) => <NavbarItem to={item.url} key={item.name} item={item} />)}
 
       <li className='navbar-item'>
-        <LoopieButton text="get started" color="blue"></LoopieButton>
+        <LoopieButton text="get started" color="blue" variant="contained"></LoopieButton>
       </li>
     </ul>
 
