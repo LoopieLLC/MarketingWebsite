@@ -48,7 +48,7 @@ class HomePageContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems}/>
-        <HomePageCTA handleEmail={this.sendMail} CTAText='Never Do Your Laundry Again.' subtext='Flat rates, starting from $27.99'/>
+        <HomePageCTA handleEmail={this.sendMail} CTAText='Never Do Your Laundry Again.' subtext='Flat rates, starting from $27.99' />
       </React.Fragment>
     );
   }

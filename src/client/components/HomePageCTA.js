@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LoopieButton from './LoopieButton';
-import CTAImage from '../../../public/images/placeholder1.jpg';
+import CTAImage from '../../../public/images/cover.jpg';
 import StickyNotes from './StickyNotes';
 import {loopieblue} from './styles';
 import Paper from '@material-ui/core/Paper';
@@ -24,14 +24,13 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
 
   <div className='home-page-cta'>
     <div className="cta-container ">
-    <img className='cta-image' src={CTAImage} />
+      <div className='cta-image' style={{backgroundImage: "url(" + CTAImage+ ")"}}  ></div>
 
-    <h1 className='cta-text'>{CTAText}</h1>
-    <h4 className='cta-subtext text-dark'>{subtext}</h4>
-    <div className='btn' >
-    <LoopieButton text='Lets get started' className="text-light" variant="outlined"/>
-
-    </div>
+      <h1 className='cta-text'>{CTAText}</h1>
+      <h4 className='cta-subtext text-dark'>{subtext}</h4>
+      <div className='btn' >
+        <LoopieButton text='Lets get started' className="text-light" variant="outlined"/>
+     </div>
 
     
     <div className={ classes.root} >
@@ -49,6 +48,7 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
 HomePageCTA.propTypes = {
   CTAText: PropTypes.string,
   subtext: PropTypes.string,
+  
   handleEmail: PropTypes.func,
 };
 
