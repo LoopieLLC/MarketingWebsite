@@ -27,9 +27,9 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
     <img className='cta-image' src={CTAImage} />
 
     <h1 className='cta-text'>{CTAText}</h1>
-    <h4 className='cta-subtext'>{subtext}</h4>
+    <h4 className='cta-subtext text-dark'>{subtext}</h4>
     <div className='btn' >
-    <LoopieButton  text='Lets get started' color="blue" className="text-light" variant = "outlined"/>
+    <LoopieButton text='Lets get started' className="text-light" variant="outlined"/>
 
     </div>
 

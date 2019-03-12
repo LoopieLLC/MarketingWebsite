@@ -28,7 +28,7 @@
     .cta-text {
       grid-column: 1 / 3;
       grid-row: 3 / 6;
-      color: $ColorLoopie;
+      color: $ColorDark;
       font-weight: bold;
       z-index: 2;
       margin-bottom: 2rem;
@@ -37,7 +37,7 @@
     .cta-subtext {
       grid-column: 2 / 3;
       grid-row: 6 / 7;
-      color: $ColorWhite;
+      color: $ColorDark;
     }
     .btn {
       grid-column: 2 / 3;
