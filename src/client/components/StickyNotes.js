@@ -22,7 +22,6 @@ const StickyNotes = ({to, header, content, color}) => {
           <p>{content}</p>
         </CardContent>
       </Card>
-
     </CardActionArea>
   );
 };

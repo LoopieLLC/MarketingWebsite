@@ -16,8 +16,6 @@ const Navbar = ({items}) => (
         <LoopieButton text="get started" color={loopieblue} variant="contained"></LoopieButton>
       </li>
     </ul>
-
-
   </nav>
 );
 

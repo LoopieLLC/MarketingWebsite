@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/cover.jpg';
+import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
 import {loopieblue} from './styles';
 import Paper from '@material-ui/core/Paper';
@@ -24,8 +25,8 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
 
   <div className='home-page-cta'>
     <div className="cta-container ">
-      <div className='cta-image' style={{backgroundImage: "url(" + CTAImage+ ")"}}  ></div>
-
+      <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
+      <div style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
       <h1 className='cta-text'>{CTAText}</h1>
       <h4 className='cta-subtext text-dark'>{subtext}</h4>
       <div className='btn' >
@@ -39,7 +40,6 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
    </div>
   </div>
 
-   <StickyNotes header="owo" content="owo" color={loopieblue} />
 
 
   </main>

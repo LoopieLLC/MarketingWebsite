@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import HomePageCTA from '../components/HomePageCTA';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
@@ -48,7 +47,7 @@ class HomePageContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems}/>
-        <HomePageCTA handleEmail={this.sendMail} CTAText='Never Do Your Laundry Again.' subtext='Flat rates, starting from $27.99' />
+        <HomePageCTA handleEmail={this.sendMail} CTAText=' ' subtext='Flat rates, starting from $27.99' />
       </React.Fragment>
     );
   }
