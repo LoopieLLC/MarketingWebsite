@@ -11,7 +11,7 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    
+
   },
   paper: {
     padding: theme.spacing.unit * 2,
@@ -28,15 +28,15 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
       <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
       <div className='cta-slogan' style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
       <h1 className='cta-text'>{CTAText}</h1>
-      <h4 className='cta-subtext text-dark'>{subtext}</h4>
+      <h3 className='cta-subtext text-dark'>{subtext}</h3>
       <div className='btn'>
-        <LoopieButton text='Lets get started' className="text-light" variant="outlined"/>
+        <LoopieButton text='Let&apos; s get started' className="text-light" variant="outlined"/>
      </div>
 
-     
 
-    
-    <div className={ classes.root} >
+
+
+    <div className={classes.root} >
 
     </div>
    </div>
@@ -50,7 +50,7 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
 HomePageCTA.propTypes = {
   CTAText: PropTypes.string,
   subtext: PropTypes.string,
-  
+
   handleEmail: PropTypes.func,
 };
 
