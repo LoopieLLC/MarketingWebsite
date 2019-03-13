@@ -26,12 +26,14 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
   <div className='home-page-cta'>
     <div className="cta-container ">
       <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
-      <div style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
+      <div className='cta-slogan' style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
       <h1 className='cta-text'>{CTAText}</h1>
       <h4 className='cta-subtext text-dark'>{subtext}</h4>
-      <div className='btn' >
+      <div className='btn'>
         <LoopieButton text='Lets get started' className="text-light" variant="outlined"/>
      </div>
+
+     
 
     
     <div className={ classes.root} >
