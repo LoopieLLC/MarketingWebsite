@@ -22,7 +22,6 @@ const styles = theme => ({
 
 const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
   <main>
-
   <div className='home-page-cta'>
     <div className="cta-container ">
       <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
@@ -30,14 +29,9 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
       <h1 className='cta-text'>{CTAText}</h1>
       <h3 className='cta-subtext text-dark'>{subtext}</h3>
       <div className='btn'>
-        <LoopieButton text='Let&apos; s get started' className="text-light" variant="outlined"/>
-     </div>
-
-
-
-
+        <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
+      </div>
     <div className={classes.root} >
-
     </div>
    </div>
   </div>
