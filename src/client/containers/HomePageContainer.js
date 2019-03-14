@@ -13,12 +13,12 @@ class HomePageContainer extends React.Component {
         url: '/home',
       },
       {
-        name: 'Services',
+        name: 'Pricing',
         url: '/services',
       },
       {
         name: 'About Us',
-        url: '/about',
+        url: '/aboutus',
       },
 
     ],
