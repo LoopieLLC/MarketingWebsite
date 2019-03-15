@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8,1fr);
-    grid-column-gap: 16px;
+    //grid-column-gap: 16px;
     .cta-image {
       //margin-right: 5rem;
       width:100%;
@@ -43,17 +43,19 @@
       font-weight: bold;
       z-index: 2;
       margin-bottom: 2rem;
+      margin-left: 16px;
     }
 
     .cta-subtext {
       grid-column: 2 / 3;
       grid-row: 6 / 7;
       color: $ColorDark;
+      margin-left: 16px;
     }
     .btn {
       grid-column: 2 / 3;
       grid-row: 7 / 8;
-
+      margin-left: 16px;
     }
 
 
