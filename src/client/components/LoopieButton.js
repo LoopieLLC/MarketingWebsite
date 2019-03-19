@@ -6,8 +6,10 @@ import Link from '@material-ui/core/Link';
 
 const LoopieButton = ({text, onClick, variant, color}) => {
   const styles = {
-    boxShadow: "none",
+    boxShadow: 'none',
     background: {color},
+    borderRadius: '2px',
+    padding: '8px 18px',
   };
 
   return (

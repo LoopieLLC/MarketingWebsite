@@ -14,7 +14,7 @@ const Navbar = ({items}) => (
 
       <li className='navbar-item'>
         <a href="http://www.loopie.us">
-          <LoopieButton text="Order Now" color={loopieblue} variant="contained"></LoopieButton>
+          <LoopieButton text="Sign Up Today" color={loopieblue} variant="contained"></LoopieButton>
         </a>
       </li>
     </ul>
