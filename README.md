@@ -32,6 +32,9 @@ This project follows a very simple, React-suggested structure:
 
   If you have work done in a new branch, wait until the PR from `simons-branch` to `develop` is accepted and merged, then pull the latest `develop` (which will have the newest, fixed code), `git checkout <new-branch-you-created>` and then `git merge develop` to merge the fixes I just made into the new branch you have
 
+# Stack 
+React JS, Node JS, Express, MongoDB
+
 # Resources
 https://reactjs.org/docs/thinking-in-react.html
 https://material.io/
