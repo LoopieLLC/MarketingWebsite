@@ -31,7 +31,9 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
       <div className='btn'>
         <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
       </div>
+      <div classname='bar'></div>
     <div className={classes.root} >
+    
     </div>
    </div>
   </div>
