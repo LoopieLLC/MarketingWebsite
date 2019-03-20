@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
+import ServicesCTA from '../components/ServicesCTA';
 
 class ServicesContainer extends React.Component {
   state = {
@@ -25,7 +26,11 @@ class ServicesContainer extends React.Component {
 
   render() {
     return (
-      <Navbar items={this.state.navItems}/>
+      <React.Fragment>
+        <Navbar items={this.state.navItems}/>
+        <ServicesCTA />
+      </React.Fragment>
+      
     );
   }
 };
