@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ServicesCTA from '../components/ServicesCTA';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
+import ServicesCTA from '../components/ServicesCTA';
 
 class ServicesContainer extends React.Component {
   state = {
