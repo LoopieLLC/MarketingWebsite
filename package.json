@@ -4,8 +4,8 @@
   "description": "Loopie, LLC Marketing website",
   "main": "src/server/index.js",
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
     "start": "npm run build && node src/server/index.js",
+    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
     "client": "webpack-dev-server --hot",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
