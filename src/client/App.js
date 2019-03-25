@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Navbar from './components/Navbar';
 import {Route, Switch, withRouter} from 'react-router-dom';
+import scrollToComponent from 'react-scroll-to-component';
 
 
 import {hot} from 'react-hot-loader';
@@ -10,6 +11,7 @@ import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
 import ServicesContainer from './containers/ServicesContainer';
 import HomePageCTA from './components/HomePageCTA';
+import ServicesCTA from './components/ServicesCTA';
 
 class App extends React.Component {
   componentDidMount = () => {
@@ -31,11 +33,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <Switch>
-        <Route exact path='/' render={this.renderHomePage} />
+      <div>
+        <HomePageContainer />
+        <ServicesContainer />
+        {/*<Route exact path='/' render={this.renderHomePage} />
         <Route path='/home' render={this.renderHomePage} />
-        <Route path='/services' render={this.renderServices} />
-      </Switch>
+        <Route path='/services' render={this.renderServices} />*/}
+      </div>
     );
   }
 }
