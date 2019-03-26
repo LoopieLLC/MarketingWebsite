@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
 import ServicesCTA from '../components/ServicesCTA';
+import { loopieblue, notblack } from '../components/styles';
 
 class ServicesContainer extends React.Component {
   state = {

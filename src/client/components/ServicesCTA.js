@@ -20,7 +20,6 @@ const styles = theme => ({
 
 const ServicesCTA = ({CTAText, subtext, handleEmail, classes}) => (
     <main>
-        <p>ur mum gay</p>
     </main>
 );
 
