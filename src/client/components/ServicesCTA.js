@@ -22,11 +22,15 @@ const styles = theme => ({
 
 const ServicesCTA = ({CTAText, subtext, classes}) => (
   <main>
-  <div className='home-page-cta'>
+  <div className='services-cta'>
     <div className="cta-container ">
       <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
-      <StickyNotes to='/' header='Hey! I&apos;m a card!' content='Card here. at your service!' color='#0085FF'/>
-      <StickyNotes to='/' header='24 hour turnaround on every order' content='Card here. at your service!' color='#0085FF'/>
+      <div className='cta-sticky' style='grid-column: 2 / 5; grid-row: 4 / 8;'>
+      	<StickyNotes to='/' header='Hey! I&apos;m a card!' content='Card here. at your service!' color='#0085FF'/>
+      </div>
+      <div className='cta-sticky'>
+      	<StickyNotes to='/' header='24 hour turnaround on every order' content='Card here. at your service!' color='#0085FF'/>
+      </div>
       {/*<h1 className='cta-text'>{CTAText}</h1>*/}
       <h3 className='cta-subtext text-dark'>{subtext}</h3>
       <div className='btn'>
