@@ -12,7 +12,6 @@ class HomePageContainer extends React.Component {
       {
         name: 'Home',
         url: '/home',
-        color: {loopieblue},
       },
       {
         name: 'Pricing',

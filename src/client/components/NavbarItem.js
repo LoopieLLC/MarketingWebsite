@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 import ButtonBase from '@material-ui/core/Button';
+import {loopieblue} from '../components/styles';
 
 const NavbarItem = ({item, color}) => {
   const styles = {
     color: {color}
   }
   return (
-    <li className='navbar-item' style={styles}>
-      <NavLink to={item.url}>{item.name}</NavLink>
+    <li className='navbar-item'>
+      <NavLink to={item.url} activeStyle={{color: '#0085FF' }}>{item.name}</NavLink>
     </li>
   );
 }
