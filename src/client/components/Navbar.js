@@ -10,7 +10,7 @@ const Navbar = ({items}) => (
     <img className='logo' src={logo} />
 
     <ul className='nav-item-container'>
-      {items.map((item) => <NavbarItem to={item.url} key={item.name} item={item} />)}
+      {items.map((item) => <NavbarItem to={item.url} key={item.name} item={item} color={item.color} />)}
 
       <li className='navbar-item'>
         <a href="http://www.loopie.us">

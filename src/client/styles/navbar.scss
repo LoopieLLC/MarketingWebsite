@@ -20,13 +20,20 @@
       margin: 0 3rem;
       list-style:  none;
       > a {
-        color: $ColorDark;
+        //color: $ColorDark;
         line-height: 14px;
         font-weight: bold;
+        &:visited {
+          color: inherit;
+        }
+
         &:hover, &:focus {
           color: $ColorBlue;
 
         }
+
+        
+
       }
     }
   }

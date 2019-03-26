@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import HomePageCTA from '../components/HomePageCTA';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
+import { loopieblue } from '../components/styles';
 
 class HomePageContainer extends React.Component {
   state = {
@@ -11,10 +12,12 @@ class HomePageContainer extends React.Component {
       {
         name: 'Home',
         url: '/home',
+        color: {loopieblue},
       },
       {
         name: 'Pricing',
         url: '/services',
+        color: 'black',
       },
       {
         name: 'About Us',
