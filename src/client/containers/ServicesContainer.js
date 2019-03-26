@@ -12,12 +12,10 @@ class ServicesContainer extends React.Component {
       {
         name: 'Home',
         url: '/home',
-        color: {notblack},
       },
       {
         name: 'Pricing',
         url: '/services',
-        color: {loopieblue},
       },
       {
         name: 'About Us',
