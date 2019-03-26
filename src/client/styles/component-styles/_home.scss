@@ -46,7 +46,19 @@
   margin-left: 3em;
 }
 .bar {
-  height:50px;
-  width:50px;
+  //for the bar on the bottom
+  height:0.2rem;
+  width:20rem;
   background-color: $ColorDark;
+  grid-column: 2 / 3;
+  grid-row: 8 / 8;
+  margin-top: 2em;
+  margin-left:20em;
+  
+}
+.cta-learnmore {
+  grid-column: 2 / 3;
+  grid-row: 8 / 8;
+  margin-bottom: 5em;
+  margin-left:10em;
 }
