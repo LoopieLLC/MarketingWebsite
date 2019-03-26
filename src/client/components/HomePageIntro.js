@@ -20,18 +20,18 @@ const styles = theme => ({
   },
 });
 
-const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
+const HomePageIntro = ({Title, Features}) => (
   <main>
   <div className='home-page-cta'>
-    <div className="split-container ">
-      <div className='split-image cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
+    <div className="cta-container ">
+      <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
       <div className='cta-slogan' style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
       <h1 className='cta-text'>{CTAText}</h1>
       <h3 className='cta-subtext text-dark'>{subtext}</h3>
       <div className='btn'>
         <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
       </div>
-      {/* <div className='bar'></div> */}
+      <div classname='bar'></div>
     <div className={classes.root} >
     
     </div>
@@ -43,11 +43,11 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
   </main>
 );
 
-HomePageCTA.propTypes = {
-  CTAText: PropTypes.string,
-  subtext: PropTypes.string,
+HomePageIntro.propTypes = {
+  Title: PropTypes.string,
+  Features: PropTypes.string,
 
-  handleEmail: PropTypes.func,
+//   handleEmail: PropTypes.func,
 };
 
-export default withStyles(styles)(HomePageCTA);
+export default withStyles(styles)(HomePageIntro);
