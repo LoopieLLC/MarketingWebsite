@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
-import ServicesCTA from '../components/ServicesCTA';
+import PricingCTA from '../components/PricingCTA';
 import { loopieblue, notblack } from '../components/styles';
 
-class ServicesContainer extends React.Component {
+class PricingContainer extends React.Component {
   state = {
     image: '',
     navItems: [
@@ -29,11 +29,11 @@ class ServicesContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems}/>
-        <ServicesCTA />
+        <PricingCTA />
       </React.Fragment>
       
     );
   }
 };
 
-export default withRouter(ServicesContainer);
+export default withRouter(PricingContainer);
