@@ -9,9 +9,9 @@ import scrollToComponent from 'react-scroll-to-component';
 import {hot} from 'react-hot-loader';
 import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
-import ServicesContainer from './containers/ServicesContainer';
+import PricingContainer from './containers/PricingContainer';
 import HomePageCTA from './components/HomePageCTA';
-import ServicesCTA from './components/ServicesCTA';
+import PricingCTA from './components/PricingCTA';
 
 class App extends React.Component {
   componentDidMount = () => {
@@ -25,9 +25,9 @@ class App extends React.Component {
     );
   }
 
-  renderServices = () => {
+  renderPricing = () => {
     return (
-      <ServicesContainer />
+      <PricingContainer />
     );
   }
 
@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
       <div>
         <HomePageContainer />
-        <ServicesContainer />
+        <PricingContainer />
         {/*<Route exact path='/' render={this.renderHomePage} />
         <Route path='/home' render={this.renderHomePage} />
         <Route path='/services' render={this.renderServices} />*/}

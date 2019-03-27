@@ -18,9 +18,9 @@ const styles = theme => ({
     },
   });
 
-const ServicesCTA = ({CTAText, subtext, handleEmail, classes}) => (
+const PricingCTA = ({CTAText, subtext, handleEmail, classes}) => (
     <main>
     </main>
 );
 
-export default withStyles(styles)(ServicesCTA);
+export default withStyles(styles)(PricingCTA);
