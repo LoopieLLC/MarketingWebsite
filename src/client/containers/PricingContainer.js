@@ -15,7 +15,7 @@ class PricingContainer extends React.Component {
       },
       {
         name: 'Pricing',
-        url: '/services',
+        url: '/pricing',
       },
       {
         name: 'About Us',
