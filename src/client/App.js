@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Navbar from './components/Navbar';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import scrollToComponent from 'react-scroll-to-component';
 
 
@@ -19,27 +19,13 @@ class App extends React.Component {
     this.props.history.push(uri);
   }
 
-  renderHomePage = () => {
-    return (
-      <HomePageContainer />
-    );
-  }
-
-  renderPricing = () => {
-    return (
-      <PricingContainer />
-    );
-  }
-
   render() {
     return (
-      <div>
-        <HomePageContainer />
-        <PricingContainer />
-        {/*<Route exact path='/' render={this.renderHomePage} />
-        <Route path='/home' render={this.renderHomePage} />
-        <Route path='/services' render={this.renderServices} />*/}
-      </div>
+      <Switch>
+        <Route exact path='/' component={HomePageContainer}/>
+        <Route path='/home' component={HomePageContainer} />
+        <Route path='/pricing' component={PricingContainer} />
+      </Switch>
     );
   }
 }

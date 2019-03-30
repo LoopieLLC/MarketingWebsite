@@ -6,9 +6,9 @@ import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
 import {loopieblue} from './styles';
 import Paper from '@material-ui/core/Paper';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     flexGrow: 1,
 
@@ -22,22 +22,21 @@ const styles = theme => ({
 
 const HomePageIntro = ({Title, Features}) => (
   <main>
-  <div className='home-page-cta'>
-    <div className="cta-container ">
-      <div className='cta-image' style={{backgroundImage:"url(" + CTAImage+ ")"}}></div>
-      <div className='cta-slogan' style={{backgroundImage:"url(" + CTASlogan+ ")"}}></div>
-      <h1 className='cta-text'>{CTAText}</h1>
-      <h3 className='cta-subtext text-dark'>{subtext}</h3>
-      <div className='btn'>
-        <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
-      </div>
-      <div classname='bar'></div>
-    <div className={classes.root} >
-    
-    </div>
-   </div>
-  </div>
+    <div className='home-page-cta'>
+      <div className="cta-container ">
+        <div className='cta-image' style={{backgroundImage: 'url(' + CTAImage+ ')'}}></div>
+        <div className='cta-slogan' style={{backgroundImage: 'url(' + CTASlogan+ ')'}}></div>
+        <h1 className='cta-text'>{CTAText}</h1>
+        <h3 className='cta-subtext text-dark'>{subtext}</h3>
+        <div className='btn'>
+          <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
+        </div>
+        <div className='bar'></div>
+        <div className={classes.root} >
 
+        </div>
+      </div>
+    </div>
 
 
   </main>

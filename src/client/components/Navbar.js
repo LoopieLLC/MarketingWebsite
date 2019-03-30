@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
 import logo from '../../../public/images/logo.svg';
 import LoopieButton from './LoopieButton';
-import { loopieblue } from './styles';
+import {loopieblue} from './styles';
 
 const Navbar = ({items}) => (
   <nav className='navbar main-nav fixed'>

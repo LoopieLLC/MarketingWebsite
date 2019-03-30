@@ -4,7 +4,7 @@ import HomePageCTA from '../components/HomePageCTA';
 import HomePageIntro from '../components/HomePageCTA';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
-import { loopieblue } from '../components/styles';
+import {loopieblue} from '../components/styles';
 
 class HomePageContainer extends React.Component {
   state = {
