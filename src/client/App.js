@@ -22,8 +22,8 @@ class App extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' component={HomePageContainer}/>
-        <Route path='/home' component={HomePageContainer} />
+        <Redirect exact path='/' to='/home' />
+        <Route exact path='/home' component={HomePageContainer} />
         <Route path='/pricing' component={PricingContainer} />
       </Switch>
     );
