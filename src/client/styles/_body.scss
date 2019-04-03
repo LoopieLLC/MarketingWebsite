@@ -1,0 +1,19 @@
+html, body, #root, #root>div {
+  height: 100vh;
+  background: no-repeat center center fixed;
+  background-color: $ColorWhite;
+  overflow-x: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+main {
+ //margin-left: 3rem;
+ //margin-right: 3rem;
+}
+
+.background-parallax {
+  
+  z-index: -1;
+}

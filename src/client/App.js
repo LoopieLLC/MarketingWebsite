@@ -1,33 +1,37 @@
-import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { hot } from 'react-hot-loader';
+import Navbar from './components/Navbar';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
+import scrollToComponent from 'react-scroll-to-component';
+
+
+import {hot} from 'react-hot-loader';
 import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
-import ServicesContainer from './containers/ServicesContainer';
+import PricingContainer from './containers/PricingContainer';
 import HomePageCTA from './components/HomePageCTA';
+import PricingCTA from './components/PricingCTA';
 
-class App extends Component {
-  renderHomePage = () => {
-    return (
-      <HomePageContainer>{(
-        items => <>
-        <Navbar items={items.navItems}/>
-        <HomePageCTA CTAText='Get Laundry Delivered To Your Doorstep' subtext='Flat rates, starting from $27.99'/>
-        </>)}
-      </HomePageContainer>
-    );
+class App extends React.Component {
+  componentDidMount = () => {
+    let uri = this.props.history.location.pathname;
+    this.props.history.push(uri);
   }
 
   render() {
     return (
       <Switch>
-        <Route exact path='/' render={this.renderHomePage} />
-        <Route path='/home' render={this.renderHomePage} />
-        <Route path='/services' render={this.renderServices} />
+        <Redirect exact path='/' to='/home' />
+        <Route exact path='/home' component={HomePageContainer} />
+        <Route path='/pricing' component={PricingContainer} />
       </Switch>
     );
   }
 }
-export default hot(module)(App);
+
+App.propTypes = {
+  history: PropTypes.object,
+};
+
+export default hot(module)(withRouter(App));

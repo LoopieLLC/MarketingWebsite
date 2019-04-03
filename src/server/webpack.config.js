@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -11,16 +10,18 @@ module.exports = {
   entry: ['babel-polyfill', './src/client/index.js'],
   output: {
     path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/',
   },
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -32,24 +33,26 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
-        loader: 'url-loader?limit=100000'
+        loader: 'url-loader?limit=100000',
       },
-    ]
+    ],
   },
   devServer: {
     port: 8080,
     open: true,
     contentBase: path.join(__dirname, outputDirectory),
-    historyApiFallback  : true,
+    proxy: {
+      '/': 'http://localhost:1337',
+    },
+    historyApiFallback: true,
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: path.join(__dirname, 'index.html'),
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
-    })
-  ]
+    }),
+  ],
 };
