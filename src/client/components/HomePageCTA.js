@@ -48,6 +48,11 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
       <div className='btn'>
         <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
       </div>
+<<<<<<< HEAD
+=======
+      <h4 className='cta-learnmore'>Learn more</h4>
+      <div className='bar'></div>
+>>>>>>> 9561766ec359c0e71b5eecec0df720d59ad5a97c
     <div className={classes.root} >
     
     </div>

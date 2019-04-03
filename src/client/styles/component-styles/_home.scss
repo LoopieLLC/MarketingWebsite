@@ -1,0 +1,66 @@
+
+.home-page-cta {
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  height: 100vh;
+  width: 100%;
+  
+   
+
+
+}
+.cta-image {
+  background-image: url('../../../public/images/cover.jpg');
+  grid-column: 1 / 2;
+  grid-row: 1 / 9;
+ 
+}
+.cta-slogan {
+  background-image: url('../../../public/images/CTASlogan.svg');
+  margin-right: 0rem;
+  padding-right: 0rem;
+  width:100%;
+  height: 40%;
+  min-height: 40%;
+  grid-column: 2 / 2;
+  grid-row: 4 / 9;
+  background-position: 0% 50%; /*Align the black text*/
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto 100%;
+}
+.cta-text {
+  grid-column: 1 / 3;
+  grid-row: 3 / 6;
+  z-index: 2;
+  margin-bottom: 2rem;
+  margin-left: 10em;
+}
+
+.cta-subtext {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+  margin-left: 3em;
+}
+.btn {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  margin-left: 3em;
+}
+.bar {
+  //for the bar on the bottom
+  height:0.2rem;
+  width:20rem;
+  background-color: $ColorDark;
+  grid-column: 2 / 3;
+  grid-row: 8 / 8;
+  margin-top: 2em;
+  margin-left:20em;
+  
+}
+.cta-learnmore {
+  grid-column: 2 / 3;
+  grid-row: 8 / 8;
+  margin-bottom: 5em;
+  margin-left:10em;
+}
