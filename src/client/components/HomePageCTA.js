@@ -8,6 +8,15 @@ import {loopieblue} from './styles';
 import Paper from '@material-ui/core/Paper';
 import {withStyles} from '@material-ui/core/styles';
 
+// const Chevron = ({
+//     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+//       <path
+//         fill="#000000"
+//         d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+//       />
+//     </svg>
+// });
+
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
@@ -40,7 +49,9 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
         />
       </div>
       <div className="learnmore">
-        <a href="#intro"><h4 className="cta-learnmore">Learn more</h4></a>
+        <LoopieButton href="#intro">
+          <h4 className="cta-learnmore">Learn more</h4>
+        </LoopieButton>
         <div className="bar" />
       </div>
 
