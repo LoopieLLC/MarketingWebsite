@@ -11,7 +11,8 @@ module.exports = {
   entry: ['babel-polyfill', './src/client/index.js'],
   output: {
     path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/',
   },
   mode: 'development',
   module: {
@@ -20,8 +21,8 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -33,9 +34,9 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/,
-        loader: 'url-loader?limit=100000'
+        loader: 'url-loader?limit=100000',
       },
-    ]
+    ],
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -43,6 +44,7 @@ module.exports = {
     open: true,
     hot: true,
     contentBase: path.join(__dirname, outputDirectory),
+    historyApiFallback: true,
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
@@ -53,6 +55,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
     }),
-    new webpack.HotModuleReplacementPlugin()
-  ]
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };

@@ -16,7 +16,7 @@ class HomePageContainer extends React.Component {
     navItems: [
       {
         name: 'Home',
-        url: '/home',
+        url: '/',
       },
       {
         name: 'Pricing',

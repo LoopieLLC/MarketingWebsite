@@ -17,7 +17,7 @@ import {withStyles} from '@material-ui/core/styles';
 //     </svg>
 // });
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -67,4 +67,4 @@ HomePageCTA.propTypes = {
   handleEmail: PropTypes.func,
 };
 
-export default withStyles (styles) (HomePageCTA);
+export default withStyles(styles)(HomePageCTA);
