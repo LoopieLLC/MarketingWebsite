@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
 import {loopieblue} from '../components/styles';
 import backgroundSvg from '../../../public/images/background.svg';
-import {ParallaxBanner} from 'react-scroll-parallax';
+import {Parallax} from 'react-scroll-parallax';
 
 //import {Parallax, Background} from 'react-parallax';
 
@@ -56,30 +56,20 @@ class HomePageContainer extends React.Component {
       <React.Fragment>
         <Navbar items={this.state.navItems} />
 
-        <ParallaxBanner
+        <Parallax
           className="background-parallax"
-          layers={[
-            {
-              image: backgroundSvg,
-              amount: 0.4,
-            },
-            // {
-            //   image: 'https://foo.com/bar.png',
-            //   amount: 0.2,
-            // },
-          ]}
-          style={{
-            height: 'auto',
-            width: '100vw',
-          }}
-        />
+          offsetYMin={-300}
+          offsetYMax={300}
+        >
+          <img src={backgroundSvg} />
+
+        </Parallax>
         <HomePageCTA
-          handleEmail={this.sendMail}
-          CTAText=" "
+          handleEmail={this.sendMail10}
+          CTAText=" j"
           subtext="Flat rates, starting from $27.99"
         />
         <HomePageIntro />
-
       </React.Fragment>
     );
   }
