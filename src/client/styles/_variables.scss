@@ -1,0 +1,56 @@
+$ColorDark: #222627;
+$ColorDarkBlue: #1C3851;
+$ColorLoopie: #FFC700;
+$ColorBlue: #0085FF;
+$ColorGreen: #2ABD88;
+$ColorWhite: #FCFBF9;
+$ColorGrey: #949494;
+$ColorGreyDark: #4B4B4B;
+$ColorDarkGradient: linear-gradient(to bottom right, #18314E, #0E1B27);
+$DropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
+
+
+
+//mixins
+
+/* css breakpoints. 
+https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+https://codepen.io/davidgilbertson/pen/aBpJzO
+
+** usage **
+    .my-box {
+    padding: 10px;
+
+    @include for-desktop-up {
+        padding: 20px;
+    }
+    }
+
+*/
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-portait-only {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-tablet-landscape-only {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-desktop-only {
+    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}
+
+

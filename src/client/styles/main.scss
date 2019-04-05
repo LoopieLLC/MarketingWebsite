@@ -1,14 +1,13 @@
+//normalize the css
 @import '../../../node_modules/normalize.css/normalize.css';
-@import 'variables.scss';
-@import 'navbar.scss';
-@import 'home.scss';
 
-html, body, #root, #root>div {
-  height: 100%;
-  background: no-repeat center center fixed;
-  background-color: $ColorBlue;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+//import core
+@import 'variables.scss';
+@import 'body.scss';
+@import 'typography.scss';
+@import 'container.scss';
+
+//import scss
+
+@import 'navbar.scss';
+@import 'component-styles/home.scss';
