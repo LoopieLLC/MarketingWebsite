@@ -6,8 +6,7 @@ import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
 import {loopieblue, notblack} from './styles';
 import Paper from '@material-ui/core/Paper';
-import { withStyles } from '@material-ui/core/styles';
-import { Spring } from 'react-spring/renderprops';
+import {withStyles} from '@material-ui/core/styles';
 
 const Chevron = () => {
   return(
@@ -32,22 +31,15 @@ const styles = (theme) => ({
 const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">
     <div className="split-container ">
-      <Spring
-        from={{ opacity: 0, marginLeft: -500}}
-        to={{ opacity: 1, marginLeft: 0}}
-      >
-        {props => (
-          <div className='split-image cta-image' style={props}></div>
-        )}
-      </Spring>
-      <Spring
-        from={{ opacity: 0, marginLeft: 500}}
-        to={{ opacity: 1, marginLeft: 0}}
-      >
-        {props => (
-          <div className='cta-slogan' style={props}></div>
-        )}
-      </Spring>
+      <div
+        className="split-image cta-image"
+        style={{backgroundImage: 'url(' + CTAImage + ')'}}
+      />
+      <div
+        className="cta-slogan"
+        style={{backgroundImage: 'url(' + CTASlogan + ')'}}
+      />
+
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
         <LoopieButton
@@ -57,7 +49,7 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
           variant="outlined"
         />
       </div>
-      <div className="cta-learnmore">
+      <div className="learnmore">
         <LoopieButton text="Learn More" icon={<Chevron />}>
           <h4 className="cta-learnmore">Learn more</h4>
         </LoopieButton>
@@ -72,6 +64,7 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
 HomePageCTA.propTypes = {
   CTAText: PropTypes.string,
   subtext: PropTypes.string,
+
   handleEmail: PropTypes.func,
 };
 
