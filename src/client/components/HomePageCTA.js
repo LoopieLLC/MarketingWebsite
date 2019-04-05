@@ -7,6 +7,7 @@ import StickyNotes from './StickyNotes';
 import {loopieblue, notblack} from './styles';
 import Paper from '@material-ui/core/Paper';
 import {withStyles} from '@material-ui/core/styles';
+import {Spring} from 'react-spring/renderprops';
 
 const Chevron = () => {
   return(
@@ -31,14 +32,22 @@ const styles = (theme) => ({
 const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">
     <div className="split-container ">
-      <div
-        className="split-image cta-image"
-        style={{backgroundImage: 'url(' + CTAImage + ')'}}
-      />
-      <div
-        className="cta-slogan"
-        style={{backgroundImage: 'url(' + CTASlogan + ')'}}
-      />
+      <Spring
+        from={{ opacity: 0, marginLeft: -500}}
+        to={{ opacity: 1, marginLeft: 0}}
+      >
+        {props => (
+          <div className='split-image cta-image' style={props}></div>
+        )}
+      </Spring>
+      <Spring
+        from={{ opacity: 0, marginLeft: 500}}
+        to={{ opacity: 1, marginLeft: 0}}
+      >
+        {props => (
+          <div className='cta-slogan' style={props}></div>
+        )}
+      </Spring>
 
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
