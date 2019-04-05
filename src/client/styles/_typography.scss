@@ -7,6 +7,19 @@ html, body {
 
 a {
   text-decoration: none;
+  &:active {
+    color:inherit;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover, &:focus {
+    color: $ColorBlue;
+
+  }
+
 }
 
 h1 {

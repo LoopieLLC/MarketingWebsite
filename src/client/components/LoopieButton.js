@@ -4,20 +4,36 @@ import Button from '@material-ui/core/Button';
 import ButtonBase from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
-const LoopieButton = ({text, onClick, variant, color}) => {
+//if you want to make a blue button set color = "primary" in buttonprops
+function LoopieButton({text, onClick, variant, color, icon}) {
   const styles = {
     boxShadow: 'none',
     background: {color},
     borderRadius: '2px',
     padding: '8px 18px',
+    fontWeight: 'bold',
   };
 
   return (
-    <Button onClick={onClick} color='primary' size='medium' fullWidth={false} variant={variant} style={styles}>{text}</Button>
+    <Button
+      onClick={onClick}
+      color={color}
+      size="medium"
+      fullWidth={false}
+      variant={variant}
+      style={styles}
+    >
+      {icon}
+      {text}
+    </Button>
   );
 };
 
-LoopieButton.defaultProps = { color: 'blue', text: 'Eat my ass', variant: 'flat'}
+LoopieButton.defaultProps = {
+  color: 'black',
+  text: 'Eat my ass',
+  variant: 'text',
+};
 
 LoopieButton.propTypes = {
   text: PropTypes.string.isRequired,

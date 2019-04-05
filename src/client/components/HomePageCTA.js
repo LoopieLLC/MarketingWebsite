@@ -4,17 +4,23 @@ import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/cover.jpg';
 import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
-import {loopieblue} from './styles';
+import {loopieblue, notblack} from './styles';
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
-import { useSpring, animated } from 'react-spring';
 import { Spring } from 'react-spring/renderprops';
 
+const Chevron = () => {
+  return(
+    <svg style={{ width: 24, height: 24 }} viewBox='0 0 24 24'>
+      <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+    </svg>
+  );
+}
 
-const styles = theme => ({
+
+const styles = (theme) => ({
   root: {
     flexGrow: 1,
-
   },
   paper: {
     padding: theme.spacing.unit * 2,
@@ -23,9 +29,8 @@ const styles = theme => ({
   },
 });
 
-const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
-  <main>
-  <div className='home-page-cta'>
+const HomePageCTA = ({subtext, handleEmail, classes}) => (
+  <div className="home-page-cta">
     <div className="split-container ">
       <Spring
         from={{ opacity: 0, marginLeft: -500}}
@@ -43,19 +48,25 @@ const HomePageCTA = ({CTAText, subtext, handleEmail, classes}) => (
           <div className='cta-slogan' style={props}></div>
         )}
       </Spring>
-      <h1 className='cta-text'>{CTAText}</h1>
-      <h3 className='cta-subtext text-dark'>{subtext}</h3>
-      <div className='btn'>
-        <LoopieButton text='Let&apos;s get started' className="text-light" variant="outlined"/>
+      <h3 className="cta-subtext text-dark">{subtext}</h3>
+      <div className="cta-btn">
+        <LoopieButton
+          color="primary"
+          text="Let&apos;s get started"
+          className="text-light"
+          variant="outlined"
+        />
       </div>
-      <h4 className='cta-learnmore'>Learn more</h4>
-      <div className='bar'></div>
-    <div className={classes.root} >
-    
+      <div className="cta-learnmore">
+        <LoopieButton text="Learn More" icon={<Chevron />}>
+          <h4 className="cta-learnmore">Learn more</h4>
+        </LoopieButton>
+        <div className="bar" />
+      </div>
+
+      <div className={classes.root} />
     </div>
-   </div>
   </div>
-  </main>
 );
 
 HomePageCTA.propTypes = {

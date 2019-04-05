@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import NavbarItem from './NavbarItem';
 import logo from '../../../public/images/logo.svg';
 import LoopieButton from './LoopieButton';
-import { loopieblue } from './styles';
+import {loopieblue} from './styles';
 
 const Navbar = ({items}) => (
   <nav className='navbar main-nav fixed'>
@@ -14,7 +14,7 @@ const Navbar = ({items}) => (
 
       <li className='navbar-item'>
         <a href="http://www.loopie.us">
-          <LoopieButton text="Sign Up Today" color={loopieblue} variant="contained"></LoopieButton>
+          <LoopieButton text="Sign Up Today" color="primary" variant="contained"></LoopieButton>
         </a>
       </li>
     </ul>
