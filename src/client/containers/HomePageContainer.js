@@ -55,29 +55,12 @@ class HomePageContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems} />
-
-        <ParallaxBanner
-          className="background-parallax"
-          layers={[
-            {
-              image: backgroundSvg,
-              amount: 0.4,
-            },
-            // {
-            //   image: 'https://foo.com/bar.png',
-            //   amount: 0.2,
-            // },
-          ]}
-          style={{
-            height: 'auto',
-            width: '100vw',
-          }}
-        />
         <HomePageCTA
           handleEmail={this.sendMail}
           CTAText=" "
           subtext="Flat rates, starting from $27.99"
         />
+        <HomePageIntro/>
 
       </React.Fragment>
     );
