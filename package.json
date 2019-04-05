@@ -47,6 +47,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scroll-parallax": "^2.0.5",
+    "react-scroll-to-component": "^1.0.2",
     "react-spring": "^8.0.19",
     "sass-loader": "^7.1.0",
     "scroll-to": "0.0.2",
