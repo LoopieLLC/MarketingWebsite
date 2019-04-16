@@ -32,7 +32,7 @@ const styles = (theme) => ({
 const HomePageIntro = ({subtext, handleEmail, classes}) => (
   <div className="intro-page-cta">
     <div className="intro-container">
-
+    	<StickyNotes to="" header="Sticky Note" content="This is a sticky note."/>
     </div>
   </div>
 );
