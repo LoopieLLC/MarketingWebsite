@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HomePageCTA from '../components/HomePageCTA';
-import HomePageIntro from '../components/HomePageCTA';
+import HomePageIntro from '../components/HomePageIntro';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
 import {loopieblue} from '../components/styles';
@@ -55,30 +55,12 @@ class HomePageContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems} />
-
-        <ParallaxBanner
-          className="background-parallax"
-          layers={[
-            {
-              image: backgroundSvg,
-              amount: 0.4,
-            },
-            // {
-            //   image: 'https://foo.com/bar.png',
-            //   amount: 0.2,
-            // },
-          ]}
-          style={{
-            height: 'auto',
-            width: '100vw',
-          }}
-        />
         <HomePageCTA
           handleEmail={this.sendMail}
           CTAText=" "
           subtext="Flat rates, starting from $27.99"
         />
-        <HomePageIntro />
+        <HomePageIntro/>
 
       </React.Fragment>
     );

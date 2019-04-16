@@ -66,3 +66,6 @@ typings/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+#Ian's personal notes file
+ians_notes.txt
