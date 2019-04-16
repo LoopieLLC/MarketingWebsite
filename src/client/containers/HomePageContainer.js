@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
 import {loopieblue} from '../components/styles';
 import backgroundSvg from '../../../public/images/background.svg';
-import {Parallax} from 'react-scroll-parallax';
+//import {Parallax} from 'react-scroll-parallax';
 
 //import {Parallax, Background} from 'react-parallax';
 
@@ -56,14 +56,6 @@ class HomePageContainer extends React.Component {
       <React.Fragment>
         <Navbar items={this.state.navItems} />
 
-        <Parallax
-          className="background-parallax"
-          offsetYMin={-300}
-          offsetYMax={300}
-        >
-          <img src={backgroundSvg} />
-
-        </Parallax>
         <HomePageCTA
           handleEmail={this.sendMail10}
           CTAText=" j"

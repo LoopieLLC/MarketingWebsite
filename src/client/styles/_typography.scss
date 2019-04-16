@@ -22,18 +22,21 @@ a {
 
 }
 
-h1 {
+h1 h2 h3 h4 {
   color: $ColorDarkBlue;
+}
+h1 {
+ 
   font-size: 5rem;
   font-weight: bold;
 }
 h2 {
-  color: $ColorLoopie;
+
   font-size: 3rem;
   font-weight: bold;
 }
 h3 {
-  color: $ColorLoopie;
+ 
   font-size: 1.5rem;
   font-weight: normal;
 }

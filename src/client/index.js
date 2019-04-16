@@ -26,9 +26,8 @@ const theme = createMuiTheme ({
 ReactDOM.render (
   <MuiThemeProvider theme={theme}>
     <BrowserRouter>
-      <ParallaxProvider>
-        <App />
-      </ParallaxProvider>
+
+      <App />
 
     </BrowserRouter>
   </MuiThemeProvider>,

@@ -1,18 +1,49 @@
-.split-container {
+
+.intro-container { // this code is depreciated and should be removed now renamed to container full
     height: 100vh;
     //margin-left: 15rem;
     width: 100%;
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(8,1fr);
-    //grid-column-gap: 16px;
-    .split-image {
-        //margin-right: 5rem;
-        width:100%;
-        height: 90%;
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover;
+}
+/* refactored container code 
+    example:
+     <div class="container intro"> 
+     
+     this will apply both container and intro
+
+*/
+.container {
+    display: grid;
+    grid-template-columns: 20em auto 20em;
+    width: 100%;
+
+    &.full { // used to be .intro-container
+        height: 100vh;
+        //margin-left: 15rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(8,1fr);
+        @include for-tablet-landscape-up {
+            grid-template-columns: 10% repeat(5,1fr) 10%;
+        }
+    }
+    &.split {
+        height: 100vh;
+        //margin-left: 15rem;
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(8,1fr);
+        }
+       
+        //grid-column-gap: 16px;
+        .split-image {
+            //margin-right: 5rem;
+            width:100%;
+            height: 90%;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
     }
 }

@@ -9,15 +9,14 @@ import Paper from '@material-ui/core/Paper';
 import {withStyles} from '@material-ui/core/styles';
 
 const Chevron = () => {
-  return(
-    <svg style={{ width: 24, height: 24 }} viewBox='0 0 24 24'>
-      <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+  return (
+    <svg style={{width: 24, height: 24}} viewBox="0 0 24 24">
+      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
     </svg>
   );
-}
+};
 
-
-const styles = (theme) => ({
+const styles = theme => ({
   root: {
     flexGrow: 1,
   },
@@ -30,7 +29,7 @@ const styles = (theme) => ({
 
 const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">
-    <div className="split-container ">
+    <div className="container split">
       <div
         className="split-image cta-image"
         style={{backgroundImage: 'url(' + CTAImage + ')'}}
@@ -68,4 +67,4 @@ HomePageCTA.propTypes = {
   handleEmail: PropTypes.func,
 };
 
-export default withStyles(styles)(HomePageCTA);
+export default withStyles (styles) (HomePageCTA);
