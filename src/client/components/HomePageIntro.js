@@ -30,42 +30,9 @@ const styles = (theme) => ({
 });
 
 const HomePageIntro = ({subtext, handleEmail, classes}) => (
-  <div className="home-page-cta">
-    <div className="split-container ">
-      <Spring
-        from={{ opacity: 0, marginLeft: -500}}
-        to={{ opacity: 1, marginLeft: 0}}
-      >
-        {props => (
-          <div className='split-image cta-image' style={props}></div>
-        )}
-      </Spring>
-      <Spring
-        from={{ opacity: 0, marginLeft: 500}}
-        to={{ opacity: 1, marginLeft: 0}}
-      >
-        {props => (
-          <div className='cta-slogan' style={props}></div>
-        )}
-      </Spring>
+  <div className="intro-page-cta">
+    <div className="intro-container">
 
-      <h3 className="cta-subtext text-dark">{subtext}</h3>
-      <div className="cta-btn">
-        <LoopieButton
-          color="primary"
-          text="Let&apos;s get started"
-          className="text-light"
-          variant="outlined"
-        />
-      </div>
-      <div className="learnmore">
-        <LoopieButton text="Learn More" icon={<Chevron />}>
-          <h4 className="cta-learnmore">Learn more</h4>
-        </LoopieButton>
-        <div className="bar" />
-      </div>
-
-      <div className={classes.root} />
     </div>
   </div>
 );
