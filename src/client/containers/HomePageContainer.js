@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HomePageCTA from '../components/HomePageCTA';
-import HomePageIntro from '../components/HomePageCTA';
+import HomePageIntro from '../components/HomePageIntro';
 import Navbar from '../components/Navbar';
 import {withRouter} from 'react-router';
 import {loopieblue} from '../components/styles';
@@ -55,13 +55,13 @@ class HomePageContainer extends React.Component {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems} />
-
         <HomePageCTA
           handleEmail={this.sendMail10}
           CTAText=" j"
           subtext="Flat rates, starting from $27.99"
         />
         <HomePageIntro />
+
       </React.Fragment>
     );
   }

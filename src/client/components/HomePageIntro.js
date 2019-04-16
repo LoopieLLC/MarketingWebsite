@@ -4,9 +4,18 @@ import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/cover.jpg';
 import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
-import {loopieblue} from './styles';
+import {loopieblue, notblack} from './styles';
 import Paper from '@material-ui/core/Paper';
 import {withStyles} from '@material-ui/core/styles';
+import {Spring} from 'react-spring/renderprops';
+
+const Chevron = () => {
+  return (
+    <svg style={{width: 24, height: 24}} viewBox="0 0 24 24">
+      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+    </svg>
+  );
+};
 
 const styles = theme => ({
   root: {
@@ -19,17 +28,23 @@ const styles = theme => ({
   },
 });
 
-const HomePageIntro = ({Title, Features}) => (
+const HomePageIntro = ({subtext, handleEmail, classes}) => (
   <div className="home-page-intro">
-    <div className="container full" />
+    <div className="container full">
+      <StickyNotes
+        to=""
+        header="Sticky Note"
+        content="This is a sticky note."
+      />
+    </div>
   </div>
 );
 
 HomePageIntro.propTypes = {
-  Title: PropTypes.string,
-  Features: PropTypes.string,
+  CTAText: PropTypes.string,
+  subtext: PropTypes.string,
 
-  //   handleEmail: PropTypes.func,
+  handleEmail: PropTypes.func,
 };
 
 export default withStyles (styles) (HomePageIntro);

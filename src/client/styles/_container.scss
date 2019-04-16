@@ -47,3 +47,16 @@
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+.intro-container {
+    height: 100vh;
+    //margin-left: 15rem;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8,1fr);
+}
+>>>>>>> 7832cbb92c99cf0faf73e696283a96047f9768a3
