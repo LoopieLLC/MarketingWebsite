@@ -4,18 +4,18 @@ import LoopieButton from './LoopieButton';
 import CTAImage from '../../../public/images/cover.jpg';
 import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
-import {loopieblue} from './styles';
+import {loopieblue, notblack} from './styles';
 import Paper from '@material-ui/core/Paper';
 import {withStyles} from '@material-ui/core/styles';
 
-// const Chevron = ({
-//     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-//       <path
-//         fill="#000000"
-//         d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-//       />
-//     </svg>
-// });
+const Chevron = () => {
+  return(
+    <svg style={{ width: 24, height: 24 }} viewBox='0 0 24 24'>
+      <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+    </svg>
+  );
+}
+
 
 const styles = (theme) => ({
   root: {
@@ -43,13 +43,14 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
         <LoopieButton
+          color="primary"
           text="Let&apos;s get started"
           className="text-light"
           variant="outlined"
         />
       </div>
       <div className="learnmore">
-        <LoopieButton href="#intro">
+        <LoopieButton text="Learn More" icon={<Chevron />}>
           <h4 className="cta-learnmore">Learn more</h4>
         </LoopieButton>
         <div className="bar" />
