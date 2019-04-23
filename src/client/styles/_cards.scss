@@ -1,0 +1,16 @@
+.sticky-price {
+	margin-left: 3em;
+	margin-right: 3em;
+	.left {
+		grid-column: 2 / 5;
+		grid-row: 5 / 8;
+	}
+	.center {
+		grid-column: 3 / 5;
+		grid-row: 5 / 8;
+	}
+	.right {
+		grid-column: 4 / 5;
+		grid-row: 5 / 8;
+	}
+}
