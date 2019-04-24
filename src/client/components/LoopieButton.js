@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 
-// if you want to make a blue button set color = "primary" in buttonprops
+// if you want to make a blue button set color = 'primary' in buttonprops
 function LoopieButton({text, onClick, variant, color, icon}) {
   const styles = {
     boxShadow: 'none',
@@ -16,7 +16,7 @@ function LoopieButton({text, onClick, variant, color, icon}) {
     <Button
       onClick={onClick}
       color={color}
-      size="medium"
+      size='medium'
       fullWidth={false}
       variant={variant}
       style={styles}
@@ -28,7 +28,7 @@ function LoopieButton({text, onClick, variant, color, icon}) {
 };
 
 LoopieButton.defaultProps = {
-  color: 'black',
+  color: 'primary',
   text: 'Eat my ass',
   variant: 'text',
 };

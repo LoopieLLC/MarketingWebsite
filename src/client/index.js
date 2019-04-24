@@ -7,8 +7,8 @@ import {MuiThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import App from './App';
 import {ParallaxProvider} from 'react-scroll-parallax';
 
-//theming
-const theme = createMuiTheme ({
+// theming
+const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#0085FF',
@@ -23,14 +23,13 @@ const theme = createMuiTheme ({
   },
 });
 
-ReactDOM.render (
+ReactDOM.render(
   <MuiThemeProvider theme={theme}>
     <BrowserRouter>
       <ParallaxProvider>
         <App />
       </ParallaxProvider>
-
     </BrowserRouter>
   </MuiThemeProvider>,
-  document.getElementById ('root')
+  document.getElementById('root')
 );

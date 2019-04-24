@@ -31,6 +31,7 @@ module.exports = {
     'no-irregular-whitespace': 2,
     'no-unexpected-multiline': 2,
     'no-multi-str': 2,
+    'no-multi-spaces': 2,
     // 'no-obj-calls': 2, // eslint:recommended
     // 'no-prototype-builtins': 0,
     'no-regex-spaces': 2, // eslint:recommended
@@ -132,7 +133,7 @@ module.exports = {
     'new-cap': 1,
     'no-array-constructor': 2,
     'no-mixed-spaces-and-tabs': 2, // eslint:recommended
-    'no-multiple-empty-lines': [2, {max: 2}],
+    'no-multiple-empty-lines': [2, {max: 1}],
     'no-new-object': 2,
     'no-tabs': 2,
     'no-trailing-spaces': 2,
@@ -145,15 +146,6 @@ module.exports = {
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'consistent'],
     'quotes': [2, 'single', {allowTemplateLiterals: true}],
-    /*
-    'require-jsdoc': [2, {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-        ClassDeclaration: true,
-      },
-    }],
-    */
     'semi': 2,
     'semi-spacing': 2,
     // 'semi-style': 0,

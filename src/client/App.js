@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Navbar from './components/Navbar';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import {hot} from 'react-hot-loader';
 import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
 import PricingContainer from './containers/PricingContainer';
-import HomePageCTA from './components/HomePageCTA';
-import PricingCTA from './components/PricingCTA';
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   componentDidMount = () => {
@@ -19,11 +17,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <Switch>
-        <Redirect exact path='/' to='/home' />
-        <Route exact path='/home' component={HomePageContainer} />
-        <Route path='/pricing' component={PricingContainer} />
-      </Switch>
+      <React.Fragment>
+        <Navbar {...this.props} />
+        <Switch>
+          <Redirect exact path='/' to='/home' />
+          <Route exact path='/home' component={HomePageContainer} />
+          <Route path='/pricing' component={PricingContainer} />
+        </Switch>
+      </React.Fragment>
+
     );
   }
 }
