@@ -1,0 +1,21 @@
+.button {
+    
+    border-Radius: 2px;
+    padding: 8px 18px;
+    font-weight: bold;
+
+    &.fill {
+        background-color: $ColorBlue;
+    }
+    &.outline {
+        outline-width: 2px;
+        outline-color: $ColorBlue;
+        
+
+    }
+    &.text {
+
+    }
+
+
+}
