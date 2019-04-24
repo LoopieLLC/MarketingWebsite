@@ -1,21 +1,57 @@
-.button {
-    
-    border-Radius: 2px;
-    padding: 8px 18px;
+// buttons
+
+//example: <button class="button fill blue"
+
+
+.button {    
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+ 
+    border-Radius: 2px; 
+    padding: 10px 18px;
     font-weight: bold;
+    cursor: pointer;
 
     &.fill {
         background-color: $ColorBlue;
+        color: $ColorWhite;
+        &:hover {
+            background-color: $ColorBlueHighlight;
+        }
+        
     }
     &.outline {
-        outline-width: 2px;
-        outline-color: $ColorBlue;
-        
+        border-width: 1px;
+        border-color: $ColorBlue;
+        border-style: solid;
+        color: $ColorBlue;
+        background-color: transparent;
+        &:hover {
+            background-color: $ColorBlue;
+            color: $ColorWhite;
+        }
 
     }
     &.text {
+        background-color: transparent;
+        color: $ColorBlue;
+        &:hover {
+            color: $ColorDark;
+        }
+
+        &.black {
+            color: $ColorDark;
+            &:hover {
+                color: $ColorBlue;
+            }
+        }
 
     }
 
-
+    
 }

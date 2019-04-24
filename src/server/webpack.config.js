@@ -38,7 +38,7 @@ module.exports = {
     ],
   },
   devServer: {
-    port: 8080,
+    port: 3000,
     open: true,
     contentBase: path.join(__dirname, outputDirectory),
     proxy: {
