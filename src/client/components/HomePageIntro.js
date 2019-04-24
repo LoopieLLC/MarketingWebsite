@@ -1,22 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LoopieButton from './LoopieButton';
-import CTAImage from '../../../public/images/cover.jpg';
-import CTASlogan from '../../../public/images/CTASlogan.svg';
 import StickyNotes from './StickyNotes';
-import {loopieblue, notblack} from './styles';
-import Paper from '@material-ui/core/Paper';
+import {loopieblue} from './styles';
 import {withStyles} from '@material-ui/core/styles';
-import {Spring} from 'react-spring/renderprops';
-
-const Chevron = () => {
-  return(
-    <svg style={{ width: 24, height: 24 }} viewBox='0 0 24 24'>
-      <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
-    </svg>
-  );
-}
-
 
 const styles = (theme) => ({
   root: {
@@ -30,11 +16,11 @@ const styles = (theme) => ({
 });
 
 const HomePageIntro = ({subtext, handleEmail, classes}) => (
-  <div className="intro-page-cta">
-    <div className="intro-container">
-    	<StickyNotes to="" header="Sticky Note" content="This is a sticky note." color={loopieblue} type="sticky-price left"/>
-    	<StickyNotes to="" header="Sticky Note" content="This is a sticky note." color={loopieblue} type="sticky-price center"/>
-    	<StickyNotes to="" header="Sticky Note" content="This is a sticky note." color={loopieblue} type="sticky-price right"/>
+  <div className='intro-page-cta'>
+    <div className='intro-container'>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price left'/>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price center'/>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price right'/>
     </div>
   </div>
 );
@@ -42,7 +28,7 @@ const HomePageIntro = ({subtext, handleEmail, classes}) => (
 HomePageIntro.propTypes = {
   CTAText: PropTypes.string,
   subtext: PropTypes.string,
-
+  classes: PropTypes.object,
   handleEmail: PropTypes.func,
 };
 
