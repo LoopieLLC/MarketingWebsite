@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import Navbar from './components/Navbar';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
-import scrollToComponent from 'react-scroll-to-component';
-
 
 import {hot} from 'react-hot-loader';
 import '../client/styles/main.scss';

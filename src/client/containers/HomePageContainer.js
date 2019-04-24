@@ -8,8 +8,6 @@ import {loopieblue} from '../components/styles';
 import backgroundSvg from '../../../public/images/background.svg';
 import {ParallaxBanner} from 'react-scroll-parallax';
 
-//import {Parallax, Background} from 'react-parallax';
-
 class HomePageContainer extends React.Component {
   state = {
     image: '',
@@ -30,28 +28,28 @@ class HomePageContainer extends React.Component {
   };
 
   sendMail = () => {
-    fetch ('/send-email', {
+    fetch('/send-email', {
       headers: {
         'Content-Type': 'application/json',
       },
       method: 'post',
-      body: JSON.stringify ({
+      body: JSON.stringify({
         subject: 'Email test!',
         body: 'This is a test',
       }),
     })
-      .then (function (response) {
-        return response.json ();
+      .then(function(response) {
+        return response.json();
       })
-      .then (function (data) {
-        console.log (data);
+      .then(function(data) {
+        console.log(data);
       })
-      .catch (function (error) {
-        console.error (error);
+      .catch(function(error) {
+        console.error(error);
       });
   };
 
-  render () {
+  render() {
     return (
       <React.Fragment>
         <Navbar items={this.state.navItems} />
@@ -67,4 +65,4 @@ class HomePageContainer extends React.Component {
   }
 }
 
-export default withRouter (HomePageContainer);
+export default withRouter(HomePageContainer);
