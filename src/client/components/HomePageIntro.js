@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StickyNotes from './StickyNotes';
-import {loopieblue} from './styles';
 import {withStyles} from '@material-ui/core/styles';
 
 const styles = (theme) => ({

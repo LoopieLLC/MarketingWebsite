@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const StickyNotes = ({to, header, content, type}) => {
   return (
     <div className={type}>
