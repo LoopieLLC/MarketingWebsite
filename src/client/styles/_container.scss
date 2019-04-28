@@ -17,12 +17,24 @@
     }
 }
 
-.intro-container {
+.sticky-container {
     height: 100vh;
     //margin-left: 15rem;
     width: 100%;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.split-container-text {
+    //override parent style
+    height: 20em !important;
+    //margin-left: 15rem;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    //grid-column-gap: 16px;
 }
