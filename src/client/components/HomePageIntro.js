@@ -15,18 +15,16 @@ const styles = theme => ({
   },
 });
 
-const HomePageIntro = ({
-  subtext,
-  handleEmail,
-  classes,
-}) => //TODO: make it look better, add real text, shadows? animations?
-(
+const HomePageIntro = (
+  {subtext, handleEmail, classes} //TODO: make it look better, add real text, shadows? animations?
+) => (
   <React.Fragment>
-    <div className="split-container-text">
-      <SplitText header="Why Choose Loopie Laundry?" type="split-text left" />
-      <SplitText subtext="Ya betta choose it" type="split-text right" />
-    </div>
-    <div className="sticky-container">
+
+    <div className="container full">
+      <div className="title one">
+        <SplitText header="Why Choose Loopie Laundry?" type="split-text left" />
+        <SplitText subtext="Ya betta choose it" type="split-text right" />
+      </div>
       <StickyNotes
         to=""
         header="24 hour turnaround on every order"

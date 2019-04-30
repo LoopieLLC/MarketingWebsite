@@ -18,7 +18,7 @@
     cursor: pointer;
     transition: all 0.3s;
     border-width: 1px;
-    border-color: $ColorBlue;
+    border-color: $colorBlue;
     border-style: solid;
     &:hover {
         transform: translateY(-1px);
@@ -28,11 +28,11 @@
         transform: translateY(0px) !important;
     }
     &.fill {
-        background-color: $ColorBlue;
-        color: $ColorWhite;
+        background-color: $colorBlue;
+        color: $colorWhite;
         
         &:hover {
-            background-color: $ColorBlueHighlight;
+            background-color: $colorBlueHighlight;
         }
 
       
@@ -40,26 +40,26 @@
     }
     &.outline {
         
-        color: $ColorBlue;
+        color: $colorBlue;
         background-color: transparent;
         &:hover {
-            background-color: $ColorBlue;
-            color: $ColorWhite;
+            background-color: $colorBlue;
+            color: $colorWhite;
         }
 
     }
     &.text {
         background-color: transparent;
-        color: $ColorBlue;
+        color: $colorBlue;
         border: none;
         &:hover {
-            color: $ColorDark;
+            color: $colorDark;
         }
 
         &.black {
-            color: $ColorDark;
+            color: $colorDark;
             &:hover {
-                color: $ColorBlue;
+                color: $colorBlue;
             }
         }
 
