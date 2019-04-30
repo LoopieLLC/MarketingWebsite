@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SplitText = ({header, subtext, type}) => {
-  if(!header){
+  if (!header) {
     return (
       <div className={type}>
         <p>{subtext}</p>
       </div>
-    );    
+    );
   }
   return (
     <div className={type}>

@@ -15,8 +15,8 @@ const styles = (theme) => ({
   },
 });
 
-const HomePageIntro = ({subtext, handleEmail, classes}) => (
-  //TODO: make it look better, add real text, shadows? animations?
+const HomePageIntro = () => (
+  // TODO: make it look better, add real text, shadows? animations?
   <React.Fragment>
     <div className='split-container-text'>
       <SplitText header='Why Choose Loopie Laundry?' type='split-text left'/>
@@ -29,12 +29,5 @@ const HomePageIntro = ({subtext, handleEmail, classes}) => (
     </div>
   </React.Fragment>
 );
-
-HomePageIntro.propTypes = {
-  CTAText: PropTypes.string,
-  subtext: PropTypes.string,
-  classes: PropTypes.object,
-  handleEmail: PropTypes.func,
-};
 
 export default withStyles(styles)(HomePageIntro);
