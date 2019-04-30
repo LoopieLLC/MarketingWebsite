@@ -2,20 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import LoopieButton from './LoopieButton';
-import CTAImage from '../../../public/images/cover.jpg';
-import CTASlogan from '../../../public/images/CTASlogan.svg';
-import StickyNotes from './StickyNotes';
-import {loopieblue, notblack} from './styles';
-import { withStyles } from '@material-ui/core/styles';
-import { Spring } from 'react-spring/renderprops';
-
-const Chevron = () => {
-  return (
-    <svg style={{ width: 24, height: 24 }} viewBox="0 0 24 24">
-      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-    </svg>
-  );
-};
+import {withStyles} from '@material-ui/core/styles';
+import {Spring} from 'react-spring/renderprops';
+import {Chevron} from '../components/icons';
 
 const styles = theme => ({
   root: {
@@ -28,18 +17,18 @@ const styles = theme => ({
   },
 });
 
-const HomePageCTA = ({ subtext, handleEmail, classes }) => (
+const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">
-    <div className="container split ">
+    <div className="split-container ">
       <Spring
-        from={{ opacity: 0, marginLeft: -500 }}
-        to={{ opacity: 1, marginLeft: 0 }}
+        from={{opacity: 0, marginLeft: -500}}
+        to={{opacity: 1, marginLeft: 0}}
       >
         {props => <div className="split-image cta-image" style={props} />}
       </Spring>
       <Spring
-        from={{ opacity: 0, marginLeft: 500 }}
-        to={{ opacity: 1, marginLeft: 0 }}
+        from={{opacity: 0, marginLeft: 500}}
+        to={{opacity: 1, marginLeft: 0}}
       >
         {props => <div className="cta-slogan" style={props} />}
       </Spring>
@@ -48,7 +37,7 @@ const HomePageCTA = ({ subtext, handleEmail, classes }) => (
       <div className="cta-btn">
         <LoopieButton
           color="primary"
-          text="Let's get started"
+          text="Let&apos;s get started"
           className="text-light"
           variant="outlined"
         />
@@ -60,7 +49,6 @@ const HomePageCTA = ({ subtext, handleEmail, classes }) => (
         <LoopieButton text="Learn More" icon={<Chevron />}>
           <h4 className="cta-learnmore">Learn more</h4>
         </LoopieButton>
-
         <div className="bar" />
       </div>
 
@@ -72,8 +60,8 @@ const HomePageCTA = ({ subtext, handleEmail, classes }) => (
 HomePageCTA.propTypes = {
   CTAText: PropTypes.string,
   subtext: PropTypes.string,
-
+  classes: PropTypes.object,
   handleEmail: PropTypes.func,
 };
 
-export default withStyles(styles)(HomePageCTA);
+export default withStyles (styles) (HomePageCTA);
