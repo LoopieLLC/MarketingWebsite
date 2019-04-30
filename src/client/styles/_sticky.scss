@@ -1,0 +1,16 @@
+.sticky-basic {
+	margin-left: 3em;
+	margin-right: 3em;
+	background-color: $ColorBlue;
+	grid-row: 2;
+	border-radius: 10px;
+	&.left {
+		grid-column: 2;
+	}
+	&.center {
+		grid-column: 3;
+	}
+	&.right {
+		grid-column: 4;
+	}
+}

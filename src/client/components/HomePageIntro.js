@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StickyNotes from './StickyNotes';
-import {loopieblue} from './styles';
 import {withStyles} from '@material-ui/core/styles';
 
 const styles = (theme) => ({
@@ -18,9 +17,9 @@ const styles = (theme) => ({
 const HomePageIntro = ({subtext, handleEmail, classes}) => (
   <div className='intro-page-cta'>
     <div className='intro-container'>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price left'/>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price center'/>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' color={loopieblue} type='sticky-price right'/>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic left'/>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic center'/>
+      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic right'/>
     </div>
   </div>
 );

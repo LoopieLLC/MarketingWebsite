@@ -1,26 +1,11 @@
-// its like the material design cards but more pretentious
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardActionArea from '@material-ui/core/CardActionArea';
-
-const StickyNotes = ({to, header, content, color, type}) => {
-  const styles = {
-    borderRadius: 10,
-    backgroundColor: color,
-  };
+const StickyNotes = ({to, header, content, type}) => {
   return (
     <div className={type}>
-      <CardActionArea onClick={(event) => { }}>
-        <Card style={styles} className='cards'>
-          <CardContent>
-            <h3>{header}</h3>
-            <p>{content}</p>
-          </CardContent>
-        </Card>
-      </CardActionArea>
+      <h3>{header}</h3>
+      <p>{content}</p>
     </div>
   );
 };
@@ -29,15 +14,7 @@ StickyNotes.propTypes = {
   to: PropTypes.string,
   header: PropTypes.string,
   content: PropTypes.string,
-  color: PropTypes.string,
   type: PropTypes.string,
-  /*
-  *  url: url,
-  *  header: string,
-  *  content: string,
-  *  color: default / primary
-  *
-  */
 };
 
 export default StickyNotes;
