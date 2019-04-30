@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Paper from '@material-ui/core/Paper';
+import {  withStyles  } from '@material-ui/core/styles';
+import {  Spring  } from 'react-spring/renderprops';
 import LoopieButton from './LoopieButton';
-import {withStyles} from '@material-ui/core/styles';
-import {Spring} from 'react-spring/renderprops';
-import {Chevron} from '../components/icons';
+import {  Chevron  } from './icons';
 
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     flexGrow: 1,
   },
@@ -17,27 +16,27 @@ const styles = theme => ({
   },
 });
 
-const HomePageCTA = ({subtext, handleEmail, classes}) => (
+const HomePageCTA = ({  subtext, handleEmail, classes  }) => (
   <div className="home-page-cta">
-    <div className="split-container ">
+    <div className="container split">
       <Spring
-        from={{opacity: 0, marginLeft: -500}}
-        to={{opacity: 1, marginLeft: 0}}
+        from={{  opacity: 0, marginLeft: -500  }}
+        to={{  opacity: 1, marginLeft: 0  }}
       >
-        {props => <div className="split-image cta-image" style={props} />}
+        {(props) => <div className="split-image cta-image" style={props} />}
       </Spring>
       <Spring
-        from={{opacity: 0, marginLeft: 500}}
-        to={{opacity: 1, marginLeft: 0}}
+        from={{  opacity: 0, marginLeft: 500  }}
+        to={{  opacity: 1, marginLeft: 0  }}
       >
-        {props => <div className="cta-slogan" style={props} />}
+        {(props) => <div className="cta-slogan" style={props} />}
       </Spring>
 
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
         <LoopieButton
           color="primary"
-          text="Let&apos;s get started"
+          text="Let's get started"
           className="text-light"
           variant="outlined"
         />
@@ -64,4 +63,4 @@ HomePageCTA.propTypes = {
   handleEmail: PropTypes.func,
 };
 
-export default withStyles (styles) (HomePageCTA);
+export default withStyles(styles)(HomePageCTA);

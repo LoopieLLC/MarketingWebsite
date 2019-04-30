@@ -1,10 +1,11 @@
 .sticky-basic {
 	margin-left: .35em;
 	margin-right: .35em;
-	padding-left: .7em;
-	padding-right: .7em;
+	padding-left: 1em;
+	padding-right: 1em;
 	background-color: $colorBlue;
-	grid-row: 1;
+	display:grid; 
+	grid-row: 3;
 	border-radius: 10px;
 	box-shadow: $dropShadow;
 
