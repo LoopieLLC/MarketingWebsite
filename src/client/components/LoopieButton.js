@@ -9,6 +9,8 @@ function handleVariant(props){
             return "button outline";
         case "text":
             return "button text";
+        default:
+            return "button text";
     }
 };
 
