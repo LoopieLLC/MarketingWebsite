@@ -49,16 +49,11 @@ const HomePageCTA = ({ subtext, handleEmail, classes }) => (
         <LoopieButton
           color="primary"
           text="Let's get started"
-          className="text-light"
           variant="outlined"
         />
-        <button className="button fill"> owo </button>
-        <button className="button outline"> owo </button>
-        <button className="button text"> owo </button>
       </div>
       <div className="learnmore">
-        <LoopieButton text="Learn More" icon={<Chevron />}>
-          <h4 className="cta-learnmore">Learn more</h4>
+        <LoopieButton variant="text" text="Learn More" icon={<Chevron />}>
         </LoopieButton>
 
         <div className="bar" />
