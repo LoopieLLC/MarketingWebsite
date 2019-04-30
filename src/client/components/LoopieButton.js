@@ -8,7 +8,9 @@ function handleVariant(props) {
     case 'outlined':
       return 'button outline';
     case 'text':
-      return 'button text black';
+      return 'button text';
+    default:
+      return 'button text';
   }
 }
 
