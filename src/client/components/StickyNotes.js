@@ -6,6 +6,7 @@ const StickyNotes = ({to, header, content, type}) => {
     <div className={type}>
       <h3>{header}</h3>
       <p>{content}</p>
+      <p className="more">Learn more</p>
     </div>
   );
 };

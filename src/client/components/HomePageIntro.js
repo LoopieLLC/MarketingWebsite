@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StickyNotes from './StickyNotes';
+import SplitText from './SplitText';
 import {withStyles} from '@material-ui/core/styles';
 
 const styles = (theme) => ({
@@ -15,13 +16,18 @@ const styles = (theme) => ({
 });
 
 const HomePageIntro = ({subtext, handleEmail, classes}) => (
-  <div className='intro-page-cta'>
-    <div className='intro-container'>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic left'/>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic center'/>
-      <StickyNotes to='' header='Sticky Note' content='This is a sticky note.' type='sticky-basic right'/>
+  //TODO: make it look better, add real text, shadows? animations?
+  <React.Fragment>
+    <div className='split-container-text'>
+      <SplitText header='Why Choose Loopie Laundry?' type='split-text left'/>
+      <SplitText subtext='Ya betta choose it' type='split-text right'/>
     </div>
-  </div>
+    <div className='sticky-container'>
+      <StickyNotes to='' header='24 hour turnaround on every order' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt' type='sticky-basic left'/>
+      <StickyNotes to='' header='Sticky Note' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt' type='sticky-basic center'/>
+      <StickyNotes to='' header='Sticky Note' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt' type='sticky-basic right'/>
+    </div>
+  </React.Fragment>
 );
 
 HomePageIntro.propTypes = {
