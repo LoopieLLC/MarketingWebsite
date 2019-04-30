@@ -2,18 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StickyNotes from './StickyNotes';
 import SplitText from './SplitText';
-import {withStyles} from '@material-ui/core/styles';
-
-const styles = (theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-});
 
 const HomePageIntro = () => (
   // TODO: make it look better, add real text, shadows? animations?
@@ -30,4 +18,4 @@ const HomePageIntro = () => (
   </React.Fragment>
 );
 
-export default withStyles(styles)(HomePageIntro);
+export default HomePageIntro;

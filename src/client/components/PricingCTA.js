@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import LoopieButton from './LoopieButton';
 import StickyNotes from './StickyNotes';
 import {loopieblue} from './styles';
-import {withStyles} from '@material-ui/core/styles';
 
 const styles = (theme) => ({
   root: {
@@ -21,4 +20,4 @@ const PricingCTA = ({CTAText, subtext, handleEmail, classes}) => (
   </main>
 );
 
-export default withStyles(styles)(PricingCTA);
+export default PricingCTA;
