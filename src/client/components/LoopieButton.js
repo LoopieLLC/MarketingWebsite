@@ -1,14 +1,14 @@
 import React from 'react';
 
 function handleVariant(props) {
-  const {variant} = props;
+  const {  variant  } = props;
   switch (variant) {
     case 'filled':
       return 'button fill';
     case 'outlined':
       return 'button outline';
     case 'text':
-      return 'button text';
+      return 'button text black';
     default:
       return 'button text';
   }
