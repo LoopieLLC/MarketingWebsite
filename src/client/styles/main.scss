@@ -8,7 +8,8 @@
 @import 'container.scss';
 @import 'buttons.scss';
 
-//import rest of scss 
-
+//import components
 @import 'navbar.scss';
 @import 'component-styles/home.scss';
+@import 'component-styles/sticky.scss';
+@import 'component-styles/split-text.scss';
