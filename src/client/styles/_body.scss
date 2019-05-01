@@ -1,7 +1,7 @@
-html, body, #root, #root>div {
-  height: 100vh;
-  background: no-repeat center center fixed;
-  background-color: $ColorWhite;
+html, body {
+  //height: 100vh;
+  //background: no-repeat center center fixed;
+  //background-color: $colorWhite;
   overflow-x: hidden;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +14,8 @@ main {
  //margin-right: 3rem;
 }
 
-.background-parallax {
-  
+.background-parallax {  // deprecated becasue were not doing parrallax as of moment. remove when pruniung
+  position: absolute;
   z-index: -1;
+  width: 100vw;
 }

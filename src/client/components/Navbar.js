@@ -28,7 +28,7 @@ const Navbar = (props) => {
         )}
         <li className='navbar-item'>
           <a href='http://www.loopie.us'>
-            <LoopieButton text='Sign Up Today' color='primary' variant='contained'></LoopieButton>
+            <LoopieButton text='Sign Up Today' color='primary' variant='filled'></LoopieButton>
           </a>
         </li>
       </ul>
