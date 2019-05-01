@@ -16,24 +16,27 @@ a {
   }
 
   &:hover, &:focus {
-    color: $ColorBlue;
+    color: $colorBlue;
 
   }
 
 }
 
+h1 h2 h3 h4 {
+  color: $colorDarkBlue;
+}
 h1 {
-  color: $ColorDarkBlue;
+ 
   font-size: 5rem;
   font-weight: bold;
 }
 h2 {
-  color: $ColorLoopie;
+
   font-size: 3rem;
   font-weight: bold;
 }
 h3 {
-  color: $ColorLoopie;
+ 
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -43,9 +46,9 @@ h3 {
 }
 
 .text-dark {
-  color:$ColorDark;
+  color:$colorDark;
 }
 
 p {
-  color: $ColorDark;
+  color: $colorDark;
 }

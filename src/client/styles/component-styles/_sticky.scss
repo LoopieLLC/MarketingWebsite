@@ -1,13 +1,16 @@
 .sticky-basic {
 	margin-left: .35em;
 	margin-right: .35em;
-	padding-left: .7em;
-	padding-right: .7em;
-	background-color: $ColorBlue;
-	grid-row: 1;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: $colorBlue;
+	display:grid; 
+	grid-row: 3;
 	border-radius: 10px;
+	box-shadow: $dropShadow;
+
 	p {
-		color: $ColorWhite;
+		color: $colorWhite;
 		font-weight: bold;
 		&.more {
 			//transform: translate(0%, 300%);
@@ -16,7 +19,7 @@
 		}
 	}
 	h3 {
-		color: $ColorWhite;
+		color: $colorWhite;
 		//i wanted to do punch out (see through) text here but its complicated
 		//color: rgba(0, 0, 0, 1);
 		//opacity: 0;

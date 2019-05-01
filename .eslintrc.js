@@ -1,18 +1,16 @@
 module.exports = {
-  'root': true,
-  'extends': 'plugin:react/recommended',
-  'parser': 'babel-eslint',
-  'parserOptions': {
-    'ecmaVersion': 8,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'jsx': true,
-    },
+  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    jest: true,
+    node: true,
   },
-  'env': {
-    'node': true,
+  env: {
+    node: true,
   },
-  'rules': {
+  rules: {
     'react/jsx-indent': [2, 2], // error, 2 spaces
     'for-direction': 0,
     'no-cond-assign': 2, // eslint:recommended
@@ -51,7 +49,7 @@ module.exports = {
     // http://eslint.org/docs/rules/#best-practices
     // --------------------------------------------
 
-    'curly': [2, 'multi-line'], // google setting
+    curly: [2, 'multi-line'], // google setting
     'default-case': 2,
     'guard-for-in': 2,
     'no-caller': 2,
@@ -83,7 +81,7 @@ module.exports = {
     'array-element-newline': 0, // eslint:recommended
     'block-spacing': [2, 'never'],
     'brace-style': 2,
-    'camelcase': [2, {properties: 'never'}],
+    camelcase: [2, {properties: 'never'}],
     // 'capitalized-comments': 0,
     'comma-dangle': [2, 'always-multiline'],
     'comma-spacing': 2,
@@ -98,25 +96,25 @@ module.exports = {
     // 'id-blacklist': 0,
     // 'id-length': 0,
     // 'id-match': 0,
-    'indent': [
-      'error', 2, {
-        'CallExpression': {
-          'arguments': 1,
+    indent: [
+      'error',
+      2,
+      {
+        CallExpression: {
+          arguments: 1,
         },
-        'FunctionDeclaration': {
-          'body': 1,
-          'parameters': 1,
+        FunctionDeclaration: {
+          body: 1,
+          parameters: 1,
         },
-        'FunctionExpression': {
-          'body': 1,
-          'parameters': 1,
+        FunctionExpression: {
+          body: 1,
+          parameters: 1,
         },
-        'MemberExpression': 1,
-        'ObjectExpression': 1,
-        'SwitchCase': 1,
-        'ignoredNodes': [
-          'ConditionalExpression',
-        ],
+        MemberExpression: 1,
+        ObjectExpression: 1,
+        SwitchCase: 1,
+        ignoredNodes: ['ConditionalExpression'],
       },
     ],
     // 'jsx-quotes': 0,
@@ -138,25 +136,31 @@ module.exports = {
     'no-tabs': 2,
     'no-trailing-spaces': 2,
     'object-curly-spacing': 2,
-    'one-var': [2, {
-      var: 'never',
-      let: 'never',
-      const: 'never',
-    }],
+    'one-var': [
+      2,
+      {
+        var: 'never',
+        let: 'never',
+        const: 'never',
+      },
+    ],
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'consistent'],
-    'quotes': [2, 'single', {allowTemplateLiterals: true}],
-    'semi': 2,
+    quotes: [2, 'single', {allowTemplateLiterals: true}],
+    semi: 2,
     'semi-spacing': 2,
     // 'semi-style': 0,
     // 'sort-keys': 0,
     // 'sort-vars': 0,
     'space-before-blocks': 2,
-    'space-before-function-paren': [2, {
-      asyncArrow: 'always',
-      anonymous: 'never',
-      named: 'never',
-    }],
+    'space-before-function-paren': [
+      2,
+      {
+        asyncArrow: 'always',
+        anonymous: 'never',
+        named: 'never',
+      },
+    ],
     'spaced-comment': [2, 'always'],
     'switch-colon-spacing': 2,
 
@@ -175,12 +179,11 @@ module.exports = {
     'rest-spread-spacing': 2,
     'yield-star-spacing': [2, 'after'],
   },
-  'settings': {
-  'import/resolver': {
-      'node': {
-        'moduleDirectory': ['node_modules', 'src/']
-      }
+  settings: {
+    'import/resolver': {
+      node: {
+        moduleDirectory: ['node_modules', 'src/'],
+      },
     },
-    'react/prop-types': [2, { ignore: ['children', 'dispatch'] }],
-  }
+  },
 };
