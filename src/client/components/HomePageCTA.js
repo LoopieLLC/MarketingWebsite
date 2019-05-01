@@ -1,20 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  withStyles  } from '@material-ui/core/styles';
 import {  Spring  } from 'react-spring/renderprops';
 import LoopieButton from './LoopieButton';
 import {  Chevron  } from './icons';
 
-const styles = (theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-});
+
 
 const HomePageCTA = ({  subtext, handleEmail, classes  }) => (
   <div className="home-page-cta">
@@ -45,8 +35,6 @@ const HomePageCTA = ({  subtext, handleEmail, classes  }) => (
         </LoopieButton>
         <div className="bar" />
       </div>
-
-      <div className={classes.root} />
     </div>
   </div>
 );
@@ -58,4 +46,4 @@ HomePageCTA.propTypes = {
   handleEmail: PropTypes.func,
 };
 
-export default withStyles(styles)(HomePageCTA);
+export default HomePageCTA;
