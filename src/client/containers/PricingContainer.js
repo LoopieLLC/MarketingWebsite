@@ -5,13 +5,11 @@ import PricingCTA from '../components/PricingCTA';
 class PricingContainer extends React.Component {
   state = {
     image: '',
-  }
+  };
 
   render() {
-    return (
-      <PricingCTA />
-    );
+    return <PricingCTA />;
   }
-};
+}
 
 export default withRouter(PricingContainer);

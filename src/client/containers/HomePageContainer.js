@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePageCTA from '../components/HomePageCTA';
 import HomePageIntro from '../components/HomePageIntro';
+import HomePagePricing from '../components/HomePagePricing';
 import {withRouter} from 'react-router';
 
 class HomePageContainer extends React.Component {
@@ -39,6 +40,7 @@ class HomePageContainer extends React.Component {
           subtext="Flat rates, starting from $27.99"
         />
         <HomePageIntro />
+        <HomePagePricing />
       </React.Fragment>
     );
   }
