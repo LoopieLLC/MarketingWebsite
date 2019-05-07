@@ -1,11 +1,13 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
-  env: {
-    browser: true,
-    commonjs: true,
-    es6: true,
-    jest: true,
-    node: true,
+  root: true,
+  extends: 'plugin:react/recommended',
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 8,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   env: {
     node: true,
@@ -71,7 +73,7 @@ module.exports = {
     'no-delete-var': 2, // eslint:recommended
     // 'no-shadow-restricted-names': 0,
     // 'no-undef': 2, // eslint:recommended
-    'no-unused-vars': [2, {args: 'none'}], // eslint:recommended
+    'no-unused-vars': [2, { args: 'none' }], // eslint:recommended
 
     // Stylistic Issues
     // http://eslint.org/docs/rules/#stylistic-issues
@@ -81,7 +83,7 @@ module.exports = {
     'array-element-newline': 0, // eslint:recommended
     'block-spacing': [2, 'never'],
     'brace-style': 2,
-    camelcase: [2, {properties: 'never'}],
+    camelcase: [2, { properties: 'never' }],
     // 'capitalized-comments': 0,
     'comma-dangle': [2, 'always-multiline'],
     'comma-spacing': 2,
@@ -131,7 +133,7 @@ module.exports = {
     'new-cap': 1,
     'no-array-constructor': 2,
     'no-mixed-spaces-and-tabs': 2, // eslint:recommended
-    'no-multiple-empty-lines': [2, {max: 1}],
+    'no-multiple-empty-lines': [2, { max: 1 }],
     'no-new-object': 2,
     'no-tabs': 2,
     'no-trailing-spaces': 2,
@@ -146,7 +148,7 @@ module.exports = {
     ],
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'consistent'],
-    quotes: [2, 'single', {allowTemplateLiterals: true}],
+    quotes: [2, 'single', { allowTemplateLiterals: true }],
     semi: 2,
     'semi-spacing': 2,
     // 'semi-style': 0,
@@ -185,5 +187,6 @@ module.exports = {
         moduleDirectory: ['node_modules', 'src/'],
       },
     },
+    'react/prop-types': [2, { ignore: ['children', 'dispatch'] }],
   },
 };

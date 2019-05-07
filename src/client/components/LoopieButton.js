@@ -1,7 +1,7 @@
 import React from 'react';
 
 function handleVariant(props) {
-  const { variant } = props;
+  const {variant} = props;
   switch (variant) {
     case 'filled':
       return 'button fill';
@@ -14,13 +14,20 @@ function handleVariant(props) {
   }
 }
 
-function LoopieButton({ text, onClick, variant, color, icon }) {
+function LoopieButton({text, onClick, variant, icon}) {
   return (
-    <button className={handleVariant({ variant })}>
+    <button className={handleVariant({variant})}>
       {icon}
       {text}
     </button>
   );
 }
+
+LoopieButton.proptypes = {
+  text: Proptypes.string,
+  icon: Proptypes.icon,
+  variant: Proptypes.string,
+  onClick: Proptypes.function,
+};
 
 export default LoopieButton;

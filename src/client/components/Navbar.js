@@ -21,7 +21,7 @@ const NAVIGATION_ITEMS = [
 const Navbar = props => {
   return (
     <nav className="navbar main-nav fixed">
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt="Loopie Laundry" />
       <ul className="nav-item-container">
         {NAVIGATION_ITEMS.map(item => (
           <NavbarItem to={item.url} key={item.name} item={item} />
