@@ -1,8 +1,14 @@
 import React from 'react';
-import HomePageCTA from '../components/HomePageCTA';
-import HomePageIntro from '../components/HomePageIntro';
-import HomePagePricing from '../components/HomePagePricing';
-import HowItWorks from '../components/HowItWorks';
+
+// import containers for homepage
+import HomePageCTA from '../components/homepage/HomePageCTA';
+import HomePageIntro from '../components/homepage/HomePageIntro';
+import HomePagePricing from '../components/homepage/HomePagePricing';
+import WorkLanding from '../components/homepage/WorkLanding';
+import PartnerLanding from '../components/homepage/PartnerLanding';
+import HowItWorks from '../components/homepage/HowItWorks';
+
+// import router
 import {withRouter} from 'react-router';
 
 class HomePageContainer extends React.Component {
@@ -43,6 +49,8 @@ class HomePageContainer extends React.Component {
         <HomePageIntro />
         <HomePagePricing />
         <HowItWorks />
+        <WorkLanding />
+        <PartnerLanding />
       </React.Fragment>
     );
   }

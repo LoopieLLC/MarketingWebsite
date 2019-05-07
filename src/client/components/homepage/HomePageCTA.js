@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Spring} from 'react-spring/renderprops';
-import LoopieButton from './LoopieButton';
-import {Chevron} from './icons';
+import LoopieButton from '../LoopieButton';
+import {Chevron} from '../icons';
 
 const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">

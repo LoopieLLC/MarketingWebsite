@@ -1,6 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import HowItWorks from '../components/HowItWorks';
+import HowItWorks from '../components/homepage/HowItWorks';
 
 class HowContainer extends React.Component {
   state = {

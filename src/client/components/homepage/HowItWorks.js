@@ -1,6 +1,6 @@
 import React from 'react';
-import StickyNotes from './StickyNotes';
-import SplitText from './SplitText';
+import StickyNotes from '../StickyNotes';
+import SplitText from '../SplitText';
 
 const HowItWorks = () => (
   // TODO: make it look better, add real text, shadows? animations?
