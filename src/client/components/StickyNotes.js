@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LoopieButton from './LoopieButton';
 
 const StickyNotes = ({to, header, content, type}) => {
   return (
     <div className={type}>
       <h3>{header}</h3>
       <p>{content}</p>
-      <p className="more">Learn more</p>
+      <div className="more">
+        <LoopieButton variant="textWhite" text="Learn More" />
+      </div>
     </div>
   );
 };

@@ -10,6 +10,8 @@ function handleVariant(props) {
       return 'button outline';
     case 'text':
       return 'button text black';
+    case 'textWhite':
+      return 'button text white';
     default:
       return 'button text';
   }
