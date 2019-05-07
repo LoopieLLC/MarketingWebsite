@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
 function handleVariant(props) {
   const {variant} = props;
@@ -23,9 +24,9 @@ function LoopieButton({text, onClick, variant, icon}) {
   );
 }
 
-LoopieButton.proptypes = {
+LoopieButton.propTypes = {
   text: Proptypes.string,
-  icon: Proptypes.icon,
+  icon: Proptypes.any,
   variant: Proptypes.string,
   onClick: Proptypes.function,
 };
