@@ -1,5 +1,5 @@
 import React from 'react';
 
-const PricingCTA = ({CTAText, subtext, handleEmail, classes}) => <main />;
-
+const PricingCTA = () => <main />;
+// {CTAText, subtext, handleEmail, classes}) -> props we expect to pass in
 export default PricingCTA;
