@@ -5,8 +5,10 @@ import {loopieblue} from '../components/styles';
 
 const NavbarItem = ({item}) => {
   return (
-    <li className='navbar-item'>
-      <NavLink to={item.url} activeStyle={{color: loopieblue}}>{item.name}</NavLink>
+    <li className="navbar-item">
+      <NavLink to={item.url} activeStyle={{color: loopieblue}}>
+        {item.name}
+      </NavLink>
     </li>
   );
 };

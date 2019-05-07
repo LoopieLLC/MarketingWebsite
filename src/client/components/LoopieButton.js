@@ -28,7 +28,7 @@ LoopieButton.propTypes = {
   text: Proptypes.string,
   icon: Proptypes.any,
   variant: Proptypes.string,
-  onClick: Proptypes.function,
+  onClick: Proptypes.any,
 };
 
 export default LoopieButton;
