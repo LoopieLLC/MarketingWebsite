@@ -9,28 +9,28 @@ class HomePageContainer extends React.Component {
   };
 
   sendMail = () => {
-    fetch ('/send-email', {
+    fetch('/send-email', {
       headers: {
         'Content-Type': 'application/json',
       },
       method: 'post',
-      body: JSON.stringify ({
+      body: JSON.stringify({
         subject: 'Email test!',
         body: 'This is a test',
       }),
     })
-      .then (function (response) {
-        return response.json ();
+      .then(function(response) {
+        return response.json();
       })
-      .then (function (data) {
-        console.log (data);
+      .then(function(data) {
+        console.log(data);
       })
-      .catch (function (error) {
-        console.error (error);
+      .catch(function(error) {
+        console.error(error);
       });
   };
 
-  render () {
+  render() {
     return (
       <React.Fragment>
         <HomePageCTA
@@ -44,4 +44,4 @@ class HomePageContainer extends React.Component {
   }
 }
 
-export default withRouter (HomePageContainer);
+export default withRouter(HomePageContainer);

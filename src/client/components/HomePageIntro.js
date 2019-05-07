@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import StickyNotes from './StickyNotes';
 import SplitText from './SplitText';
 

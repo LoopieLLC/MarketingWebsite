@@ -12,10 +12,10 @@ import Navbar from './components/Navbar';
 class App extends React.Component {
   componentDidMount = () => {
     let uri = this.props.history.location.pathname;
-    this.props.history.push (uri);
+    this.props.history.push(uri);
   };
 
-  render () {
+  render() {
     return (
       <React.Fragment>
         <Navbar {...this.props} />
@@ -33,4 +33,4 @@ App.propTypes = {
   history: PropTypes.object,
 };
 
-export default hot (module) (withRouter (App));
+export default hot(module)(withRouter(App));
