@@ -8,7 +8,7 @@ const HomePageIntro = () => (
     <div className="container full">
       <div className="title one">
         <SplitText header="Why Choose Loopie Laundry?" type="split-text left" />
-        <SplitText subtext="haha dab" type="split-text right" />
+        <SplitText subtext="haha yes" type="split-text right" />
       </div>
       <StickyNotes
         to=""
