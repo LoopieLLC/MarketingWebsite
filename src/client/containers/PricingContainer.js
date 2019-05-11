@@ -1,6 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import PricingCTA from '../components/homepage/HomePagePricing';
+import PricingCTA from '../components/pricing/PricingCTA';
 
 class PricingContainer extends React.Component {
   state = {
