@@ -8,6 +8,7 @@ import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
 import PricingContainer from './containers/PricingContainer';
 import Navbar from './components/Navbar';
+import SocialBar from './components/SocialBar';
 
 class App extends React.Component {
   componentDidMount = () => {
@@ -19,6 +20,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Navbar {...this.props} />
+        <SocialBar />
         <Switch>
           <Redirect exact path="/" to="/home" />
           <Route exact path="/home" component={HomePageContainer} />
