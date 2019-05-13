@@ -1,15 +1,15 @@
 $colorDark: #222627;
-$colorDarkBlue: #1C3851;
-$colorLoopie: #FFC700;
-$colorBlue: #0085FF;
-$colorGreen: #2ABD88;
-$colorWhite: #FCFBF9;
+$colorDarkBlue: #1c3851;
+$colorLoopie: #ffc700;
+$colorBlue: #0085ff;
+$colorGreen: #2abd88;
+$colorWhite: #fcfbf9;
 $colorGrey: #949494;
-$colorGreyDark: #4B4B4B;
-$colorDarkGradient: linear-gradient(to bottom right, #18314E, #0E1B27);
+$colorGreyDark: #4b4b4b;
+$colorDarkGradient: linear-gradient(to bottom right, #18314e, #0e1b27);
 $dropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
 
-$colorBlueHighlight: #00A5FF;
+$colorBlueHighlight: #00a5ff;
 
 //mixins
 
@@ -29,28 +29,42 @@ https://codepen.io/davidgilbertson/pen/aBpJzO
 */
 
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-tablet-portait-only {
-    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-only {
-    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 @mixin for-desktop-only {
-    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
 }
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
-
-
