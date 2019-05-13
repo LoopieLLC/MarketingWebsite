@@ -2,16 +2,39 @@ import StickyNotes from '../StickyNotes';
 import SplitText from '../SplitText';
 import React, { useState, useCallback } from 'react';
 import { useTransition, animated } from 'react-spring';
+import LoopieButton from '../LoopieButton';
+import PropTypes from 'prop-types';
 
-function HowSlides() {
-	const [index, set] = useState(0);
-	const onClick = useCallback(() => set(state => (state + 1) % 3), []);
-	const transitions = useTransition(index, p => p, {
-		from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-		enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-		leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
-	});
-	return <div />;
-}
+const HowSlides = ({ header, content }) => {
+	return ([
+		({ style }) => (
+			<animated.div style={{ ...style, background: 'lightpink' }}>
+				A
+			</animated.div>
+		),
+		({ style }) => (
+			<animated.div style={{ ...style, background: 'lightblue' }}>
+				B
+			</animated.div>
+		),
+		({ style }) => (
+			<animated.div style={{ ...style, background: 'lightgreen' }}>
+				C
+			</animated.div>
+		),
+	])
+};
+
+/**<div className="sticky-basic">
+      <h3>{header}</h3>
+      <p>{content}</p>
+      <div className="more">
+        <LoopieButton variant="textWhite" text="Learn More" />
+      </div>
+    </div>**/
+HowSlides.propTypes = {
+	header: PropTypes.string,
+	content: PropTypes.string,
+};
 
 export default HowSlides;

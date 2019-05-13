@@ -1,0 +1,80 @@
+.slide {
+	//overflow: hidden;
+	max-width: 50%;
+	max-height: 100%;
+	grid-row: 1;
+	grid-column: 2;
+	color: $colorWhite;
+	&.test {
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		height: 50vh;
+		width: 100%;
+	}
+}
+.slide-left {
+	overflow: hidden;
+	max-width: 50%;
+	max-height: 100%;
+	grid-row: 1;
+	grid-column: 1;
+	color: $colorDark;
+	vertical-align: middle;
+	text-align: center;
+	&.test {
+		position: absolute;
+		font-weight: bold;
+		font-size: 30px;
+		height: 50vh;
+		width: 100%;
+	}
+}
+
+.slide-container {
+	//overflow: hidden;
+	max-width: 50%;
+	max-height: 100%;
+	grid-row: 1;
+	grid-column: 2;
+	color: $colorWhite;
+	position: absolute;
+	font-weight: bold;
+	font-size: 30px;
+	height: 50vh;
+	width: 100%;
+}
+
+.slide-background-test {
+	//overflow: hidden;
+	max-width: 50%;
+	max-height: 100%;
+	grid-row: 1;
+	grid-column: 2;
+	color: $colorWhite;
+	position: absolute;
+	font-weight: bold;
+	font-size: 30px;
+	height: 50vh;
+	width: 100%;
+	&.pickup {
+		background-size: cover;
+		background-image: url('../../../public/images/car3.jpg');
+	}
+	&.order {
+		background-image: url('../../../public/images/iphone2.jpg');
+		background-size: cover;
+	}
+	&.fold {
+		background-size: cover;
+		background-image: url('../../../public/images/placeholder1.jpg');
+	}
+	&.washer {
+		background-size: cover;
+		background-image: url('../../../public/images/washer1.jpg');
+	}
+	&.deliver {
+		background-size: cover;
+		background-image: url('../../../public/images/car2.jpg');
+	}
+}

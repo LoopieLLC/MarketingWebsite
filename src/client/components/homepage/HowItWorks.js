@@ -1,12 +1,12 @@
 import React from 'react';
 import StickyNotes from '../StickyNotes';
 import SplitText from '../SplitText';
-import HowSlides from './HowSlides.js';
+import SlideShow from './SlideShow.js';
 
 const HowItWorks = () => (
 	// TODO: make it look better, add real text, shadows? animations?
 	<React.Fragment>
-		<div className="container full">
+		<div className="container half-full">
 			<div className="title one">
 				<SplitText header="How it works" type="split-text left" />
 				<SplitText
@@ -14,7 +14,9 @@ const HowItWorks = () => (
 					type="split-text right"
 				/>
 			</div>
-			<HowSlides/>
+		</div>
+		<div className="container slides">
+			<SlideShow />
 		</div>
 	</React.Fragment>
 );

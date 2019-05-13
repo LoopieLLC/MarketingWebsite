@@ -90,4 +90,10 @@
             grid-template-columns:  1fr 1.5fr 1.5fr 1fr;
         }
     }
+    &.slides {
+        height: 50vh;
+        //margin-left: 15rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;      
+    }
 }
