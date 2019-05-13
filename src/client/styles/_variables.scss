@@ -1,15 +1,35 @@
-$colorDark: #222627;
-$colorDarkBlue: #1c3851;
+/*
+    Color Pallete
+
+*/
+//  Primary
+$colorDarkBlue: #1c3851; // legacy, use colorDark from now.
+$colorDark: $colorDarkBlue;
+
 $colorLoopie: #ffc700;
 $colorBlue: #0085ff;
-$colorGreen: #2abd88;
 $colorWhite: #fcfbf9;
-$colorGrey: #949494;
-$colorGreyDark: #4b4b4b;
-$colorDarkGradient: linear-gradient(to bottom right, #18314e, #0e1b27);
-$dropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
 
 $colorBlueHighlight: #00a5ff;
+
+//Secondary
+$colorY: #ffde69;
+$colorG: #70c3a0;
+$colorB: #5185ea;
+$colorR: #ec6374;
+$colorYLite: #fff6c5;
+$colorGLite: #ace3cc;
+$colorBLite: #b1daff;
+$colorRLite: #ffdede;
+
+//not Greyscale
+$colorGrey1: #d7e1ea;
+$colorGrey2: #797f8b;
+$colorGrey3: #30384b;
+$colorGrey4: #2a3039;
+
+$colorDarkGradient: linear-gradient(to bottom right, #18314e, #0e1b27);
+$dropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
 
 //mixins
 
