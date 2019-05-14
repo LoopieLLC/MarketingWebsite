@@ -1,12 +1,13 @@
-
-.intro-container { // this code is depreciated and should be removed now renamed to container full
-    height: 100vh;
-    //margin-left: 15rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8,1fr);
+.intro-container {
+  // this code is depreciated and should be removed now renamed to container full
+  height: 100vh;
+  //margin-left: 15rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
 }
+
 /* refactored container code 
     example:
      <div class="container intro"> 
@@ -15,48 +16,52 @@
 
 */
 .container {
-    display: grid;
-    grid-template-columns: 20em auto 20em;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 20em auto 20em;
+  width: 100%;
 
-    &.full { // used to be .intro-container
-        height: 100vh;
-        //margin-left: 15rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(4,1fr);
-        @include for-tablet-landscape-up {
-            grid-template-columns:  repeat(5,1fr) ;
-        }
-        .title {
-            &.one {
-                grid-row: 2;
-                grid-column: 2 / 5; 
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                //height: 20em !important;
-                //margin-left: 15rem;
-                width: 100%;
-                text-align: center;
-                align-items: center;
-            }
-        }
+  &.full {
+    // used to be .intro-container
+    height: 100vh;
+    //margin-left: 15rem;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 15% repeat(2, 1fr) 15%;
+    @include for-tablet-landscape-up {
+      grid-template-columns: repeat(5, 1fr);
     }
-    &.split {
-        height: 100vh;
+    .title {
+      &.one {
+        grid-row: 2;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        //height: 20em !important;
         //margin-left: 15rem;
+        width: 100%;
+        text-align: center;
+        align-items: center;
         @include for-tablet-landscape-up {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(8,1fr);
+          grid-column: 2 / 5;
         }
-       
-        //grid-column-gap: 16px;
-        .split-image {
-            //margin-right: 5rem;
-            width:100%;
-            height: 90%;
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover;
-        }
+      }
     }
+  }
+  &.split {
+    height: 100vh;
+    //margin-left: 15rem;
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(8, 1fr);
+    }
+
+    //grid-column-gap: 16px;
+    .split-image {
+      //margin-right: 5rem;
+      width: 100%;
+      height: 90%;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+    }
+  }
 }
