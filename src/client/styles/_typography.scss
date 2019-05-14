@@ -1,6 +1,17 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../../../public/fonts/Gilroy-ExtraBold.otf) format('opentype');
+  font-weight: Bold;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(../../../public/fonts/Gilroy-Light.otf) format('opentype');
+  font-weight: normal;
+}
+
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 a {
@@ -45,8 +56,15 @@ h3 {
 
 p {
   color: $colorDark;
+  font-weight: 200;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
+}
+.blue {
+  color: $colorBlue;
+}
+.black {
+  color: $colorDark;
 }

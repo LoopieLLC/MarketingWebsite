@@ -5,7 +5,7 @@ import SplitText from '../SplitText';
 const HomePagePricing = () => (
   // TODO: make it look better, add real text, shadows? animations?
   <React.Fragment>
-    <div className="container full">
+    <div className="container grid">
       <div className="title one">
         <SplitText header="Simple Pricing." type="split-text left" />
         <SplitText
