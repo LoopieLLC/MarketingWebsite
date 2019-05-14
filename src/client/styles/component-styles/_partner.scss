@@ -1,16 +1,15 @@
 .partner-header {
   grid-column: 3/ span 4;
   grid-row: 2;
-}
+  > .partner-text {
+    font-size: 3em;
+    font-weight: bold;
 
-.partner-text {
-  font-size: 3em;
-  font-weight: bold;
-
-  &.blue {
-    color: $colorBlue;
-  }
-  &.black {
-    color: $colorDark;
+    > .blue {
+      color: $colorBlue;
+    }
+    > .black {
+      color: $colorDark;
+    }
   }
 }

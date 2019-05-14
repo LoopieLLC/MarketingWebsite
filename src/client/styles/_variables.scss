@@ -1,15 +1,35 @@
-$colorDark: #222627;
-$colorDarkBlue: #1C3851;
-$colorLoopie: #FFC700;
-$colorBlue: #0085FF;
-$colorGreen: #2ABD88;
-$colorWhite: #FCFBF9;
-$colorGrey: #949494;
-$colorGreyDark: #4B4B4B;
-$colorDarkGradient: linear-gradient(to bottom right, #18314E, #0E1B27);
-$dropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
+/*
+    Color Pallete
 
-$colorBlueHighlight: #00A5FF;
+*/
+//  Primary
+$colorDarkBlue: #1c3851; // legacy, use colorDark from now.
+$colorDark: $colorDarkBlue;
+
+$colorLoopie: #ffc700;
+$colorBlue: #0085ff;
+$colorWhite: #fcfbf9;
+
+$colorBlueHighlight: #00a5ff;
+
+//Secondary
+$colorY: #ffde69;
+$colorG: #70c3a0;
+$colorB: #5185ea;
+$colorR: #ec6374;
+$colorYLite: #fff6c5;
+$colorGLite: #ace3cc;
+$colorBLite: #b1daff;
+$colorRLite: #ffdede;
+
+//not Greyscale
+$colorGrey1: #d7e1ea;
+$colorGrey2: #797f8b;
+$colorGrey3: #30384b;
+$colorGrey4: #2a3039;
+
+$colorDarkGradient: linear-gradient(to bottom right, #18314e, #0e1b27);
+$dropShadow: 0 0.4em 20px rgba(0, 0, 0, 0.15);
 
 //mixins
 
@@ -29,28 +49,42 @@ https://codepen.io/davidgilbertson/pen/aBpJzO
 */
 
 @mixin for-phone-only {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-    @media (min-width: 600px) { @content; }
+  @media (min-width: 600px) {
+    @content;
+  }
 }
 @mixin for-tablet-portait-only {
-    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-up {
-    @media (min-width: 900px) { @content; }
+  @media (min-width: 900px) {
+    @content;
+  }
 }
 @mixin for-tablet-landscape-only {
-    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
 @mixin for-desktop-only {
-    @media (min-width: 1200px) and (max-width: 1799px) { @content; }
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
 }
 @mixin for-big-desktop-up {
-    @media (min-width: 1800px) { @content; }
+  @media (min-width: 1800px) {
+    @content;
+  }
 }
-
-

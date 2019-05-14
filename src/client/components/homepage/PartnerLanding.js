@@ -7,8 +7,9 @@ const PartnerLanding = () => (
   <React.Fragment>
     <div className="container full">
       <div className="partner-header">
-        <span className="partner-text black">Better, </span>
-        <span className="partner-text blue">Together.</span>
+        <h3 className="partner-text black">
+          Better, <span className="blue">Together.</span>
+        </h3>
       </div>
       <SplitLogo partner={bungalow} partneralt="Bungalow" />
     </div>
