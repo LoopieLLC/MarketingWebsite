@@ -1,6 +1,15 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../../../public/fonts/Gilroy-ExtraBold.otf), format('opentype');
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(../../../public/fonts/Gilroy-Light.otf), format('opentype');
+}
+
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 a {
@@ -49,4 +58,10 @@ p {
 
 .vertical-text {
   writing-mode: vertical-rl;
+}
+.blue {
+  color: $colorBlue;
+}
+.black {
+  color: $colorDark;
 }

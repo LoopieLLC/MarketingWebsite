@@ -6,12 +6,12 @@ const PartnerLanding = () => (
   // TODO: make it look better, add real text, shadows? animations?
   <React.Fragment>
     <div className="container full full-height">
-      <div className="partner-header">
-        <h3 className="partner-text black">
+      <div className="partner header">
+        <h1 className="partner-text black">
           Better, <span className="blue">Together.</span>
-        </h3>
+        </h1>
+        <SplitLogo partner={bungalow} partneralt="Bungalow" />
       </div>
-      <SplitLogo partner={bungalow} partneralt="Bungalow" />
     </div>
   </React.Fragment>
 );
