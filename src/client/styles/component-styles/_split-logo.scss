@@ -6,13 +6,14 @@
     font-size: 3em;
     font-weight: bold;
     display: inline-block;
+    color: $colorBlue;
   }
   .logo-left {
     max-height: 100%;
     max-width: 10rem;
     display: inline-block;
   }
-  .logo-right {
+  > .logo-right {
     max-height: 100%;
     max-width: 10rem;
     display: inline-block;

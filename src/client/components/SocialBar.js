@@ -5,22 +5,22 @@ const socials = [
   {
     name: 'facebook',
     icon: <Facebook />,
-    url: '/home',
+    url: 'https://www.facebook.com/loopielaundry/',
   },
   {
     name: 'instagram',
     icon: <Instagram />,
-    url: '/pricing',
+    url: 'https://www.instagram.com/loopielaundry/',
   },
   {
     name: 'linkedin',
     icon: <Linkedin />,
-    url: '/pricing',
+    url: 'https://www.linkedin.com/company/loopiellc',
   },
   {
     name: 'twitter',
     icon: <Twitter />,
-    url: '/pricing',
+    url: 'https://twitter.com/loopielaundry',
   },
 ];
 
