@@ -1,20 +1,26 @@
 .split-loopie {
-  grid-column: 3;
-  grid-row: 3;
-  > .logo-text {
+  display: inline-flex;
+  align-items: center;
+
+  .logo-text {
+    text-align: center;
     font-size: 3em;
     font-weight: bold;
+    display: inline-block;
     color: $colorBlue;
-    display: inline-block;
   }
-  > .logo-left {
-    max-height: 100%;
-    max-width: 10rem;
-    display: inline-block;
+  .logo-left {
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    max-width: 100%;
+    height: auto;
+    max-height: 2rem;
+    //display: inline-block;
   }
-  > .logo-right {
-    max-height: 100%;
-    max-width: 10rem;
-    display: inline-block;
+  .logo-right {
+    max-width: 100%;
+    height: auto;
+    max-height: 7rem;
+    // display: inline-block;
   }
 }
