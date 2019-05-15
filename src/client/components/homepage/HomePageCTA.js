@@ -6,7 +6,7 @@ import {Chevron} from '../icons';
 
 const HomePageCTA = ({subtext, handleEmail, classes}) => (
   <div className="home-page-cta">
-    <div className="container split">
+    <div className="container split full-height">
       <Spring
         from={{opacity: 0, marginLeft: -500}}
         to={{opacity: 1, marginLeft: 0}}

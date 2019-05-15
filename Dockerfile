@@ -1,12 +1,13 @@
 # stage: 1
 FROM node:8 as react-build
 WORKDIR /app
-COPY . ./
+COPY . /app/
 RUN npm i
-RUN npm run dev
 
-# stage: 2 — the production environment
-FROM nginx:alpine
-# COPY — from=react-build /app/build /usr/share/nginx/html
-EXPOSE 80
-CMD [“nginx”, “-g”, “daemon off;”]
+EXPOSE 1337
+
+COPY docker-entrypoint.sh   /
+
+RUN chmod 700 /docker-entrypoint.sh
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

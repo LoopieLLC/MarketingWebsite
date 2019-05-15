@@ -34,12 +34,22 @@
   }
   &.left {
     grid-column: 2;
+
+    @include for-tablet-landscape-up {
+      grid-column: 2;
+    }
   }
   &.center {
-    grid-column: 3;
+    grid-column: 2;
+    @include for-tablet-landscape-up {
+      grid-column: 3;
+    }
   }
   &.right {
-    grid-column: 4;
+    grid-column: 2;
+    @include for-tablet-landscape-up {
+      grid-column: 4;
+    }
   }
 }
 

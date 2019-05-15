@@ -15,11 +15,11 @@ const pages = [
 
 const pages2 = [
   
-  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}>Place an order with your phone</animated.div>,
-  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}>A driver will come to pick up your clothes</animated.div>,
-  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}>The driver takes your clothes to a certified washer</animated.div>,
-  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}>Your clothes are washed and folded</animated.div>,
-  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}>A driver delivers your washed, folded clothes to you in under 24 hours</animated.div>,
+  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}><h3 className="slide-text">Place an order with your phone</h3></animated.div>,
+  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}><h3 className="slide-text">A driver will come to pick up your clothes</h3></animated.div>,
+  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}><h3 className="slide-text">The driver takes your clothes to a certified washer</h3></animated.div>,
+  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}><h3 className="slide-text">Your clothes are washed and folded</h3></animated.div>,
+  ({ style }) => <animated.div className="slide-left test" style={{ ...style }}><h3 className="slide-text">A driver delivers your washed, folded clothes to you in under 24 hours</h3></animated.div>,
 ]
 
 function SlideShow() {

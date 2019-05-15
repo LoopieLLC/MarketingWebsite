@@ -4,9 +4,9 @@
   "description": "Loopie, LLC Marketing website",
   "main": "src/server/index.js",
   "scripts": {
-    "start": "npm run build && node src/server/index.js",
+    "start": "node src/server/index.js",
     "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
-    "client": "webpack-dev-server --hot --mode=development",
+    "client": "webpack-dev-server --host 0.0.0.0 --hot --mode=development",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "lint": "npx eslint 'src/**/*.js'"
@@ -24,7 +24,6 @@
     "concurrently": "^4.0.0",
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
-    "file-loader": "^2.0.0",
     "gulp": "^4.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.5",
@@ -44,7 +43,6 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "typeface-roboto": "0.0.54",
-    "url-loader": "^1.0.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-middleware": "^3.4.0",
@@ -76,7 +74,7 @@
     "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
-    "url-loader": "^1.0.1",
+    "url-loader": "^1.1.2",
     "webpack-dev-server": "^3.1.14"
   }
 }
