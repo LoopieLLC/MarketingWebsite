@@ -1,6 +1,6 @@
 import StickyNotes from '../StickyNotes';
 import SplitText from '../SplitText'; 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
 import HowSlides from './HowSlides';
 import { loopieblue, loopieyellow } from '../styles';
@@ -23,8 +23,10 @@ const pages2 = [
 ]
 
 function SlideShow() {
-	const [index, set] = useState(0);
-	const onClick = useCallback(() => set(state => (state + 1) % 5), []);
+	const [index, setIndex] = useState(0);
+	const onClick = useCallback(() => setIndex(state => (state + 1) % 5), []);
+	//const slideTimer = set(state => (state + 1) % 5), []);
+	//const slideTimer2 = setState(0);
 	const transitions = useTransition(index, p => p, {
 		from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
 		enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
@@ -35,6 +37,12 @@ function SlideShow() {
 		enter: { opacity: 1 },
 		leave: { opacity: 0 },
 	});
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setIndex(state => (state + 1) % 5);
+		}, 4000);
+		return () => clearTimeout(timeout);
+	}, [index]);
   return (
   	<React.Fragment>
 	    <div className="slide" onClick={onClick}>

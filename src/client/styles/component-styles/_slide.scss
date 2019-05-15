@@ -65,11 +65,12 @@
 	z-index: 0;
 	&.pickup {
 		background-size: cover;
-		background-image: url('../../../public/images/car3.jpg');
+		background-image: url('../../../public/images/car4.jpg');
 	}
 	&.order {
-		background-image: url('../../../public/images/iphone2.jpg');
+		background-image: url('../../../public/images/iphone3.jpg');
 		background-size: cover;
+		background-position: center;
 	}
 	&.fold {
 		background-size: cover;
