@@ -62,7 +62,7 @@
 	font-size: 30px;
 	height: 70vh;
 	width: 100%;
-	z-index: -1;
+	z-index: 0;
 	&.pickup {
 		background-size: cover;
 		background-image: url('../../../public/images/car3.jpg');

@@ -5,7 +5,6 @@ import HomePageCTA from '../components/homepage/HomePageCTA';
 import HomePageIntro from '../components/homepage/HomePageIntro';
 import HomePagePricing from '../components/homepage/HomePagePricing';
 import WorkLanding from '../components/homepage/WorkLanding';
-import PartnerLanding from '../components/homepage/PartnerLanding';
 import HowItWorks from '../components/homepage/HowItWorks';
 
 // import router
@@ -44,13 +43,12 @@ class HomePageContainer extends React.Component {
         <HomePageCTA
           handleEmail={this.sendMail}
           CTAText=" "
-          subtext="Flat rates, starting from $27.99"
+          subtext="Flat rates, starting from $32.99"
         />
         <HomePageIntro />
         <HomePagePricing />
         <HowItWorks />
         <WorkLanding />
-        <PartnerLanding />
       </React.Fragment>
     );
   }

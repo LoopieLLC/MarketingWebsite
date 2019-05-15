@@ -1,6 +1,6 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import PartnerCTA from '../components/partner/PartnerCTA';
+import PartnerLanding from '../components/partner/PartnerLanding';
 
 class PartnerContainer extends React.Component {
   state = {
@@ -8,7 +8,7 @@ class PartnerContainer extends React.Component {
   };
 
   render() {
-    return <PartnerCTA />;
+    return <PartnerLanding />;
   }
 }
 
