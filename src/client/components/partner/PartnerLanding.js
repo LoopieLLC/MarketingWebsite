@@ -11,6 +11,14 @@ const PartnerLanding = () => (
           Better, <span className="blue">Together.</span>
         </h1>
         <SplitLogo partner={bungalow} partneralt="Bungalow" />
+        <div className="code">
+          <div className="title">
+            <h3>Discount Code:</h3>
+          </div>
+          <div className="value">
+            <h3>Bungalow</h3>
+          </div>
+        </div>
       </div>
       <div className="partner-description">
         Loopie and Bungalow; the perfect match. Loopie&apos;s wash and fold

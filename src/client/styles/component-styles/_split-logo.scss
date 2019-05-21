@@ -4,6 +4,7 @@
   .logo-text {
     text-align: center;
     font-size: 3em;
+    margin: 0;
     font-weight: bold;
     display: inline-block;
     color: $colorBlue;
@@ -19,7 +20,8 @@
   .logo-right {
     max-width: 100%;
     height: auto;
-    max-height: 7rem;
+    padding-left: 2.5rem;
+    max-height: 5rem;
     // display: inline-block;
   }
 }
