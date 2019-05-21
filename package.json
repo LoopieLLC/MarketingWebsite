@@ -27,9 +27,16 @@
     "nodemailer": "^5.1.1",
     "normalize.css": "^8.0.1",
     "postcss-loader": "^3.0.0",
+<<<<<<< HEAD
+    "prop-types": "^15.6.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.8.4",
+=======
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+>>>>>>> c0c5d57c65c276da6cfc2a6bbaaf8de41482305c
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scroll-parallax": "^2.1.2",
@@ -64,8 +71,12 @@
     "mini-css-extract-plugin": "^0.4.5",
     "nodemon": "^1.19.0",
     "postcss-loader": "^3.0.0",
+<<<<<<< HEAD
+    "prettier": "^1.17.0",
+=======
     "prettier": "^1.17.1",
     "react-hot-loader": "^4.8.7",
+>>>>>>> c0c5d57c65c276da6cfc2a6bbaaf8de41482305c
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.2",

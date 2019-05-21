@@ -52,3 +52,45 @@
     }
   }
 }
+
+.sticky-price {
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: $colorBlue;
+  display: grid;
+  grid-template-rows: 5rem 1fr 3rem;
+  min-height: 18rem;
+  grid-row: 1;
+  border-radius: 10px;
+  box-shadow: $dropShadow;
+
+  p {
+    color: $colorWhite;
+    // font-weight: bold;
+  }
+  .more {
+    //transform: translate(0%, 300%);
+    //TODO: align this on the bottom of the sticky
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+  h3 {
+    color: $colorWhite;
+    //i wanted to do punch out (see through) text here but its complicated
+    //color: rgba(0, 0, 0, 1);
+    //opacity: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  &.left {
+    grid-column: 2;
+  }
+  &.right {
+    grid-column: 3;
+  }
+}

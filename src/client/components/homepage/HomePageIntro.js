@@ -8,7 +8,7 @@ const HomePageIntro = () => (
     <div className="container grid">
       <div className="title one">
         <SplitText header="Why Choose Loopie Laundry?" type="split-text left" />
-        <SplitText subtext="haha yes" type="split-text right" />
+        <SplitText subtext="The simplest way to get your laundry washed and delivered." type="split-text right" />
       </div>
       <StickyNotes
         to=""
@@ -24,7 +24,7 @@ const HomePageIntro = () => (
       />
       <StickyNotes
         to=""
-        header="No accounts, No BS"
+        header="No Accounts, No Hassle"
         content="No more frustration trying to create another account. Just plug in your information and order."
         type="sticky-basic right"
       />
