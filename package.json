@@ -4,9 +4,9 @@
   "description": "Loopie, LLC Marketing website",
   "main": "src/server/index.js",
   "scripts": {
-    "start": "npm run build && node src/server/index.js",
-    "build": "./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
-    "client": "webpack-dev-server --hot --mode=development",
+    "start": "node src/client/index.js",
+    "build": "webpack-cli --config webpack.config.js --mode production",
+    "client": "webpack-dev-server --host 127.0.0.1 --mode=production",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "lint": "npx eslint 'src/**/*.js'"
@@ -69,6 +69,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.2",
-    "webpack-dev-server": "^3.4.1"
+    "webpack": "^4.31.0",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-server": "^0.1.2"
   }
 }
