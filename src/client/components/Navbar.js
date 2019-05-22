@@ -7,10 +7,17 @@ const NAVIGATION_ITEMS = [
   {
     name: 'Home',
     url: '/home',
+  },  {
+    name: 'About Us',
+    url: '/aboutus',
   },
   {
     name: 'Pricing',
     url: '/pricing',
+  },
+  {
+    name: 'FAQ',
+    url: '/faq',
   },
   {
     name: 'About Us',

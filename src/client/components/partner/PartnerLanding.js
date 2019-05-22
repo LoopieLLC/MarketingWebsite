@@ -1,6 +1,7 @@
 import React from 'react';
 import SplitLogo from '../SplitLogo';
 import bungalow from '../../../../public/images/bungalow.png';
+import PartnerCode from '../PartnerCode';
 
 const PartnerLanding = () => (
   // TODO: make it look better, add real text, shadows? animations?
@@ -19,14 +20,7 @@ const PartnerLanding = () => (
         their time, and would appreciate spending theirs doing what they love
         instead of laundry. First time Bungalow customers get their first bag on us!{' '}
         </div>
-        <div className="code">
-          <div className="title">
-            <h3>Discount Code:</h3>
-          </div>
-          <div className="value">
-            <h3>Bungalow</h3>
-          </div>
-        </div>
+        <PartnerCode code="Bungalow" />
       </div>
     </div>
   </React.Fragment>
