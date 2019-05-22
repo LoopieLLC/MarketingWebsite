@@ -28,6 +28,15 @@ a {
   &:focus {
     color: $colorBlue;
   }
+  #svg-hover {
+    transition: all 0.3s;
+    fill: $colorDark;
+  }
+  &:hover {
+    #svg-hover {
+      fill: $colorBlue;
+    }
+  }
 }
 
 h1 h2 h3 h4 {
@@ -57,6 +66,7 @@ h3 {
 p {
   color: $colorDark;
   font-weight: 200;
+  font-size: 1.3rem;
 }
 
 .vertical-text {
@@ -65,6 +75,16 @@ p {
 .blue {
   color: $colorBlue;
 }
+
 .black {
   color: $colorDark;
+  #svg-hover {
+    transition: all 0.3s;
+    fill: $colorDark;
+  }
+  &:hover {
+    #svg-hover {
+      fill: $colorBlue;
+    }
+  }
 }
