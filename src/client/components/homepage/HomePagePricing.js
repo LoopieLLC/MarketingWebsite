@@ -23,7 +23,7 @@ const HomePagePricing = () => (
       />
       <StickyNotes
         to=""
-        header="Standard Wash and Fold"
+        header="Wash and Fold"
         content="We wash your clothes, dry them, and fold them before sending them back"
         type="sticky-price right"
       />
