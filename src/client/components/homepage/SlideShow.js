@@ -46,7 +46,7 @@ const pages2 = [
   ({style}) => (
     <animated.div className="slide-left test" style={{...style}}>
       <h3 className="slide-text">
-        The driver takes your clothes to a certified washer
+		The driver takes your clothes to a certified washer
       </h3>
     </animated.div>
   ),
