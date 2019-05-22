@@ -1,12 +1,12 @@
 import React from 'react';
 import {withRouter} from 'react-router';
-import PricingCTA from '../components/faq/FaqCTA';
+import faqCTA from '../components/faq/FaqCTA';
 
-class PricingContainer extends React.Component {
+class FaqContainer extends React.Component {
 
   render() {
     return <faqCTA />;
   }
 }
 
-export default withRouter(PricingContainer);
+export default withRouter(FaqContainer);

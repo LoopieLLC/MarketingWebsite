@@ -19,10 +19,6 @@ const NAVIGATION_ITEMS = [
     name: 'FAQ',
     url: '/faq',
   },
-  {
-    name: 'About Us',
-    url: '/aboutus',
-  },
 ];
 
 const Navbar = (props) => {
