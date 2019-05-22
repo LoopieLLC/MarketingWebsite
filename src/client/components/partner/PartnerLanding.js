@@ -1,6 +1,7 @@
 import React from 'react';
 import SplitLogo from '../SplitLogo';
 import bungalow from '../../../../public/images/bungalow.png';
+import PartnerCode from '../PartnerCode';
 
 const PartnerLanding = () => (
   // TODO: make it look better, add real text, shadows? animations?
@@ -11,14 +12,7 @@ const PartnerLanding = () => (
           Better, <span className="blue">Together.</span>
         </h1>
         <SplitLogo partner={bungalow} partneralt="Bungalow" />
-        <div className="code">
-          <div className="title">
-            <h3>Discount Code:</h3>
-          </div>
-          <div className="value">
-            <h3>Bungalow</h3>
-          </div>
-        </div>
+        <PartnerCode code="Bungalow" />
       </div>
       <div className="partner-description">
         Loopie and Bungalow; the perfect match. Loopie&apos;s wash and fold
