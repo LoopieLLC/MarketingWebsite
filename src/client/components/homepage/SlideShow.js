@@ -1,5 +1,6 @@
 import React, {useState, useCallback, useEffect} from 'react';
 import {useTransition, animated} from 'react-spring';
+import Proptypes from 'prop-types';
 
 const pages = [
   ({style}) => (
@@ -45,7 +46,7 @@ const pages2 = [
   ({style}) => (
     <animated.div className="slide-left test" style={{...style}}>
       <h3 className="slide-text">
-				The driver takes your clothes to a certified washer
+		The driver takes your clothes to a certified washer
       </h3>
     </animated.div>
   ),
@@ -57,7 +58,7 @@ const pages2 = [
   ({style}) => (
     <animated.div className="slide-left test" style={{...style}}>
       <h3 className="slide-text">
-				A driver delivers your washed, folded clothes to you in under 24 hours
+        A driver delivers your washed, folded clothes to you in under 24 hours
       </h3>
     </animated.div>
   ),
