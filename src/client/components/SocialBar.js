@@ -35,7 +35,7 @@ const SocialBar = (props) => {
         ))}
       </div>
       <div className="copyright vertical-text">
-        <p>copyright mmxix ©</p>
+        <p>copyright 2019 ©</p>
       </div>
     </div>
   );

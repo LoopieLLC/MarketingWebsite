@@ -17,6 +17,15 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     box-shadow: $dropShadow;
+    @include for-phone-only {
+      text-align: center;
+      //align-items: center;
+      //justify-content: center;
+      //padding: 1rem;
+      //width: 70%;
+      //margin-top: 1rem;
+      //margin-bottom: 1rem;
+    }
     h3 {
       font-weight: Bold;
       margin-top: 0.3rem;
@@ -31,22 +40,31 @@
     .value {
       padding: 1rem;
       background-color: $colorWhite;
+      @include for-phone-only {
+        padding-top: 2rem;
+      }
     }
   }
   .partner-text {
     text-align: center;
-    //font-size: 3em;
+    @include for-phone-only {
+      font-size: 4em;
+    }
     font-weight: bold;
   }
   .description {
-  max-width: 30em;
-  align-self: center;
-  justify-self: center;
-  grid-column: 2;
-  grid-row: 3;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    max-width: 30em;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include for-phone-only {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
 }
 

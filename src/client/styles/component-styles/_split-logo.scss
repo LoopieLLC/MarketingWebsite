@@ -1,12 +1,20 @@
 .split-loopie {
-  display: inline-flex;
+  @include for-tablet-landscape-up {
+    display: inline-flex;
+  }
   align-items: center;
   .logo-text {
     text-align: center;
+    justify-items: center;
+    align-items: center;
     font-size: 3em;
+    @include for-phone-only {
+      //font-size: 1em;
+      display: flex;
+      margin-left: 43%;
+    }
     margin: 0;
     font-weight: bold;
-    display: inline-block;
     color: $colorBlue;
   }
   .logo-left {

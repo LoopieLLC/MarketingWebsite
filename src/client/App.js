@@ -24,8 +24,7 @@ class App extends React.Component {
         <Navbar {...this.props} />
         <SocialBar />
         <Switch>
-          <Redirect exact path="/" to="/home" />
-          <Route exact path="/home" component={HomePageContainer} />
+          <Route exact path="/" component={HomePageContainer} />
           <Route path="/pricing" component={PricingContainer} />
           <Route path="/bungalow" component={PartnerContainer} />
           <Route path="/faq" component={FaqContainer} />
