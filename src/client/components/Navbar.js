@@ -18,7 +18,7 @@ const Navbar = (props) => {
         {NAVIGATION_ITEMS.map((item) => (
           <NavbarItem to={item.url} key={item.name} item={item} />
         ))}
-        <li className="navbar-item">
+        <li className="navbar-signup">
           <a href="http://www.loopie.us">
             <LoopieButton
               text="Sign Up Today"

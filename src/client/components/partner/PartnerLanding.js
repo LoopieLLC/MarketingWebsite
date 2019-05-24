@@ -12,6 +12,7 @@ const PartnerLanding = () => (
           Better, <span className="blue">Together.</span>
         </h1>
         <SplitLogo partner={bungalow} partneralt="Bungalow" />
+        <PartnerCode code="Bungalow" />
         <div className="partner description">
         Loopie is proud to partner with Bungalow. Since we launched in Seattle 
         we&apos;ve noticed that many of our customers think about things
@@ -20,7 +21,6 @@ const PartnerLanding = () => (
         their time, and would appreciate spending theirs doing what they love
         instead of laundry. First time Bungalow customers get their first bag on us!{' '}
         </div>
-        <PartnerCode code="Bungalow" />
       </div>
     </div>
   </React.Fragment>

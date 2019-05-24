@@ -1,6 +1,6 @@
 .fixed {
   position: fixed;
-  @include for-phone-only {
+  @include for-phone-and-tablet-portrait {
     //position: relative;
   }
 }
@@ -9,9 +9,12 @@
   display: flex;
   justify-content: space-between;
   height: 5rem;
+  @include for-big-phone-only {
+    height: 4rem;
+  }
   padding-top: 1rem;
   z-index: 300;
-  @include for-phone-only {
+  @include for-phone-and-tablet-portrait {
     background-color: $colorDark;
     padding-top: .2rem;
   }
@@ -24,6 +27,18 @@
     align-items: center;
 
     .navbar-item {
+      margin: 0 3rem;
+      list-style:  none;
+      > a {
+        //color: $colorDark;
+        line-height: 14px;
+        font-weight: bold;
+      }
+    }
+    .navbar-signup {
+      @include for-phone-and-tablet-portrait {
+        display: none;
+      }
       margin: 0 3rem;
       list-style:  none;
       > a {
