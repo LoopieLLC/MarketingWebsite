@@ -14,11 +14,10 @@ const PartnerLanding = () => (
         <SplitLogo partner={bungalow} partneralt="Bungalow" />
         <PartnerCode code="Bungalow" />
         <div className="partner description">
-        Loopie is proud to partner with Bungalow. Since we launched in Seattle, 
-        we&apos;ve noticed that many of our customers think
-        differently, take bold lifestyle risks, and value their time. Spend your 
-        time doing what you love, and leave the laundry to us. Sign up now 
-        and use discount code Bungalow to receive your first bag free!{' '}
+        Loopie's wash and fold laundry delivery service is perfect for mobile, 
+        active Bungalow customers. Spend your time doing what you love, 
+        and leave the laundry to us. Sign up now and use discount code 
+        Bungalow to receive your first bag free!{' '}
         </div>
       </div>
     </div>
