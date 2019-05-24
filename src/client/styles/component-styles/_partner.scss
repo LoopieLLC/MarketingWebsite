@@ -5,7 +5,7 @@
   align-self: center;
   justify-self: center;
   @include for-phone-only {
-    margin-top: -14%;
+    margin-top: -15.5%;
   }
   grid-column: 2;
   grid-row: 2;
@@ -53,25 +53,70 @@
     font-weight: bold;
   }
   .description {
-    max-width: 30em;
+    @include for-big-phone-only {
+      display: none;
+    }
+    margin-left: 0.35em;
+    margin-right: 0.35em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-row: 3;
+    border-radius: 10px;
+    border-width: 2px;
+    //border-style: solid;
+    //border-color: $colorBlue;
+    max-width: 25em;
+    font-weight: regular;
+    color: $colorDark;
     align-self: center;
     justify-self: center;
     grid-column: 2;
     grid-row: 3;
+    font-weight: bold;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: -.5rem;
+    margin-bottom: 2.5rem;
     font-size: 1.4rem;
-    @include for-big-phone-only {
-      font-size: 1.19rem;
-    }
-    @include for-phone-and-tablet-portrait {
-      margin-left: .7rem;
-      margin-right: .7rem;
-    }
     .bold {
       font-weight: bold;
     }
+  }
+  .description-mobile {
+    @include for-big-phone-up {
+      display: none;
+    }  
+    margin-left: 0.35em;
+    margin-right: 0.35em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-row: 3;
+    border-radius: 10px;
+    border-width: 2px;
+    //border-style: solid;
+    //border-color: $colorBlue;
+    max-width: 25em;
+    font-weight: regular;
+    color: $colorDark;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    box-shadow: $dropShadow;
+    background-color: $colorBlue;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.19rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: normal; 
   }
 }
 
