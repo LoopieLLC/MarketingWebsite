@@ -61,9 +61,16 @@
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.4rem;
+    @include for-big-phone-only {
+      font-size: 1.19rem;
+    }
     @include for-phone-and-tablet-portrait {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: .7rem;
+      margin-right: .7rem;
+    }
+    .bold {
+      font-weight: bold;
     }
   }
 }
