@@ -5,7 +5,7 @@ function PartnerCode({code}) {
   return (
     <div className="code">
       <div className="title">
-        <h3>Discount Code:</h3>
+        <h3>Code:</h3>
       </div>
       <div className="value">
         <h3>{code}</h3>

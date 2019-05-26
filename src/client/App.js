@@ -24,8 +24,7 @@ class App extends React.Component {
         <Navbar {...this.props} />
         <SocialBar />
         <Switch>
-          <Redirect exact path="/" to="/home" />
-          <Route exact path="/home" component={HomePageContainer} />
+          <Route exact path='/' component={() => { window.location.assign(window.location.protocol + '//' + window.location.hostname) ; return null; }} />
           <Route path="/pricing" component={PricingContainer} />
           <Route path="/bungalow" component={PartnerContainer} />
           <Route path="/faq" component={FaqContainer} />

@@ -11,16 +11,20 @@ const PartnerLanding = () => (
         <h1 className="partner-text black">
           Better, <span className="blue">Together.</span>
         </h1>
-        <SplitLogo partner={bungalow} partneralt="Bungalow" />
+        <SplitLogo partner={bungalow} partneralt="Bungalow" /> 
         <div className="partner description">
-        Loopie is proud to partner with Bungalow. Since we launched in Seattle 
-        we&apos;ve noticed that many of our customers think about things
-        differently and are willing to take bold lifestyle risks. We believe that
-        anyone who uses Bungalow to find housing might be someone who values 
-        their time, and would appreciate spending theirs doing what they love
-        instead of laundry. First time Bungalow customers get their first bag on us!{' '}
+        Loopie's wash and fold laundry delivery service is perfect for mobile, 
+        active Bungalow residents. Spend your time doing what you love, 
+        and leave the laundry to us. Sign up now and use discount code 
+        Bungalow to receive your first bag free!{' '}
         </div>
         <PartnerCode code="Bungalow" />
+        <div className="partner description-mobile">
+        Loopie's wash and fold laundry delivery service is perfect for mobile, 
+        active Bungalow residents. Spend your time doing what you love, 
+        and leave the laundry to us. Sign up now and use discount code 
+        Bungalow to receive your first bag free!{' '}
+        </div>
       </div>
     </div>
   </React.Fragment>
