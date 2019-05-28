@@ -1,11 +1,21 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 
 // import containers for homepage
-import HomePageCTA from '../components/homepage/HomePageCTA';
-import HomePageIntro from '../components/homepage/HomePageIntro';
-import HomePagePricing from '../components/homepage/HomePagePricing';
-import WorkLanding from '../components/homepage/WorkLanding';
-import HowItWorks from '../components/homepage/HowItWorks';
+// import HomePageCTA from '../components/homepage/HomePageCTA';
+// import HomePageIntro from '../components/homepage/HomePageIntro';
+// import HomePagePricing from '../components/homepage/HomePagePricing';
+// import WorkLanding from '../components/homepage/WorkLanding';
+// import HowItWorks from '../components/homepage/HowItWorks';
+
+const HomePageCTA = lazy(() => import('../components/homepage/HomePageCTA'));
+const HomePageIntro = lazy(() =>
+  import('../components/homepage/HomePageIntro'),
+);
+const HomePagePricing = lazy(() =>
+  import('../components/homepage/HomePagePricing'),
+);
+const WorkLanding = lazy(() => import('../components/homepage/WorkLanding'));
+const HowItWorks = lazy(() => import('../components/homepage/HowItWorks'));
 
 // import router
 import {withRouter} from 'react-router';
@@ -40,15 +50,17 @@ class HomePageContainer extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HomePageCTA
-          handleEmail={this.sendMail}
-          CTAText=" "
-          subtext="Flat rates, starting from $32.99"
-        />
-        <HomePageIntro />
-        <HomePagePricing />
-        <HowItWorks />
-        <WorkLanding />
+        <Suspense fallback={<h1>coochie</h1>}>
+          <HomePageCTA
+            handleEmail={this.sendMail}
+            CTAText=" "
+            subtext="Flat rates, starting from $32.99"
+          />
+          <HomePageIntro />
+          <HomePagePricing />
+          <HowItWorks />
+          <WorkLanding />
+        </Suspense>
       </React.Fragment>
     );
   }
