@@ -3,8 +3,10 @@
   flex-direction: column;
   align-items: center;
   align-self: center;
-
   justify-self: center;
+  @include for-phone-only {
+    margin-top: -15.5%;
+  }
   grid-column: 2;
   grid-row: 2;
   .code {
@@ -15,13 +17,22 @@
     border-style: solid;
     //padding: 1rem;
     width: fit-content;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    //margin-top: 1rem;
+    //margin-bottom: 1rem;
     box-shadow: $dropShadow;
+    @include for-phone-and-tablet-portrait {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      //padding: 1rem;
+      //width: 70%;
+      //margin-top: 1rem;
+      //margin-bottom: 1rem;
+    }
     h3 {
       font-weight: Bold;
-      margin-top: 0.3rem;
-      margin-bottom: 0.3rem;
+      //margin-top: 0.3rem;
+      //margin-bottom: 0.3rem;
     }
 
     .title {
@@ -36,17 +47,76 @@
   }
   .partner-text {
     text-align: center;
-    //font-size: 3em;
+    @include for-phone-and-tablet-portrait {
+      font-size: 4em;
+    }
     font-weight: bold;
+  }
+  .description {
+    @include for-big-phone-only {
+      display: none;
+    }
+    margin-left: 0.35em;
+    margin-right: 0.35em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-row: 3;
+    border-radius: 10px;
+    border-width: 2px;
+    //border-style: solid;
+    //border-color: $colorBlue;
+    max-width: 25em;
+    font-weight: regular;
+    color: $colorDark;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    .bold {
+      font-weight: bold;
+    }
+  }
+  .description-mobile {
+    @include for-big-phone-up {
+      display: none;
+    }  
+    margin-left: 0.35em;
+    margin-right: 0.35em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    grid-row: 3;
+    border-radius: 10px;
+    border-width: 2px;
+    //border-style: solid;
+    //border-color: $colorBlue;
+    max-width: 25em;
+    font-weight: regular;
+    color: $colorDark;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 3;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    box-shadow: $dropShadow;
+    background-color: $colorBlue;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.19rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: normal; 
   }
 }
 
-.partner-description {
-  max-width: 30em;
-  align-self: center;
-  justify-self: center;
-  grid-column: 2;
-  grid-row: 3;
-  text-align: center;
-  margin-bottom: 45%;
-}

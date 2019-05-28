@@ -4,18 +4,10 @@ import logo from '../../../public/images/logo.svg';
 import LoopieButton from './LoopieButton';
 
 const NAVIGATION_ITEMS = [
-  {
-    name: 'Home',
-    url: '/home',
-  },
-  {
-    name: 'Pricing',
-    url: '/pricing',
-  },
-  {
-    name: 'About Us',
-    url: '/aboutus',
-  },
+  //{
+  //  name: 'test',
+  //  url: '/test',
+  //},  
 ];
 
 const Navbar = (props) => {
@@ -26,7 +18,8 @@ const Navbar = (props) => {
         {NAVIGATION_ITEMS.map((item) => (
           <NavbarItem to={item.url} key={item.name} item={item} />
         ))}
-        <li className="navbar-item">
+        <li className="navbar-item"><a href="/">Home</a></li>
+        <li className="navbar-signup">
           <a href="http://www.loopie.us">
             <LoopieButton
               text="Sign Up Today"

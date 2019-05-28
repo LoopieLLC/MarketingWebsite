@@ -70,3 +70,6 @@ typings/
 #Ian's personal notes file
 ians_notes.txt
 /dist
+/.vs/MarketingWebsite/v16/Browse.VC.db
+/.vs/MarketingWebsite/v16/Browse.VC.opendb
+/.vs/VSWorkspaceState.json
