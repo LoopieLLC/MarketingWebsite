@@ -22,11 +22,13 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
 
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
-        <LoopieButton
-          color="primary"
-          text="Let's get started"
-          variant="outlined"
-        />
+        <a href="http://www.loopie.us">
+          <LoopieButton
+            color="primary"
+            text="Let's get started"
+            variant="outlined"
+          />
+        </a>
       </div>
       <div className="learnmore">
         <LoopieButton variant="text" text="Learn More" icon={<Chevron />} />

@@ -1,13 +1,24 @@
 .fixed {
   position: fixed;
+  @include for-phone-and-tablet-portrait {
+    //position: relative;
+  }
 }
 .main-nav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
   height: 5rem;
+  @include for-big-phone-only {
+    height: 3rem;
+  }
   padding-top: 1rem;
   z-index: 300;
+  @include for-phone-and-tablet-portrait {
+    background-color: $colorDark;
+    padding-top: .2rem;
+    height: 3rem;
+  }
   //background-image: linear-gradient(to bottom, rgba(0,0,0,0.15),rgba(0,0,0,0),rgba(0,0,0,0));
 
 
@@ -17,6 +28,18 @@
     align-items: center;
 
     .navbar-item {
+      margin: 0 3rem;
+      list-style:  none;
+      > a {
+        color: $colorBlue;
+        line-height: 14px;
+        font-weight: bold;
+      }
+    }
+    .navbar-signup {
+      @include for-phone-and-tablet-portrait {
+        display: none;
+      }
       margin: 0 3rem;
       list-style:  none;
       > a {
