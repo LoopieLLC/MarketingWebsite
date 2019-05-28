@@ -28,7 +28,7 @@ class App extends React.Component {
       <React.Fragment>
         <Navbar {...this.props} />
         <SocialBar />
-        <Suspense fallback={<h1>Loading</h1>}>
+        <Suspense fallback={<h1>simon is a japanese salaryman</h1>}>
           <Switch>
             <Redirect exact path="/" to="/home" />
             <Route exact path="/home" component={HomePageContainer} />
