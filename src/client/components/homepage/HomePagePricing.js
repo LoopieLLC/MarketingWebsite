@@ -14,18 +14,18 @@ const HomePagePricing = () => (
         />
       </div>
     </div>
-    <div className = "container split-cards">
+    <div className="container split-cards">
       <StickyNotes
         to=""
         header="Wash and Dry(No Fold)"
         content="We wash your clothes, dry them, and send them back"
-        type="sticky-price left"
+        type="sticky-price right"
       />
       <StickyNotes
         to=""
-        header="Standard Wash and Fold"
+        header="Standard Wash and Fold - $29.99"
         content="We wash your clothes, dry them, and fold them before sending them back"
-        type="sticky-price right"
+        type="sticky-price left"
       />
     </div>
   </React.Fragment>
