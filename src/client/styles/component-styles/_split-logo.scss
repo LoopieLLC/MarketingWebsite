@@ -1,13 +1,13 @@
 .split-loopie {
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     display: inline-flex;
     //margin-top: -3em;
-    padding-bottom: 3em;
+    margin-bottom: 1.5em;
   }
   @include for-big-phone-only {
     margin-top: -2rem;
-    padding-bottom: .3rem;
-    padding-top: .3rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
   }
   align-items: center;
   .logo-text {
@@ -15,11 +15,7 @@
     justify-items: center;
     align-items: center;
     font-size: 3em;
-    @include for-big-phone-only {
-      //font-size: 1em;
-      display: flex;
-      margin-left: 43%;
-    }
+    justify-content: center;
     margin: 0;
     font-weight: bold;
     color: $colorBlue;
