@@ -1,4 +1,7 @@
 .socials {
+  @include for-big-phone-only {
+    display: none;
+  }
   right: 2%;
   bottom: 8vh;
   z-index: 1;
