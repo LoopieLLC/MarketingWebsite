@@ -1,6 +1,6 @@
 {
   "name": "marketing-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Loopie, LLC Marketing website",
   "repository": "https://github.com/LoopieLLC/MarketingWebsite",
   "main": "src/server/index.js",
