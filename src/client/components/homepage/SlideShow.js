@@ -4,20 +4,66 @@ import Proptypes from 'prop-types';
 import Slide from './Slide';
 import TextSlide from './TextSlide';
 
-const pageClassesRight = [
-  "slide-background-test order",
-  "slide-background-test pickup",
-  "slide-background-test washer",
-  "slide-background-test fold",
-  "slide-background-test deliver"
+const pages = [
+  ({style}) => (
+    <animated.div
+      className="slide-background-test order"
+      style={{...style}}
+    />
+  ),
+  ({style}) => (
+    <animated.div
+      className="slide-background-test pickup"
+      style={{...style}}
+    />
+  ),
+  ({style}) => (
+    <animated.div
+      className="slide-background-test washer"
+      style={{...style}}
+    />
+  ),
+  ({style}) => (
+    <animated.div className="slide-background-test fold" style={{...style}} />
+  ),
+  ({style}) => (
+    <animated.div
+      className="slide-background-test deliver"
+      style={{...style}}
+    />
+  ),
 ];
 
-const pageTextLeft = [
-  "Place an order with your phone",
-  "A driver will come to pick up your clothes",
-  "The driver takes your clothes to a certified washer",
-  "Your clothes are washed and folded",
-  "A driver delivers your washed, folded clothes to you in under 24 hours"
+const pages2 = [
+  ({style}) => (
+    <animated.div className="slide-left test" style={{...style}}>
+      <h3 className="slide-text">Place an order with your phone</h3>
+    </animated.div>
+  ),
+  ({style}) => (
+    <animated.div className="slide-left test" style={{...style}}>
+      <h3 className="slide-text">A driver will come to pick up your clothes</h3>
+    </animated.div>
+  ),
+  ({style}) => (
+    <animated.div className="slide-left test" style={{...style}}>
+      <h3 className="slide-text">
+        The driver takes your clothes to a certified washer
+      </h3>
+    </animated.div>
+  ),
+  ({style}) => (
+    <animated.div className="slide-left test" style={{...style}}>
+      <h3 className="slide-text">Your clothes are washed and folded</h3>
+    </animated.div>
+  ),
+  ({style}) => (
+    <animated.div className="slide-left test" style={{...style}}>
+      <h3 className="slide-text">
+        A driver delivers your washed, folded clothes to you in under 24 hours
+      </h3>
+    </animated.div>
+  ),
 ];
 
 function SlideShow() {
@@ -41,16 +87,16 @@ function SlideShow() {
   }, [index]);
   return (
     <React.Fragment>
-      <animated.div className="slide" onClick={onClick}>
+      <div className="slide" onClick={onClick}>
         {transitions.map(({item, props, key}) => {
-          const pageClass = pageClassesRight[item];
-          return <Slide slideClassName={pageClass} style={props} />;
+          let ImagePage = pages[item];
+          return <ImagePage key={key} index={item} style={props} />;
         })}
       </div>
       <div className="slide-left" onClick={onClick}>
         {transitions2.map(({item, props, key}) => {
-          const pageText = pageTextLeft[item];
-          return <TextSlide slideText={pageText} slideClassName={"slide-left test"} style={props} />;
+          let TextPage = pages2[item];
+          return <TextPage key={key} index={key} style={props} />;
         })}
       </div>
     </React.Fragment>

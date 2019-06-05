@@ -7,9 +7,11 @@
   "scripts": {
     "start": "node src/client/index.js",
     "build": "webpack-cli --config webpack.config.js --mode production",
-    "client": "webpack-dev-server --host 0.0.0.0 --mode=production",
+    "prod-client": "webpack-dev-server --host 0.0.0.0 --mode=production",
+    "dev-client": "webpack-dev-server --host 0.0.0.0 --mode=development",
     "server": "nodemon src/server/index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run dev-client\"",
+    "prod": "concurrently \"npm run server\" \"npm run prod-client\"",
     "lint": "npx eslint 'src/**/*.js'"
   },
   "author": "Brandon Paris",
