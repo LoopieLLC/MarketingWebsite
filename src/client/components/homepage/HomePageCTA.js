@@ -31,7 +31,14 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
         </a>
       </div>
       <div className="learnmore">
-        <LoopieButton variant="text" text="Learn More" icon={<Chevron />} />
+        <LoopieButton
+          variant="text"
+          text="Learn More"
+          icon={<Chevron />}
+          onClick={() =>
+            window.scrollBy({top: 950, left: 0, behavior: 'smooth'})
+          }
+        />
         <div className="bar" />
       </div>
     </div>

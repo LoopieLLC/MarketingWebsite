@@ -19,7 +19,7 @@ function handleVariant(props) {
 
 function LoopieButton({text, onClick, variant, icon}) {
   return (
-    <button className={handleVariant({variant})}>
+    <button className={handleVariant({variant})} onClick={onClick}>
       {icon}
       {text}
     </button>
