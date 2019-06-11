@@ -11,6 +11,22 @@
   }
   align-items: center;
   .logo-text {
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 3em;
+    justify-content: center;
+    margin: 0;
+    font-weight: bold;
+    color: $colorBlue;
+  }
+  .image-text {
+    @include for-phone-and-tablet-portrait {
+      display: none;
+    }    
     text-align: center;
     justify-items: center;
     align-items: center;
