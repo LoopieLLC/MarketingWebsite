@@ -17,4 +17,10 @@
   &.right {
     grid-column: 3;
   }
+  &.left-half {
+    grid-column: 1;
+  }
+  &.right-half {
+    grid-column: 2;
+  }
 }

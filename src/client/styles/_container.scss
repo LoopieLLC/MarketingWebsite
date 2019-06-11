@@ -116,5 +116,14 @@
     //margin-left: 15rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    .title {
+      height: 25vh;
+      &.left {
+        grid-column: 1;
+      }
+      &.right {
+        grid-column: 2;
+      }
+    }
   }
 }

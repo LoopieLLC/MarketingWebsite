@@ -36,31 +36,31 @@ const pages = [
 
 const pages2 = [
   ({style}) => (
-    <animated.div className="slide-left test" style={{...style}}>
-      <h3 className="slide-text">Place an order with your phone</h3>
+    <animated.div className="slide-left text" style={{...style}}>
+      <h3 className="slide-text">Place an order with your phone, and schedule a pick up time.</h3>
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left test" style={{...style}}>
-      <h3 className="slide-text">A driver will come to pick up your clothes</h3>
+    <animated.div className="slide-left text" style={{...style}}>
+      <h3 className="slide-text">A driver will come to pick up your clothes.</h3>
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left test" style={{...style}}>
+    <animated.div className="slide-left text" style={{...style}}>
       <h3 className="slide-text">
-        The driver takes your clothes to a certified washer
+        The driver takes your clothes to a certified washer. 
       </h3>
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left test" style={{...style}}>
-      <h3 className="slide-text">Your clothes are washed and folded</h3>
+    <animated.div className="slide-left text" style={{...style}}>
+      <h3 className="slide-text">Your clothes are washed, dried, and folded.</h3>
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left test" style={{...style}}>
+    <animated.div className="slide-left text" style={{...style}}>
       <h3 className="slide-text">
-        A driver delivers your washed, folded clothes to you in under 24 hours
+        A driver delivers your washed, folded clothes to you in under 24 hours. 
       </h3>
     </animated.div>
   ),
@@ -75,9 +75,9 @@ function SlideShow() {
     leave: {opacity: 0, transform: 'translate3d(0,0,0)'},
   });
   const transitions2 = useTransition(index, (p) => p, {
-    from: {opacity: 0},
-    enter: {opacity: 1},
-    leave: {opacity: 0},
+    from: {opacity: 0, transform: 'translate3d(100%,0,0)'},
+    enter: {opacity: 1,transform: 'translate3d(0%,0,0)'},
+    leave: {opacity: 0, transform: 'translate3d(0,0,0)'},
   });
   useEffect(() => {
     const timeout = setTimeout(() => {

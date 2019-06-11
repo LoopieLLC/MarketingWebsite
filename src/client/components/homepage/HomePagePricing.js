@@ -17,15 +17,15 @@ const HomePagePricing = () => (
     <div className="container split-cards">
       <StickyNotes
         to=""
-        header="Wash and Dry(No Fold)"
-        content="We wash your clothes, dry them, and send them back"
-        type="sticky-price right"
+        header="Standard Wash and Fold"
+        content="We wash your clothes, dry them, fold them and send them back in the Loopie Duffel (10”W x 24”L x 18”H) within 24 hours."
+        type="sticky-price left"
       />
       <StickyNotes
         to=""
-        header="Wash and Fold"
-        content="We wash your clothes, dry them, and fold them before sending them back"
-        type="sticky-price left"
+        header="Commercial Wash and Fold"
+        content="We wash your clothes, dry them, fold them and send them back in a Loopie Commercial Size Bag (30” x 40”) within 24 hours."
+        type="sticky-price right"
       />
     </div>
   </React.Fragment>
