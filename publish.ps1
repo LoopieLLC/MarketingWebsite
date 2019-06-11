@@ -62,4 +62,4 @@ if ($all)
 
 }
 
-Build 1.0.4 -latest
+Build 1.0.5 -latest
