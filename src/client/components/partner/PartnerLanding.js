@@ -16,9 +16,9 @@ const PartnerLanding = () => (
           <p>
             Loopie's wash and fold laundry delivery service is perfect for
             mobile, active Bungalow residents. Spend your time doing what you
-            love, and leave the laundry to us. In addition to receiving a Loopie Duffel 
-            free for your first order, if you sign up now with discount code
-            Bungalow you will receive your first order (a $30.00 value) free!{' '}
+            love, and leave the laundry to us. In addition to receiving a free Loopie Duffel 
+            with your first order, you will get $30.00 off your first order 
+            if you sign up now with code: Bungalow.{' '}
           </p>
           <PartnerCode code="Bungalow" />
         </div>
