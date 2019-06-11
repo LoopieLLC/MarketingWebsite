@@ -53,6 +53,7 @@
     @include for-tablet-portrait-up {
       border-width: 0;
       background-color: transparent;
+      max-width: 42em;
       p {
       }
     }
