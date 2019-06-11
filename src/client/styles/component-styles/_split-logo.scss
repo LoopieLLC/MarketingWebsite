@@ -23,10 +23,7 @@
     font-weight: bold;
     color: $colorBlue;
   }
-  .image-text {
-    @include for-phone-and-tablet-portrait {
-      display: none;
-    }    
+  .image-text {  
     text-align: center;
     justify-items: center;
     align-items: center;
@@ -35,6 +32,12 @@
     margin: 0;
     font-weight: bold;
     color: $colorBlue;
+  }
+  .duffel {
+    @include for-phone-and-tablet-portrait {
+      max-width: 5em;
+    } 
+    max-width: 6.5em;
   }
   .logo-left {
     padding-left: 2.5rem;
