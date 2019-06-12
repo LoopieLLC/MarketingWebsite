@@ -1,6 +1,9 @@
 .socials {
+  @include for-big-phone-only {
+    display: none;
+  }
   right: 2%;
-  bottom: 8vh;
+  bottom: 7.9vh;
   z-index: 1;
   .social-icons {
     display: flex;
@@ -9,7 +12,7 @@
 
     a {
       padding: 3px;
-      margin-bottom: 1.7em;
+      margin-top: 1.7em;
       height: auto;
       width: 1.1rem;
       color: $colorDark;

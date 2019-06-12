@@ -1,6 +1,6 @@
 {
   "name": "marketing-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Loopie, LLC Marketing website",
   "repository": "https://github.com/LoopieLLC/MarketingWebsite",
   "main": "src/server/index.js",
@@ -40,6 +40,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "babel-polyfill": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",

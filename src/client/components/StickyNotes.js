@@ -8,7 +8,7 @@ const StickyNotes = ({to, header, content, type}) => {
       <h3>{header}</h3>
       <p>{content}</p>
       <div className="more">
-        <LoopieButton variant="textWhite" text="Learn More" />
+        <LoopieButton variant="text" text="Learn More" />
       </div>
     </div>
   );
