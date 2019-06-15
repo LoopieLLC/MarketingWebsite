@@ -26,8 +26,8 @@ const Navbar = (props) => {
         {NAVIGATION_ITEMS.map((item) => (
           <NavbarItem to={item.url} key={item.name} item={item} />
         ))}
-        <li className="navbar-item">
-          <a href="http://www.loopie.us">
+        <li className="navbar-item ">
+          <a className="no-wrap" href="http://www.loopie.us">
             <LoopieButton
               text="Sign Up Today"
               color="primary"
