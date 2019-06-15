@@ -79,6 +79,9 @@
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
     }
+    &.small {
+      max-height: 20vh;
+    }
   }
   &.half-full {
     height: 50vh;

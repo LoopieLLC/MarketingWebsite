@@ -19,8 +19,17 @@
   }
   &.left-half {
     grid-column: 1;
+    align-self: center;
+    h3 {
+      text-align: center;
+    }
+
   }
   &.right-half {
     grid-column: 2;
+    align-self: center;
+    p {
+      text-align: center;
+    }
   }
 }

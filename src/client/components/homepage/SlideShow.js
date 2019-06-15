@@ -36,32 +36,28 @@ const pages = [
 
 const pages2 = [
   ({style}) => (
-    <animated.div className="slide-left text" style={{...style}}>
-      <h3 className="slide-text">Place an order with your phone, and schedule a pick up time.</h3>
+    <animated.div className="slide-text" style={{...style}}>
+      Place an order with your phone, and schedule a pick up time.
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left text" style={{...style}}>
-      <h3 className="slide-text">A driver will come to pick up your clothes.</h3>
+    <animated.div className="slide-text" style={{...style}}>
+      A driver will come to pick up your clothes.
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left text" style={{...style}}>
-      <h3 className="slide-text">
+    <animated.div className="slide-text" style={{...style}}>
         The driver takes your clothes to a certified washer. 
-      </h3>
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left text" style={{...style}}>
-      <h3 className="slide-text">Your clothes are washed, dried, and folded.</h3>
+    <animated.div className="slide-text" style={{...style}}>
+      Your clothes are washed, dried, and folded.
     </animated.div>
   ),
   ({style}) => (
-    <animated.div className="slide-left text" style={{...style}}>
-      <h3 className="slide-text">
+    <animated.div className="slide-text" style={{...style}}>
         A driver delivers your washed, folded clothes to you in under 24 hours. 
-      </h3>
     </animated.div>
   ),
 ];
