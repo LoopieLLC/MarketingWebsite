@@ -21,20 +21,21 @@ const NAVIGATION_ITEMS = [
 
 function Navbar(props) {
   let [open, setOpen] = useState(0);
-
+  function setOpen() {
+    open = !open;
+  }
   return (
     <nav className="navbar main-nav fixed">
       <img className="logo" src={logo} alt="Loopie Laundry" />
-      <div className="nav-mobile">
+      <div onClick={setOpen()} className="nav-mobile">
         <HamburgerMenu
           isOpen={open}
-          menuClicked={() => setOpen((open = !open))}
-          width={24}
-          height={20}
-          strokeWidth={2}
+          strokeWidth={3}
           rotate={0}
+          width={22}
+          height={20}
           color="white"
-          borderRadius={2}
+          borderRadius={4}
           animationDuration={0.3}
         />
       </div>
