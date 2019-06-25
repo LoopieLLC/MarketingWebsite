@@ -20,11 +20,25 @@
     height: 3rem;
   }
   //background-image: linear-gradient(to bottom, rgba(0,0,0,0.15),rgba(0,0,0,0),rgba(0,0,0,0));
+  .nav-mobile {
+    display: block;
+    padding: 0.3em;
+    background-color: $colorBlue;
+    &:hover {
+      background-color: $colorBlueHighlight;
+    }
 
+    @include for-tablet-landscape-up {
+      display: none;
+    }
+  }
   .nav-item-container {
-    display: flex;
+    display: none;
     margin-top: 1rem;
     align-items: center;
+    @include for-tablet-landscape-up {
+      display: flex;
+    }
 
     .navbar-item {
       margin: 0 3rem;

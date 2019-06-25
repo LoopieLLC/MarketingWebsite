@@ -8,6 +8,7 @@
      this will apply both container and intro
 
 */
+
 .container {
   display: grid;
   grid-template-columns: 20em auto 20em;
@@ -67,8 +68,8 @@
   &.split {
     max-height: 100vh;
     //margin-left: 15rem;
+    grid-template-columns: 1fr 1fr;
     @include for-tablet-landscape-up {
-      grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(8, 1fr);
     }
 
