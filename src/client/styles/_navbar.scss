@@ -36,7 +36,7 @@
       background: $colorBlue !important;
       transition: all 0.2s !important;
     }
-    &:hover {
+    &:hover &:active {
       background-color: $colorBlue;
       span {
         background: $colorWhite !important;
@@ -92,4 +92,35 @@
     max-width: 9rem;
     margin-left: 2rem;
   }
+}
+
+.nav-mobile-full {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: $colorDarkBlue;
+  transition: opacity 0.2s;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 299;
+  .navbar-item {
+    list-style: none;
+    margin: 3rem 0;
+    > a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $colorWhite;
+      &:hover {
+        color: $colorBlue;
+      }
+    }
+  }
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
