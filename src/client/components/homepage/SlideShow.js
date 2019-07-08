@@ -42,7 +42,7 @@ const pages2 = [
   ),
   ({style}) => (
     <animated.div className="slide-text" style={{...style}}>
-      A driver will come to pick up your clothes.
+      A driver will come to pick up your clothes and deliver them to a Loopie certified washer.
     </animated.div>
   ),
   ({style}) => (
