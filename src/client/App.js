@@ -8,6 +8,7 @@ import '../client/styles/main.scss';
 import HomePageContainer from './containers/HomePageContainer';
 import PricingContainer from './containers/PricingContainer';
 import PartnerContainer from './containers/PartnerContainer';
+import PitchbookContainer from './containers/PitchbookContainer';
 import FaqContainer from './containers/FaqContainer';
 import Navbar from './components/Navbar';
 import SocialBar from './components/SocialBar';
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route exact path='/' component={() => { window.location.assign(window.location.protocol + '//' + window.location.hostname) ; return null; }} />
           <Route path="/pricing" component={PricingContainer} />
           <Route path="/bungalow" component={PartnerContainer} />
+          <Route path="/pitchbook" component={PitchbookContainer} />
           <Route path="/faq" component={FaqContainer} />
         </Switch>
       </React.Fragment>
