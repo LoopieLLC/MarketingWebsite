@@ -13,6 +13,12 @@
   grid-template-columns: 20em auto 20em;
   width: 100%;
 
+  &.full-pitchbook {
+    min-height: 100vh;
+    //margin-left: 15rem;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 7% 1fr 15%;
+  }
   &.full {
     min-height: 100vh;
     //margin-left: 15rem;
