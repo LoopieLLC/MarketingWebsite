@@ -7,7 +7,7 @@ const HowItWorks = () => (
   <React.Fragment>
     <div className="container split small">
         <SplitText 
-          header="How it works" 
+          header="So How Does it All Work?" 
           type="split-text left-half" />
         <SplitText
           subtext="Our certified washers and drivers make laundry a breeze."

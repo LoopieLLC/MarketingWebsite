@@ -58,8 +58,8 @@ class HomePageContainer extends React.Component {
           />
           <HomePageIntro />
           <HomePagePricing />
-          <HowItWorks />
           <WorkLanding />
+          <HowItWorks />
         </Suspense>
       </React.Fragment>
     );
