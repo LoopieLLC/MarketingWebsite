@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SplitText = ({header, subtext, type}) => {
+const SplitText = ({ header, subtext, type }) => {
   if (!header) {
     return (
       <div className={type}>
