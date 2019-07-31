@@ -44,7 +44,7 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
             color="primary"
             text="Let's get started"
             variant="outlined"
-            onClick={gtag_report_conversion("https://www.loopie.us")}
+            onClick={ () => gtag_report_conversion("https://www.loopie.us")}
           />
         </a>
       </div>
