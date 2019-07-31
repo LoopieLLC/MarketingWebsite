@@ -50,11 +50,11 @@ class HomePageContainer extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Suspense fallback={<h1>coochie</h1>}>
+        <Suspense fallback={<h1>test</h1>}>
           <HomePageCTA
             handleEmail={this.sendMail}
             CTAText=" "
-            subtext="Flat rates, starting from $32.99"
+            subtext="Flat rates, starting from $29.99"
           />
           <HomePageIntro />
           <HomePagePricing />

@@ -71,7 +71,7 @@ function SlideShow() {
     leave: {opacity: 0, transform: 'translate3d(0,0,0)'},
   });
   const transitions2 = useTransition(index, (p) => p, {
-    from: {opacity: 0, transform: 'translate3d(100%,0,0)'},
+    from: {opacity: 0, transform: 'translate3d(0%,0,0)'},
     enter: {opacity: 1,transform: 'translate3d(0%,0,0)'},
     leave: {opacity: 0, transform: 'translate3d(0,0,0)'},
   });
