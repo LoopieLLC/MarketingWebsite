@@ -1,7 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['airbnb', 'prettier', 'plugin:react/recommended'],
-  plugins: ['prettier'],
+  extends: 'plugin:react/recommended',
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 8,
@@ -14,9 +13,7 @@ module.exports = {
     node: true,
   },
   rules: {
-    'prettier/prettier': ['error'],
     'react/jsx-indent': [2, 2], // error, 2 spaces
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'for-direction': 0,
     'no-cond-assign': 2, // eslint:recommended
     'no-console': 1, // eslint:recommended
