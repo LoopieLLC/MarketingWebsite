@@ -1,0 +1,19 @@
+.jumbotron {
+  display: grid;
+  background-color: $colorGrey1;
+  grid-row: 3 / 7;
+  grid-column: 1 / 3;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}
