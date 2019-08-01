@@ -23,22 +23,20 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
       <h3 className="cta-subtext text-dark">{subtext}</h3>
       <div className="cta-btn">
         <a href="http://www.loopie.us">
-          <LoopieButton
-            color="primary"
-            text="Let's get started"
-            variant="outlined"
-          />
+          <LoopieButton variant="outlined">Let's Get Started</LoopieButton>
         </a>
       </div>
       <div className="learnmore">
         <LoopieButton
           variant="text"
-          text="Learn More"
-          icon={<Chevron />}
           onClick={() =>
             window.scrollBy({top: 950, left: 0, behavior: 'smooth'})
           }
-        />
+        >
+          <Chevron />
+          Learn More
+        </LoopieButton>
+
         <div className="bar" />
       </div>
     </div>
