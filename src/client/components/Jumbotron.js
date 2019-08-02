@@ -4,6 +4,7 @@ import Proptypes from 'prop-types';
 import LoopieButton from './LoopieButton';
 
 // use with container split full-height
+// TODO: make css work with more stuff lol
 
 const Jumbotron = (props) => {
   return (
@@ -15,6 +16,11 @@ const Jumbotron = (props) => {
       </div>
     </div>
   );
+};
+
+Jumbotron.propTypes = {
+  header: Proptypes.string,
+  subtext: Proptypes.subtext,
 };
 
 export default Jumbotron;

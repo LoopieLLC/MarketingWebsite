@@ -33,8 +33,7 @@ const HomePageCTA = ({subtext, handleEmail, classes}) => (
             window.scrollBy({top: 950, left: 0, behavior: 'smooth'})
           }
         >
-          <Chevron />
-          Learn More
+          <Chevron /> Learn More
         </LoopieButton>
 
         <div className="bar" />

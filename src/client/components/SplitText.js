@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Proptypes from 'prop-types';
 
 const SplitText = ({header, subtext, type}) => {
   if (!header) {
@@ -18,9 +18,9 @@ const SplitText = ({header, subtext, type}) => {
 };
 
 SplitText.propTypes = {
-  header: PropTypes.string,
-  subtext: PropTypes.string,
-  type: PropTypes.string,
+  header: Proptypes.string,
+  subtext: Proptypes.string,
+  type: Proptypes.string,
 };
 
 export default SplitText;
