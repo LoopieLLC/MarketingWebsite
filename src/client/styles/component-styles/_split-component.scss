@@ -3,5 +3,14 @@
   background-color: $colorGrey1;
   grid-row: 2;
   grid-column: 2;
-  grid-template-columns: repeat(13, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2em;
+
+  .left {
+    grid-column: 1 / 8;
+  }
+
+  .right {
+    grid-column: 8 / 13;
+  }
 }
