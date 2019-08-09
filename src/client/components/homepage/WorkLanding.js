@@ -30,7 +30,7 @@ const WorkLanding = () => (
         <StickyNotes
           to=""
           header="We Provide Detergent"
-          content="No need to worry about buying detergent or dryer sheets. Our Loopie Washer kits come with everything you'll need."
+          content="No need to worry about buying detergent or dryer sheets. Our Loopie Washer Kit comes with everything you'll need."
           type="sticky-basic right"
         />
       </div>

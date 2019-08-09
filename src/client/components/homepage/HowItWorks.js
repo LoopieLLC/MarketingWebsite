@@ -1,23 +1,22 @@
 import React from 'react';
 import SplitText from '../SplitText';
-import SlideShow from './SlideShow.js';
+import StepIcon from '../StepIcon';
+import { StickyContainer, Sticky } from 'react-sticky';
+//import searchimage from '../../../../public/images/animat-search-color.gif';
 
-const HowItWorks = () => (
-  // TODO: make it look better, add real text, shadows? animations?
+const HowItWorks2 = () => (
   <React.Fragment>
-    <div className="container split small">
-        <SplitText 
-          header="So How Does it All Work?" 
-          type="split-text left-half" />
-        <SplitText
-          subtext="Our certified washers and drivers make laundry a breeze."
-          type="split-text right-half"
-        />
-    </div>
-    <div className="container slides">
-      <SlideShow />
-    </div>
+    <StickyContainer className="container-image-scroll">
+      <Sticky>
+        {({style}) => (<div className="sticky-image" style={style}/>)}
+      </Sticky>
+      <StepIcon title="Place an order with your phone." subtext=""  />
+      <StepIcon title="A Driver will come to pick up your clothes" subtext=""  />
+    </StickyContainer>
+    <h1>HEYY</h1>
+    <h1>HEYY</h1>
+    <h1>HEYY</h1>
   </React.Fragment>
 );
 
-export default HowItWorks;
+export default HowItWorks2;

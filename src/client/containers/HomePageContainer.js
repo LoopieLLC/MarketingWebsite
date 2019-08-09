@@ -16,6 +16,7 @@ const HomePagePricing = lazy(() =>
 );
 const WorkLanding = lazy(() => import('../components/homepage/WorkLanding'));
 const HowItWorks = lazy(() => import('../components/homepage/HowItWorks'));
+const HowItWorks2 = lazy(() => import('../components/homepage/HowItWorks2'));
 
 // import router
 import {withRouter} from 'react-router';
@@ -59,7 +60,7 @@ class HomePageContainer extends React.Component {
           <HomePageIntro />
           <HomePagePricing />
           <WorkLanding />
-          <HowItWorks />
+          <HowItWorks2 />
         </Suspense>
       </React.Fragment>
     );
